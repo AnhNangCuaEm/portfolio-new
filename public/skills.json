@@ -1,0 +1,34 @@
+{
+    "skills": {
+        "web": [
+            { "name": "HTML", "level": 90 },
+            { "name": "CSS", "level": 90 },
+            { "name": "Tailwind CSS", "level": 90 },
+            { "name": "JavaScript", "level": 60 },
+            { "name": "TypeScript", "level": 60 },
+            { "name": "Next.js", "level": 70 },
+            { "name": "PHP", "level": 60 },
+            { "name": "Laravel", "level": 40 },
+            { "name": "MySQL", "level": 70 },
+            { "name": "WordPress", "level": 80 },
+            { "name": "Git", "level": 70 }
+        ],
+        "design": [
+            { "name": "Figma", "level": 70 },
+            { "name": "Adobe Photoshop", "level": 60 },
+            { "name": "Adobe Illustrator", "level": 60 },
+            { "name": "UI/UX Design", "level": 60 }
+        ],
+        "softSkills": [
+            { "name": "Problem Solving", "level": 80 },
+            { "name": "Leadership", "level": 75 },
+            { "name": "Communication", "level": 75 },
+            { "name": "Teamwork", "level": 80 }
+        ],
+        "languages": [
+            { "name": "Vietnamese", "level": 100, "native": true },
+            { "name": "Japanese", "level": 70 },
+            { "name": "English", "level": 50 }
+        ]
+    }
+}

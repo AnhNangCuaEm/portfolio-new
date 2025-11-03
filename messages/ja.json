@@ -1,7 +1,22 @@
 {
     "info": {
+        "edu": "学歴",
+        "education": "HAL東京 - WEB学科",
+        "now": "2024 - 現在",
         "description": "Web開発を学習中です。フロントエンドではHTML/CSS/JavaScript、バックエンドではPHP/MySQLを使用してプロジェクトを開発しています。現在、NextjsとLaravelの学習に取り組んでおり、モダンな開発技術の習得に励んでいます。",
         "description2": "新しい技術に対する強い興味と、チーム開発への意欲を持っています。ユーザー目線のWeb開発を心がけ、価値あるサービスの創造を目指しています。",
-        "location": "Tokyo, Japan"
+        "interest": "興味・関心",
+        "interests": {
+            "photography": "写真",
+            "traveling": "旅行",
+            "music": "音楽",
+            "coding": "コーディング"
+        },
+        "learning": "学習中",
+        "learnings": {
+            "nextjs": "Next.js",
+            "laravel": "Laravel"
+        },
+        "clicktocopy": "クリックしてコピー"
     }
 }

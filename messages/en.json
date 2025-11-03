@@ -1,7 +1,22 @@
 {
     "info": {
+        "edu": "Education",
+        "education": "HAL Tokyo - WEB Department",
+        "now": "2024 - Present",
         "description": "I am learning web development. On the frontend, I use HTML/CSS/JavaScript, and on the backend, I develop projects using PHP/MySQL. Currently, I am studying Nextjs and Laravel, striving to acquire modern development skills.",
         "description2": "I have a strong interest in new technologies and a willingness to work in team development. I aim to create valuable services with a user-centered approach to web development.",
-        "location": "Tokyo, Japan"
+        "interest": "Interests",
+        "interests": {
+            "photography": "Photography",
+            "traveling": "Traveling",
+            "music": "Music",
+            "coding": "Coding"
+        },
+        "learning": "Currently Learning",
+        "learnings": {
+            "nextjs": "Next.js",
+            "laravel": "Laravel"
+        },
+        "clicktocopy": "Click to copy"
     }
 }
