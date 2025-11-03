@@ -11,3 +11,6 @@ export type { GlassButtonProps } from './GlassButton';
 
 export { default as GlassCard } from './GlassCard';
 export type { GlassCardProps } from './GlassCard';
+
+export { default as SkillProgressBar } from './SkillProgressBar';
+export type { SkillProgressBarProps } from './SkillProgressBar';

@@ -3,8 +3,8 @@
         "edu": "Education",
         "education": "HAL Tokyo - WEB Department",
         "now": "2024 - Present",
-        "description": "I am learning web development. On the frontend, I use HTML/CSS/JavaScript, and on the backend, I develop projects using PHP/MySQL. Currently, I am studying Nextjs and Laravel, striving to acquire modern development skills.",
-        "description2": "I have a strong interest in new technologies and a willingness to work in team development. I aim to create valuable services with a user-centered approach to web development.",
+        "description": "I build fast, accessible web interfaces and pragmatic backends. My strengths are clean UI with HTML/CSS/Tailwind and modern JS/TS, plus data-driven features with Next.js and MySQL. I also craft WordPress solutions when they're the right fit.",
+        "description2": "Currently sharpening Next.js and Laravel to deliver production‑ready features end to end. I enjoy collaborative Git workflows, care about UX, and love turning ideas into polished, useful products.",
         "interest": "Interests",
         "interests": {
             "photography": "Photography",
@@ -18,5 +18,11 @@
             "laravel": "Laravel"
         },
         "clicktocopy": "Click to copy"
+    },
+    "skills": {
+        "web": "Web Development",
+        "design": "Design",
+        "softSkills": "Soft Skills",
+        "languages": "Languages"
     }
 }

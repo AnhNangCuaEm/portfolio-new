@@ -3,8 +3,8 @@
         "edu": "学歴",
         "education": "HAL東京 - WEB学科",
         "now": "2024 - 現在",
-        "description": "Web開発を学習中です。フロントエンドではHTML/CSS/JavaScript、バックエンドではPHP/MySQLを使用してプロジェクトを開発しています。現在、NextjsとLaravelの学習に取り組んでおり、モダンな開発技術の習得に励んでいます。",
-        "description2": "新しい技術に対する強い興味と、チーム開発への意欲を持っています。ユーザー目線のWeb開発を心がけ、価値あるサービスの創造を目指しています。",
+        "description": "高速でアクセシブルなUIと実用的なバックエンドの実装が得意です。HTML/CSS/TailwindでのクリーンなUI、JavaScript/TypeScriptによるモダンな開発、Next.jsとMySQLを用いたデータ連携を強みとしています。要件に応じてWordPressでの構築にも対応します。",
+        "description2": "現在はNext.jsを中心にスキルを強化し、設計から実装まで一貫して価値を届けられるエンジニアを目指しています。Gitを活用したチーム開発とUX改善が得意で、アイデアを使いやすいプロダクトへ磨き上げることに情熱があります。",
         "interest": "興味・関心",
         "interests": {
             "photography": "写真",
@@ -18,5 +18,11 @@
             "laravel": "Laravel"
         },
         "clicktocopy": "クリックしてコピー"
+    },
+    "skills": {
+        "web": "ウェブ開発",
+        "design": "デザイン",
+        "softSkills": "ソフトスキル",
+        "languages": "言語"
     }
 }
