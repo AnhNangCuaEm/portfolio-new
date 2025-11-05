@@ -1,23 +1,359 @@
 {
     "projects": [
         {
-            "title": "Project 1",
-            "description": "Description for project 1"
+            "title": "Kindergarten",
+            "subtitle": "幼稚園の情報と日々の活動を共有するサイト",
+            "engSub": "Site Sharing Kindergarten Information and Daily Activities",
+            "description": "幼稚園の情報発信サイトです。園の概要、カリキュラム、園児の日々の活動、イベント情報など、保護者に重要な情報をわかりやすく提供しています。親子の絆を深める情報発信を心がけています。",
+            "engDes": "A kindergarten information site providing essential details to parents in an easy-to-understand format. It includes kindergarten overview, curriculum, daily activities of children, event information, and more. The site focuses on information sharing that strengthens the parent-child bond.",
+            "url": "https://kindergarten.anhnangcuaem.com",
+            "github": "https://github.com/AnhNangCuaEm/kindergarten",
+            "technologies": [
+                "Next.js",
+                "Tailwind CSS"
+            ],
+            "education": true,
+            "thumb": "/project-img/kindergarten/kindergarten.jpg",
+            "gallery": [
+                "/project-img/kindergarten/kindergarten.jpg",
+                "/project-img/kindergarten/kindergarten1.jpg",
+                "/project-img/kindergarten/kindergarten2.jpg",
+                "/project-img/kindergarten/kindergarten3.jpg",
+                "/project-img/kindergarten/kindergarten4.jpg"
+            ],
+            "team": [
+                {
+                    "name": "Le Ly Thanh Hai",
+                    "role": "Frontend Developer",
+                    "responsibilities": "All"
+                }
+            ]
         },
         {
-            "title": "CafeSite",
-            "description": "架空のカフェを演出する雰囲気重視の情報サイト。HTMLとCSSで構築され、レスポンシブデザインを採用しています。",
-            "engDes": "A fictional cafe-themed information site focusing on ambiance. Built with HTML and CSS, it features a responsive design.",
+            "title": "Auraflow",
+            "subtitle": "AuraFlow - 音楽体験アプリケーション",
+            "engSub": "AuraFlow - Music Experience Application",
+            "description": "AuraFlowは、Next.jsで開発されたモダンな音楽ストリーミングアプリケーションです。色彩豊かでインタラクティブなUIを提供し、ユーザーが音楽を視覚的に楽しむことができます。主な機能には、アルバムアートに基づく背景色の自動変更、リアルなレコード盤のアニメーション、歌詞の同期表示、再生リストの管理などがあります。",
+            "engDes": "AuraFlow is a modern music streaming application developed with Next.js. It provides a colorful and interactive UI that allows users to enjoy music visually. Key features include automatic background color changes based on album art, realistic record animations, synchronized lyrics display, and playlist management.",
+            "url": "https://auraflow.anhnangcuaem.com",
+            "github": "https://github.com/AnhNangCuaEm/AuraFlow",
+            "technologies": [
+                "Next.js",
+                "Tailwind CSS",
+                "TypeScript"
+            ],
+            "education": true,
+            "thumb": "/project-img/auraflow/auraflow.jpg",
+            "gallery": [
+                "/project-img/auraflow/auraflow.jpg",
+                "/project-img/auraflow/auraflow1.jpg",
+                "/project-img/auraflow/auraflow2.jpg",
+                "/project-img/auraflow/auraflow3.jpg",
+                "/project-img/auraflow/auraflow4.jpg"
+            ],
+            "team": [
+                {
+                    "name": "Le Ly Thanh Hai",
+                    "role": "Frontend Developer",
+                    "responsibilities": "All"
+                }
+            ]
+        },
+        {
+            "title": "Tachikawa City",
+            "subtitle": "2カラムレイアウトの立川市の情報サイト",
+            "engSub": "Tachikawa City Information Site with 2-Column Layout",
+            "description": "このウェブサイトは、東京西部にある立川市を紹介するために作成されました。立川市は充実した都市機能を持ち、公共交通機関から公園、モールまで、生活に必要なあらゆる施設が整っています。ウェブサイトは2カラムレイアウトを採用し、様々なデバイスに対応するレスポンシブデザインとなっています。",
+            "engDes": "This website was created to introduce Tachikawa City in western Tokyo. Tachikawa features comprehensive urban facilities with everything needed for daily life, from public transportation to parks and shopping malls. The website adopts a two-column layout with responsive design for various devices.",
+            "url": "https://tachikawacity.anhnangcuaem.com",
+            "github": "https://github.com/AnhNangCuaEm/TachikawaCity",
+            "technologies": [
+                "JavaScript",
+                "HTML",
+                "Tailwind CSS"
+            ],
+            "education": true,
+            "thumb": "/project-img/tachikawacity/tachikawacity.jpg",
+            "gallery": [
+                "/project-img/tachikawacity/tachikawacity.jpg",
+                "/project-img/tachikawacity/tachikawacity1.jpg",
+                "/project-img/tachikawacity/tachikawacity2.jpg",
+                "/project-img/tachikawacity/tachikawacity3.jpg"
+            ],
+            "team": [
+                {
+                    "name": "Le Ly Thanh Hai",
+                    "role": "Frontend Developer",
+                    "responsibilities": "All"
+                }
+            ]
+        },
+        {
+            "title": "Music Player",
+            "subtitle": "オンラインで音楽を楽しむためのWebアプリケーション",
+            "engSub": "Web Application for Enjoying Music Online",
+            "description": "Music Playerは、オンライン音楽プレイヤーの機能を提供するWebアプリケーションです。再生、シャッフル、次へ、前へ、リピートなどの基本的な操作をサポートしています。プレイリストから曲をクリックするとその曲を再生でき、歌詞の表示機能があり、リアルタイム歌ってるところがハイライトされます。",
+            "engDes": "Music Player is a web application that provides online music player functionality. It supports basic operations such as play, shuffle, next, previous, and repeat. Users can click on songs in the playlist to play them, and the app includes lyrics display with real-time highlighting of the current lyrics.",
+            "url": "https://musicplayer.anhnangcuaem.com",
+            "github": "https://github.com/AnhNangCuaEm/MusicPlayer",
+            "technologies": [
+                "JavaScript",
+                "HTML",
+                "CSS"
+            ],
+            "education": true,
+            "thumb": "/project-img/musicplayer/musicplayer.png",
+            "gallery": [
+                "/project-img/musicplayer/musicplayer.png",
+                "/project-img/musicplayer/musicplayer1.png",
+                "/project-img/musicplayer/musicplayer2.png",
+                "/project-img/musicplayer/musicplayer3.png"
+            ],
+            "team": [
+                {
+                    "name": "Le Ly Thanh Hai",
+                    "role": "Frontend Developer",
+                    "responsibilities": "All"
+                }
+            ]
+        },
+        {
+            "title": "Green Space",
+            "subtitle": "公園施設とイベント情報を提供する総合ポータルサイト",
+            "engSub": "Comprehensive Portal Site for Park Facilities and Event Information",
+            "description": "Green Spaceは、あらゆるデバイスに最適化されたモダンなレスポンシブデザインを採用し、直感的な操作性を実現しています。リアルタイム検索機能により、ユーザーは必要な公園やイベント情報にスムーズにアクセスできます。管理者向けには、データベースの専門知識がなくても簡単に情報を管理できる専用システムを実装。",
+            "engDes": "Green Space adopts a modern responsive design optimized for all devices with intuitive usability. The real-time search functionality allows users to smoothly access necessary park and event information. A dedicated management system is implemented for administrators to easily manage information without specialized database knowledge.",
+            "url": "",
+            "github": "https://github.com/AnhNangCuaEm/GreenSpace",
+            "technologies": [
+                "PHP",
+                "JavaScript",
+                "MySQL",
+                "CSS",
+                "HTML"
+            ],
+            "education": true,
+            "thumb": "/project-img/greenspace/greenspace.jpg",
+            "gallery": [
+                "/project-img/greenspace/greenspace.jpg",
+                "/project-img/greenspace/greenspace1.png",
+                "/project-img/greenspace/greenspace2.jpg",
+                "/project-img/greenspace/greenspace3.jpg",
+                "/project-img/greenspace/greenspace4.jpg"
+            ],
+            "team": [
+                {
+                    "name": "Le Ly Thanh Hai",
+                    "role": "Full Stack Developer",
+                    "responsibilities": "All"
+                }
+            ]
+        },
+        {
+            "title": "Deep Shinjuku",
+            "subtitle": "新宿の都市伝説と怪談を紐解く没入型ウェブ体験",
+            "engSub": "Immersive Web Experience Exploring Urban Legends and Ghost Stories of Shinjuku",
+            "description": "「DEEP新宿 - 新宿怪談集」は、新宿区に伝わる不思議な物語と都市伝説を現代的な視点で紹介するウェブサイトです。長い歴史の中で織りなされてきた数々の怪談や都市伝説を通じて、新宿という街が持つ独特の文化的深層に迫ります。",
+            "engDes": "DEEP Shinjuku presents mysterious stories and urban legends from Shinjuku Ward from a contemporary perspective. Through numerous ghost stories and urban legends woven throughout history, it explores the unique cultural depth of Shinjuku.",
+            "url": "https://deepshinjuku.anhnangcuaem.com",
+            "github": "https://github.com/AnhNangCuaEm/Deep-Shinjuku",
+            "technologies": [
+                "PHP",
+                "JavaScript",
+                "CSS",
+                "HTML"
+            ],
+            "education": true,
+            "thumb": "/project-img/deepshinjuku/deepshinjuku.jpeg",
+            "gallery": [
+                "/project-img/deepshinjuku/deepshinjuku.jpeg",
+                "/project-img/deepshinjuku/deepshinjuku1.jpg",
+                "/project-img/deepshinjuku/deepshinjuku2.jpg",
+                "/project-img/deepshinjuku/deepshinjuku3.png",
+                "/project-img/deepshinjuku/deepshinjuku4.jpg"
+            ],
+            "team": [
+                {
+                    "name": "Le Ly Thanh Hai",
+                    "role": "Backend Developer",
+                    "responsibilities": "Like and Comment Function, Backend Logic"
+                },
+                {
+                    "name": "LIUCHIAWEI",
+                    "role": "Frontend Developer",
+                    "responsibilities": "Index Page, Animation, Frontend Development"
+                },
+                {
+                    "name": "李森",
+                    "role": "UI/UX Designer",
+                    "responsibilities": "UI/UX Design, Logo Design"
+                },
+                {
+                    "name": "KAUNGTHAR",
+                    "role": "Photographer",
+                    "responsibilities": "Photo, Presentation"
+                },
+                {
+                    "name": "鍾嘉朗",
+                    "role": "Frontend Developer",
+                    "responsibilities": "Intro Page, Frontend Development"
+                },
+                {
+                    "name": "若林真緒",
+                    "role": "Planner",
+                    "responsibilities": "Project Planning, Strategy"
+                }
+            ]
+        },
+        {
+            "title": "Boulangeries",
+            "subtitle": "西新宿のベーカリーの魅力を伝えるブランドサイト",
+            "engSub": "Brand Site Showcasing the Appeal of a Bakery in Nishi-Shinjuku",
+            "description": "西新宿に位置するベーカリーの魅力を余すことなく伝えるウェブサイトです。こだわりの商品メニュー、店舗へのアクセス、最新ニュースなど、パン好きの心をくすぐる情報を丁寧に紹介しています。",
+            "engDes": "This website fully conveys the appeal of a bakery located in Nishi-Shinjuku. It carefully presents information that captivates bread lovers, including a carefully curated product menu, store access information, and the latest news.",
+            "url": "https://boulangeries.anhnangcuaem.com",
+            "github": "https://github.com/AnhNangCuaEm/Boulangerie",
+            "technologies": [
+                "JavaScript",
+                "Tailwind CSS",
+                "HTML"
+            ],
+            "education": true,
+            "thumb": "/project-img/boulangerie/boulangerie.jpg",
+            "gallery": [
+                "/project-img/boulangerie/boulangerie.jpg",
+                "/project-img/boulangerie/boulangerie1.jpg",
+                "/project-img/boulangerie/boulangerie2.jpg",
+                "/project-img/boulangerie/boulangerie3.jpg",
+                "/project-img/boulangerie/boulangerie4.jpg"
+            ],
+            "team": [
+                {
+                    "name": "Le Ly Thanh Hai",
+                    "role": "Frontend Developer",
+                    "responsibilities": "All"
+                }
+            ]
+        },
+        {
+            "title": "Artist",
+            "subtitle": "アーティストの創造世界を表現するクリエイティブポートフォリオ",
+            "engSub": "Creative Portfolio Expressing an Artist's Creative World",
+            "description": "アーティストの独創性と芸術世界を最大限に引き出すよう設計された、モダンでインタラクティブなポートフォリオサイトです。作品展示やプロフィール、SNSフィード、今後のイベント情報など、アーティストの活動を多角的に発信します。",
+            "engDes": "A modern and interactive portfolio site designed to maximize an artist's originality and artistic world. It presents the artist's activities from multiple perspectives, including artwork display, profile information, social media feeds, and upcoming event details.",
+            "url": "",
+            "github": "",
+            "technologies": [
+                "JavaScript",
+                "CSS",
+                "HTML"
+            ],
+            "education": true,
+            "thumb": "/project-img/artistsite/artissite.jpg",
+            "gallery": [
+                "/project-img/artistsite/artistsite.jpg",
+                "/project-img/artistsite/artistsite1.jpg",
+                "/project-img/artistsite/artistsite2.jpg"
+            ],
+            "team": [
+                {
+                    "name": "Le Ly Thanh Hai",
+                    "role": "Frontend Developer",
+                    "responsibilities": "All"
+                }
+            ]
+        },
+        {
+            "title": "CocoonTower",
+            "subtitle": "コクーンタワーの魅力を発信する総合情報サイト",
+            "engSub": "Comprehensive Information Site Showcasing the Appeal of Cocoon Tower",
+            "description": "コクーンタワーの施設情報、テナント情報、教育機関情報を一元化した総合情報ポータルです。洗練された直感的なデザインにより、求める情報へのアクセスを容易にしています。視覚的にわかりやすいアクセスマップと施設案内により、初めての来訪者でも迷わずに目的地へ到着できます。",
+            "engDes": "A comprehensive information portal that consolidates facility information, tenant details, and educational institution information for Cocoon Tower. Sophisticated and intuitive design makes accessing desired information easy. Clear visual access maps and facility guides help first-time visitors reach their destination without confusion.",
+            "url": "",
+            "github": "",
+            "technologies": [
+                "CSS",
+                "HTML"
+            ],
+            "education": true,
+            "thumb": "/project-img/cocoonsite/cocoonsite.jpg",
+            "gallery": [
+                "/project-img/cocoonsite/cocoonsite.jpg",
+                "/project-img/cocoonsite/cocoonsite1.jpg",
+                "/project-img/cocoonsite/cocoonsite2.jpg",
+                "/project-img/cocoonsite/cocoonsite3.jpg"
+            ],
+            "team": [
+                {
+                    "name": "Le Ly Thanh Hai",
+                    "role": "Frontend Developer",
+                    "responsibilities": "Frontend Development, Implementation"
+                },
+                {
+                    "name": "程世豪",
+                    "role": "UI/UX Designer",
+                    "responsibilities": "UI/UX Design, Logo Design"
+                },
+                {
+                    "name": "有薗柊哉",
+                    "role": "Photographer",
+                    "responsibilities": "Photo, Imagery"
+                },
+                {
+                    "name": "若林真緒",
+                    "role": "Planner",
+                    "responsibilities": "Project Planning, Strategy"
+                }
+            ]
+        },
+        {
+            "title": "Movie Site",
+            "subtitle": "映画「Interstellar」の公式プロモーションサイト",
+            "engSub": "Official Promotional Site for the Movie 'Interstellar'",
+            "description": "映画「Interstellar」の魅力を伝える公式サイトです。作品概要、キャスト情報、レビューなど、映画の世界観を余すことなく紹介します。宇宙をモチーフにしたUIデザインにより、作品の壮大なスケールを視覚的に表現しています。",
+            "engDes": "This is the official site promoting the movie 'Interstellar'. It provides an overview of the film, cast information, reviews, and more, capturing the essence of the movie. The UI design, inspired by space themes, visually represents the grand scale of the film.",
+            "url": "",
+            "github": "",
             "technologies": [
                 "HTML",
                 "CSS"
             ],
+            "education": true,
+            "thumb": "/project-img/moviesite/moviesite.jpg",
+            "gallery": [
+                "/project-img/moviesite/moviesite.jpg",
+                "/project-img/moviesite/moviesite1.jpg",
+                "/project-img/moviesite/moviesite2.jpg",
+                "/project-img/moviesite/moviesite3.jpg"
+            ],
+            "team": [
+                {
+                    "name": "Le Ly Thanh Hai",
+                    "role": "Frontend Developer",
+                    "responsibilities": "All"
+                }
+            ]
+        },
+        {
+            "title": "Cafe Site",
+            "subtitle": "架空のカフェ情報サイト",
+            "engSub": "Fictional Cafe Information Site",
+            "description": "架空のカフェの世界観を表現したウェブサイトです。カフェならではの温かみのある雰囲気をUIデザインで表現し、メニュー情報、アクセス情報、ニュースなど、実在するかのような臨場感のある情報を提供します。",
+            "engDes": "This website represents the world of a fictional cafe. The UI design captures the warm and inviting atmosphere typical of cafes, providing menu information, access details, news, and other content that gives a realistic feel as if the cafe actually exists.",
+            "url": "",
+            "github": "",
+            "technologies": [
+                "HTML",
+                "CSS"
+            ],
+            "education": true,
             "thumb": "/project-img/cafesite/cafesite.png",
             "gallery": [
-                "/project-img/cafesite/cafesite-1.png",
-                "/project-img/cafesite/cafesite-2.png",
-                "/project-img/cafesite/cafesite-3.png",
-                "/project-img/cafesite/cafesite-4.png"
+                "/project-img/cafesite/cafesite.png",
+                "/project-img/cafesite/cafesite1.jpg",
+                "/project-img/cafesite/cafesite2.jpg",
+                "/project-img/cafesite/cafesite3.jpg",
+                "/project-img/cafesite/cafesite4.jpg"
             ],
             "team": [
                 {
