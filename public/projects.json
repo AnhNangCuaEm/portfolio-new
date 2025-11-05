@@ -19,7 +19,8 @@
                 "/project-img/kindergarten/kindergarten1.jpg",
                 "/project-img/kindergarten/kindergarten2.jpg",
                 "/project-img/kindergarten/kindergarten3.jpg",
-                "/project-img/kindergarten/kindergarten4.jpg"
+                "/project-img/kindergarten/kindergarten4.jpg",
+                "/project-img/kindergarten/kindergarten5.jpg"
             ],
             "team": [
                 {
@@ -46,10 +47,10 @@
             "thumb": "/project-img/auraflow/auraflow.jpg",
             "gallery": [
                 "/project-img/auraflow/auraflow.jpg",
-                "/project-img/auraflow/auraflow1.jpg",
                 "/project-img/auraflow/auraflow2.jpg",
                 "/project-img/auraflow/auraflow3.jpg",
-                "/project-img/auraflow/auraflow4.jpg"
+                "/project-img/auraflow/auraflow4.jpg",
+                "/project-img/auraflow/auraflow1.jpg"
             ],
             "team": [
                 {
@@ -181,7 +182,7 @@
                 {
                     "name": "LIUCHIAWEI",
                     "role": "Frontend Developer",
-                    "responsibilities": "Index Page, Animation, Frontend Development"
+                    "responsibilities": "Index Page, Animation, Frontend Dev, Presenter"
                 },
                 {
                     "name": "李森",
@@ -196,7 +197,7 @@
                 {
                     "name": "鍾嘉朗",
                     "role": "Frontend Developer",
-                    "responsibilities": "Intro Page, Frontend Development"
+                    "responsibilities": "Intro Page, Frontend Dev"
                 },
                 {
                     "name": "若林真緒",
@@ -249,7 +250,7 @@
                 "HTML"
             ],
             "education": true,
-            "thumb": "/project-img/artistsite/artissite.jpg",
+            "thumb": "/project-img/artistsite/artistsite.jpg",
             "gallery": [
                 "/project-img/artistsite/artistsite.jpg",
                 "/project-img/artistsite/artistsite1.jpg",
@@ -287,7 +288,7 @@
                 {
                     "name": "Le Ly Thanh Hai",
                     "role": "Frontend Developer",
-                    "responsibilities": "Frontend Development, Implementation"
+                    "responsibilities": "Frontend Dev, Implementation, Presenter"
                 },
                 {
                     "name": "程世豪",

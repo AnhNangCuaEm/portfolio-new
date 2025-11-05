@@ -1,6 +1,8 @@
 'use client';
 
 import Header from "@/components/layout/Header";
+import HamburgerMenu from "@/components/layout/Hamburger";
+import { ProjectModal }  from "@/components";
 import { useLocale } from "next-intl";
 import { useState, useEffect } from "react";
 
@@ -27,6 +29,8 @@ export default function ProjectsPage() {
     const locale = useLocale();
     const [projects, setProjects] = useState<Project[]>([]);
     const [isLoading, setIsLoading] = useState(true);
+    const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     useEffect(() => {
         fetch('/projects.json')
@@ -41,10 +45,21 @@ export default function ProjectsPage() {
             });
     }, []);
 
+    const handleProjectClick = (project: Project) => {
+        setSelectedProject(project);
+        setIsModalOpen(true);
+    };
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+        setTimeout(() => setSelectedProject(null), 300);
+    };
+
     return (
         <div className="flex flex-col items-center min-h-screen bg-black/50">
             <Header />
-            <main className="w-full py-32 px-4 md:px-8">
+            <HamburgerMenu />
+            <main className="w-full py-24 sm:py-32 px-4 sm:px-8">
                 <div className="max-w-7xl mx-auto">
                     {/* Loading state */}
                     {isLoading ? (
@@ -61,6 +76,7 @@ export default function ProjectsPage() {
                                 return (
                                     <div
                                         key={index}
+                                        onClick={() => handleProjectClick(project)}
                                         className="relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-400 ease-in-out cursor-pointer scroll-animate scroll-fade-up"
                                         style={{
                                             aspectRatio: "4 / 3",
@@ -110,6 +126,13 @@ export default function ProjectsPage() {
                     )}
                 </div>
             </main>
+
+            {/* Modal */}
+            <ProjectModal
+                project={selectedProject}
+                isOpen={isModalOpen}
+                onClose={handleCloseModal}
+            />
         </div>
     );
 }

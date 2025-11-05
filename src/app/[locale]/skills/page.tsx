@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import Header from "@/components/layout/Header";
+import HamburgerMenu from "@/components/layout/Hamburger";
 import SkillProgressBar from "@/components/SkillProgressBar";
 
 interface Skill {
@@ -73,7 +74,8 @@ export default function SkillsPage() {
     return (
         <div className="flex flex-col items-center min-h-screen">
             <Header />
-            <main className="flex min-h-screen w-full max-w-6xl flex-col items-center py-32 px-8">
+            <HamburgerMenu />
+            <main className="flex min-h-screen w-full max-w-6xl flex-col items-center py-24 sm:py-32 px-4 sm:px-8">
                 <div className="w-full">
                     {loading ? (
                         <div className="text-center text-gray-300">

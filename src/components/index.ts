@@ -14,3 +14,5 @@ export type { GlassCardProps } from './GlassCard';
 
 export { default as SkillProgressBar } from './SkillProgressBar';
 export type { SkillProgressBarProps } from './SkillProgressBar';
+
+export { default as ProjectModal } from './ProjectModal';
