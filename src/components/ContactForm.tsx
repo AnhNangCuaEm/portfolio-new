@@ -280,7 +280,7 @@ const ContactForm: React.FC = () => {
                     <div>
                         <label
                             htmlFor="name"
-                            className="block text-md font-bold text-white mb-2"
+                            className="block text-md pl-1 sm:pl-0 font-bold text-white mb-2"
                         >
                             {t('form.name')}
                         </label>
@@ -303,7 +303,7 @@ const ContactForm: React.FC = () => {
                     <div>
                         <label
                             htmlFor="email"
-                            className="block text-md font-bold text-white mb-2"
+                            className="block text-md pl-1 sm:pl-0 font-bold text-white mb-2"
                         >
                             {t('form.email')}
                         </label>
@@ -327,7 +327,7 @@ const ContactForm: React.FC = () => {
                 <div>
                     <label
                         htmlFor="content"
-                        className="block text-md font-bold text-white mb-2"
+                        className="block text-md pl-1 sm:pl-0 font-bold text-white mb-2"
                     >
                         {t('form.content')}
                     </label>

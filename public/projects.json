@@ -1,0 +1,31 @@
+{
+    "projects": [
+        {
+            "title": "Project 1",
+            "description": "Description for project 1"
+        },
+        {
+            "title": "CafeSite",
+            "description": "架空のカフェを演出する雰囲気重視の情報サイト。HTMLとCSSで構築され、レスポンシブデザインを採用しています。",
+            "engDes": "A fictional cafe-themed information site focusing on ambiance. Built with HTML and CSS, it features a responsive design.",
+            "technologies": [
+                "HTML",
+                "CSS"
+            ],
+            "thumb": "/project-img/cafesite/cafesite.png",
+            "gallery": [
+                "/project-img/cafesite/cafesite-1.png",
+                "/project-img/cafesite/cafesite-2.png",
+                "/project-img/cafesite/cafesite-3.png",
+                "/project-img/cafesite/cafesite-4.png"
+            ],
+            "team": [
+                {
+                    "name": "Le Ly Thanh Hai",
+                    "role": "Frontend Developer",
+                    "responsibilities": "All"
+                }
+            ]
+        }
+    ]
+}
