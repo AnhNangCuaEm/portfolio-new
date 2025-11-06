@@ -1,0 +1,53 @@
+# llms.txt - AI Navigation File
+# This file helps AI models understand the structure and content of this website
+
+Site-Name: Portfolio Website
+Site-Description: A professional portfolio showcasing web development projects and skills
+Site-Author: Anh Nang Cua Em
+Primary-Language: en, ja
+Repository: https://github.com/AnhNangCuaEm/portfolio-new
+
+# Main Pages
+Pages:
+  - Home: / - Main landing page
+  - Projects: /projects - Showcase of web development projects
+  - Skills: /skills - Technical skills and expertise
+  - Awards: /awards - Achievements and recognitions
+  - Contact: /contact - Contact form for inquiries
+
+# Project Information
+Projects:
+  - Artist Site
+  - Aura Flow
+  - Boulangerie
+  - Cafe Site
+  - Cocoon Site
+  - Deep Shinjuku
+  - Green Space
+  - Kindergarten
+  - Movie Site
+  - Music Player
+  - Tachikawa City
+
+# Technical Stack
+Technologies:
+  - Frontend: Next.js, React, TypeScript
+  - Styling: Tailwind CSS, PostCSS
+  - Internationalization: i18n (English, Japanese)
+  - UI Components: Glass-morphism design components
+  - Animation: Scroll animations
+
+# Content
+This portfolio demonstrates expertise in:
+- Full-stack web development
+- Responsive design
+- UI/UX implementation
+- Project showcase and documentation
+
+# Accessibility
+- Multi-language support (English, Japanese)
+- Responsive design
+- Accessible navigation
+
+# Contact
+For inquiries, please use the contact form on the website.

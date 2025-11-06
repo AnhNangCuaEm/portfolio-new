@@ -114,7 +114,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                     animate="visible"
                     exit="exit"
                     transition={{ duration: 0.2 }}
-                    className="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+                    className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"
                     onClick={(e) => {
                         if (e.target === e.currentTarget) onClose();
                     }}
@@ -138,7 +138,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                             initial={{ opacity: 0, y: -10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.1 }}
-                            className="sticky top-0 flex justify-between items-center p-6 border-b border-purple-500/10 backdrop-blur-xl bg-black/80 rounded-t-3xl"
+                            className="sticky top-0 flex justify-between items-center p-4 sm:p-6 border-b border-purple-500/10 backdrop-blur-xl bg-black/80 rounded-t-3xl"
                         >
                             <div>
                                 <h1 className="text-3xl font-bold text-white">{project.title}</h1>
@@ -148,7 +148,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.95 }}
                                 onClick={onClose}
-                                className="p-2 hover:bg-purple-500/20 rounded-lg transition-colors cursor-pointer"
+                                className="p-2 hover:bg-purple-500/40 rounded-lg transition-colors cursor-pointer"
                                 aria-label="Close modal"
                             >
                                 <X className="w-6 h-6 text-white" />
@@ -160,7 +160,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.15 }}
-                            className="p-6 space-y-6"
+                            className="p-4 sm:p-6 space-y-6"
                         >
                             {/* Description */}
                             <motion.div
@@ -169,17 +169,17 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                                 transition={{ delay: 0.2 }}
                             >
                                 <div className='flex items-center justify-between mb-2'>
-                                    <h2 className="text-xl font-semibold text-purple-300">
+                                    <h2 className="text-xl text-nowrap font-semibold text-purple-300">
                                         {locale === 'ja' ? '説明' : 'Description'}
                                     </h2>
                                     {/* Links */}
-                                    <div className="flex gap-3">
+                                    <div className="flex justify-end flex-wrap gap-3">  
                                         {project.url && (
                                             <a
                                                 href={project.url}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold rounded-lg transition-colors"
+                                                className="flex items-center gap-2 px-2 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold rounded-lg transition-colors"
                                             >
                                                 <ExternalLink className="w-4 h-4" />
                                                 {locale === 'ja' ? 'ウェブサイト' : 'Website'}
@@ -190,7 +190,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                                                 href={project.github}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white font-semibold rounded-lg transition-colors"
+                                                className="flex items-center gap-2 px-2 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white font-semibold rounded-lg transition-colors"
                                             >
                                                 <Github className="w-4 h-4" />
                                                 GitHub
@@ -198,7 +198,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                                         )}
                                     </div>
                                 </div>
-                                <p className="text-gray-300 leading-relaxed">{description}</p>
+                                <p className="text-gray-200 leading-relaxed">{description}</p>
                             </motion.div>
 
                             {/* Education Note */}
@@ -238,7 +238,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                                                 data-pswp-height={dims?.height || 687}
                                                 target="_blank"
                                                 rel="noreferrer"
-                                                className="overflow-hidden rounded-lg hover:shadow-lg transition-shadow cursor-zoom-in group"
+                                                className="overflow-hidden rounded-lg cursor-zoom-in group"
                                             >
                                                 <img
                                                     src={image}
