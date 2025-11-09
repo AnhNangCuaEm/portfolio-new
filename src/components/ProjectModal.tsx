@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 import { useLocale } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
@@ -175,7 +176,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                                     {/* Links */}
                                     <div className="flex justify-end flex-wrap gap-3">  
                                         {project.url && (
-                                            <a
+                                            <Link
                                                 href={project.url}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
@@ -183,10 +184,10 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                                             >
                                                 <ExternalLink className="w-4 h-4" />
                                                 {locale === 'ja' ? 'ウェブサイト' : 'Website'}
-                                            </a>
+                                            </Link>
                                         )}
                                         {project.github && (
-                                            <a
+                                            <Link
                                                 href={project.github}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
@@ -194,7 +195,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                                             >
                                                 <Github className="w-4 h-4" />
                                                 GitHub
-                                            </a>
+                                            </Link>
                                         )}
                                     </div>
                                 </div>

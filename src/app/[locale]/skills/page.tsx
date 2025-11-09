@@ -75,7 +75,7 @@ export default function SkillsPage() {
         <div className="flex flex-col items-center min-h-screen">
             <Header />
             <HamburgerMenu />
-            <main className="flex min-h-screen w-full max-w-6xl flex-col items-center py-24 sm:py-32 px-4 sm:px-8">
+            <main className="flex min-h-screen w-full max-w-6xl flex-col items-center pt-24 pb-4 sm:pt-32 px-4 sm:px-8">
                 <div className="w-full">
                     {loading ? (
                         <div className="text-center text-gray-300">
@@ -111,7 +111,7 @@ export default function SkillsPage() {
                             </div>
 
                             {/* Languages */}
-                            <div className="lg:col-span-2 lg:row-start-3 bg-white/5 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-white/10">
+                            <div className="lg:col-span-2 lg:row-start-3 h-fit bg-white/5 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-white/10">
                                 {renderSkillCategory(
                                     t('skills.languages'),
                                     skillsData.skills.languages,

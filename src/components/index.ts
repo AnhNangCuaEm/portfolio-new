@@ -16,3 +16,5 @@ export { default as SkillProgressBar } from './SkillProgressBar';
 export type { SkillProgressBarProps } from './SkillProgressBar';
 
 export { default as ProjectModal } from './ProjectModal';
+
+export { default as AwardsModal } from './AwardsModal';

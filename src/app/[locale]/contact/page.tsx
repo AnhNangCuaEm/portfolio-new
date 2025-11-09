@@ -10,7 +10,7 @@ export default function ContactPage() {
         <div className="flex flex-col items-center min-h-screen">
             <Header />
             <HamburgerMenu />
-            <main className="flex min-h-screen w-full max-w-4xl flex-col items-center justify-center py-32 px-4 sm:px-8">
+            <main className="flex min-h-screen w-full max-w-4xl flex-col items-center justify-center pt-24 pb-4 sm:pt-32 px-4 sm:px-8">
                 <div className="w-full max-w-3xl text-center mb-12">
                     <h1 className="text-4xl font-bold text-white mb-4 scroll-animate scroll-fade-up">
                         {t('title')}

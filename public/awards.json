@@ -1,0 +1,40 @@
+{
+    "awards": [
+        {
+            "title": "独創力賞",
+            "engTitle": "Innovation Award",
+            "project": "AuraFlow",
+            "pjURL": "https://auraflow.anhnangcuaem.com/",
+            "issuer": "HAL 東京",
+            "engIssuer": "HAL Tokyo",
+            "date": "2025-09-30",
+            "description": "カード型レイアウトデザインコンペティションにて独創力賞を受賞。",
+            "engDescription": "Received the Innovation Award in the Card Layout Design Competition.",
+            "img": "/awards/3.jpg"
+        },
+        {
+            "title": "銅賞",
+            "engTitle": "Bronze Award",
+            "project": "Green Space",
+            "pjURL": "",
+            "issuer": "HAL 東京",
+            "engIssuer": "HAL Tokyo",
+            "date": "2025-03-08",
+            "description": "就職作品展にて銅賞を受賞。",
+            "engDescription": "Received the Bronze Award at the Employment Works Exhibition.",
+            "img": "/awards/2.jpg"
+        },
+        {
+            "title": "独創力賞",
+            "engTitle": "Innovation Award",
+            "project": "Boulangerie Site",
+            "pjURL": "https://boulangeries.anhnangcuaem.com/",
+            "issuer": "HAL 東京",
+            "engIssuer": "HAL Tokyo",
+            "date": "2025-02-27",
+            "description": "店舗サイト リデザインコンペティションにて独創力賞を受賞。",
+            "engDescription": "Received the Innovation Award in the Store Site Redesign Competition.",
+            "img": "/awards/1.jpg"
+        }
+    ]
+}
