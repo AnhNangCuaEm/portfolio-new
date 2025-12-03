@@ -137,7 +137,7 @@ export default function AwardsModal({ award, isOpen, onClose }: AwardsModalProps
                                 <div className='flex justify-between items-center'>
                                     <p className="text-2xl font-bold text-gray-200">{award.project}</p>
                                     {award.pjURL && (<div>
-                                        <Link href={award.pjURL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-2 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold rounded-lg transition-colors">
+                                        <Link href={award.pjURL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-2 py-1.5 sm:px-4 sm:py-2 bg-linear-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold rounded-lg transition-colors">
                                             <ExternalLink className="w-4 h-4" />
                                             {locale === 'ja' ? 'ウェブサイト' : 'Website'}
                                         </Link>
