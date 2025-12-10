@@ -84,7 +84,7 @@ export default function SkillsPage() {
                     ) : skillsData ? (
                         <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-3 gap-12">
                             {/* Web Development */}
-                            <div className="row-span-2 bg-white/5 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-white/10">
+                            <div className="row-span-2 bg-white/5 backdrop-blur-xs rounded-3xl p-6 sm:p-8 border border-white/20">
                                 {renderSkillCategory(
                                     t('skills.web'),
                                     skillsData.skills.web,
@@ -93,7 +93,7 @@ export default function SkillsPage() {
                             </div>
 
                             {/* Design */}
-                            <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-white/10">
+                            <div className="bg-white/5 backdrop-blur-xs rounded-3xl p-6 sm:p-8 border border-white/20">
                                 {renderSkillCategory(
                                     t('skills.design'),
                                     skillsData.skills.design,
@@ -102,7 +102,7 @@ export default function SkillsPage() {
                             </div>
 
                             {/* Soft Skills */}
-                            <div className="lg:col-start-2 lg:row-start-2 bg-white/5 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-white/10">
+                            <div className="lg:col-start-2 lg:row-start-2 bg-white/5 backdrop-blur-xs rounded-3xl p-6 sm:p-8 border border-white/20">
                                 {renderSkillCategory(
                                     t('skills.softSkills'),
                                     skillsData.skills.softSkills,
@@ -111,7 +111,7 @@ export default function SkillsPage() {
                             </div>
 
                             {/* Languages */}
-                            <div className="lg:col-span-2 lg:row-start-3 h-fit bg-white/5 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-white/10">
+                            <div className="lg:col-span-2 lg:row-start-3 h-fit bg-white/5 backdrop-blur-xs rounded-3xl p-6 sm:p-8 border border-white/20">
                                 {renderSkillCategory(
                                     t('skills.languages'),
                                     skillsData.skills.languages,

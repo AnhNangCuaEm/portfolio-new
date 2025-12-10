@@ -5,6 +5,7 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from "next/navigation";
 import { routing } from '@/i18n/routing';
 import PageWrapper from "@/components/PageWrapper";
+import { Particles } from "@/components";
 import { Analytics } from '@vercel/analytics/next';
 import "../globals.css";
 
@@ -54,10 +55,26 @@ export default async function LocaleLayout({
         className={`${montserrat.variable} ${notoSansJP.variable} antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-          <PageWrapper>
-            {children}
-            <Analytics />
-          </PageWrapper>
+          {/* Particles background */}
+          <div className="fixed inset-0 w-full h-screen pointer-events-none">
+            <Particles
+              particleCount={200}
+              particleSpread={10}
+              speed={0.1}
+              particleColors={['#ffffff']}
+              particleBaseSize={90}
+              alphaParticles={false}
+              disableRotation={false}
+            />
+          </div>
+
+          {/* Main content */}
+          <div className="relative z-10">
+            <PageWrapper>
+              {children}
+              <Analytics />
+            </PageWrapper>
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>
