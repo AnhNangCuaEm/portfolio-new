@@ -21,7 +21,7 @@ export default function HomePage() {
             <Header />
             <HamburgerMenu />
             <main className="flex min-h-screen w-full max-w-6xl flex-col items-center justify-between pt-24 pb-4 sm:pt-32 px-4 sm:px-8">
-                <div className="w-full bg-white/5 backdrop-blur-xl rounded-4xl p-4 sm:p-8 border border-white/10 shadow-2xl">
+                <div className="w-full bg-white/5 backdrop-blur-xs rounded-4xl p-4 sm:p-8 border border-white/20 shadow-2xl">
                     <div className="flex flex-col items-center gap-6 sm:gap-8">
                         <div className="w-32 h-32 sm:w-48 sm:h-48 flex justify-center rounded-full overflow-hidden border-4 border-purple-500/30 scroll-animate scroll-fade-down">
                             <Image src="/avatar.png" alt="Avatar" width={310} height={395} className="h-full w-auto mt-2" />
@@ -52,16 +52,16 @@ export default function HomePage() {
                             <div className="mb-6">
                                 <h2 className="text-xl text-white font-semibold mb-3 scroll-animate scroll-fade-up">{t('info.interest')}</h2>
                                 <div className="flex flex-wrap justify-center gap-3">
-                                    <span className="px-4 py-2 bg-white/5 rounded-full text-gray-300 border border-white/10 scroll-animate scroll-fade-up scroll-delay-100">
+                                    <span className="px-4 py-2 bg-purple-500/20 rounded-full text-purple-300 border-white/20 border-1 scroll-animate scroll-fade-up scroll-delay-100">
                                         <i className="fas fa-camera mr-2"></i>{t('info.interests.photography')}
                                     </span>
-                                    <span className="px-4 py-2 bg-white/5 rounded-full text-gray-300 border border-white/10 scroll-animate scroll-fade-up scroll-delay-200">
+                                    <span className="px-4 py-2 bg-purple-500/20 rounded-full text-purple-300 border-white/20 border-1 scroll-animate scroll-fade-up scroll-delay-200">
                                         <i className="fas fa-plane-departure mr-2"></i>{t('info.interests.traveling')}
                                     </span>
-                                    <span className="px-4 py-2 bg-white/5 rounded-full text-gray-300 border border-white/10 scroll-animate scroll-fade-up scroll-delay-300">
+                                    <span className="px-4 py-2 bg-purple-500/20 rounded-full text-purple-300 border-white/20 border-1 scroll-animate scroll-fade-up scroll-delay-300">
                                         <i className="fas fa-music mr-2"></i>{t('info.interests.music')}
                                     </span>
-                                    <span className="px-4 py-2 bg-white/5 rounded-full text-gray-300 border border-white/10 scroll-animate scroll-fade-up scroll-delay-400">
+                                    <span className="px-4 py-2 bg-purple-500/20 rounded-full text-purple-300 border-white/20 border-1 scroll-animate scroll-fade-up scroll-delay-400">
                                         <i className="fas fa-code mr-2"></i>{t('info.interests.coding')}
                                     </span>
                                 </div>
@@ -71,8 +71,8 @@ export default function HomePage() {
                             <div className="mb-6">
                                 <h2 className="text-xl text-white font-semibold mb-3 scroll-animate scroll-fade-up">{t('info.learning')}</h2>
                                 <div className="flex flex-wrap justify-center gap-3">
-                                    <span className="px-4 py-2 bg-purple-500/20 rounded-full text-purple-300 scroll-animate scroll-fade-up">{t('info.learnings.nextjs')}</span>
-                                    <span className="px-4 py-2 bg-purple-500/20 rounded-full text-purple-300 scroll-animate scroll-fade-up">{t('info.learnings.laravel')}</span>
+                                    <span className="px-4 py-2 bg-purple-500/20 rounded-full text-purple-300 border-white/20 border-1 scroll-animate scroll-fade-up">{t('info.learnings.nextjs')}</span>
+                                    <span className="px-4 py-2 bg-purple-500/20 rounded-full text-purple-300 border-white/20 border-1 scroll-animate scroll-fade-up">{t('info.learnings.laravel')}</span>
                                 </div>
                             </div>
 
