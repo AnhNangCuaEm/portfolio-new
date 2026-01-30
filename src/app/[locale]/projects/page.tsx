@@ -16,6 +16,7 @@ interface Project {
     github: string;
     technologies: string[];
     education: boolean;
+    development: boolean;
     thumb: string;
     gallery: string[];
     team: Array<{
