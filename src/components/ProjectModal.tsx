@@ -18,6 +18,7 @@ interface Project {
     github: string;
     technologies: string[];
     education: boolean;
+    development: boolean;
     thumb: string;
     gallery: string[];
     team: Array<{
@@ -143,7 +144,12 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                         >
                             <div>
                                 <h1 className="text-3xl font-bold text-white">{project.title}</h1>
-                                <p className="text-purple-300 text-sm mt-1">{subtitle}</p>
+                                <p className="text-purple-300 text-md mt-1">{subtitle}</p>
+                                {project.development && (
+                                    <span className="text-yellow-500 text-md font-semibold">
+                                        {locale === 'ja' ? '(開発中)' : '(In Development)'}
+                                    </span>
+                                )}
                             </div>
                             <motion.button
                                 whileHover={{ scale: 1.1 }}
@@ -239,12 +245,12 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                                                 data-pswp-height={dims?.height || 687}
                                                 target="_blank"
                                                 rel="noreferrer"
-                                                className="overflow-hidden rounded-lg cursor-zoom-in group"
+                                                className="overflow-hidden cursor-zoom-in group"
                                             >
                                                 <img
                                                     src={image}
                                                     alt={`${project.title} gallery ${index + 1}`}
-                                                    className="w-full max-h-60 object-cover group-hover:scale-110 transition-transform duration-300"
+                                                    className="w-full max-h-60 object-cover rounded-lg group-hover:scale-110 transition-transform duration-300"
                                                     loading="lazy"
                                                     onLoad={(e) => handleImageLoad(e, image)}
                                                 />
