@@ -1,6 +1,65 @@
 {
     "projects": [
         {
+            "title": "Fuwari Sweet Shop",
+            "subtitle": "甘いスイーツショップのECサイト",
+            "engSub": "Fuwari Sweet Shop - E-commerce Site for Sweets",
+            "description": "モダンなフロントエンド技術と安全な決済機能を用いたスイーツネットショップです。Next.jsとTailwind CSSを使用して、美しいデザインと優れたユーザー体験を提供しています。Three.jsを活用した3Dモデル表示により、商品を立体的に紹介し、顧客の購買意欲を高めます。バックエンドにはPostgreSQLを採用し、効率的なデータ管理と高速なパフォーマンスを実現しています。さらに、Stripeを統合することで、安全でスムーズな決済プロセスを提供し、顧客の信頼を獲得しています。",
+            "engDes": "An e-commerce site for sweets using modern front-end technologies and secure payment features. Built with Next.js and Tailwind CSS, it offers a beautiful design and excellent user experience. Utilizing Three.js for 3D model display, it showcases products in a three-dimensional manner, enhancing customer purchase motivation. The backend employs PostgreSQL for efficient data management and high performance. Additionally, by integrating Stripe, it provides a secure and smooth payment process, earning customer trust.",
+            "url": "https://fuwari.anhnangcuaem.com",
+            "github": "https://github.com/AnhNangCuaEm/fuwari",
+            "technologies": [
+                "Next.js",
+                "Tailwind CSS",
+                "Three.js",
+                "PostgreSQL",
+                "Framer Motion",
+                "Stripe",
+                "Other..."
+            ],
+            "education": true,
+            "development": true,
+            "thumb": "/project-img/fuwari/fuwari.png",
+            "gallery": [
+                "/project-img/fuwari/fuwari.png",
+                "/project-img/fuwari/fuwari2.png",
+                "/project-img/fuwari/fuwari3.png",
+                "/project-img/fuwari/fuwari4.png",
+                "/project-img/fuwari/fuwari5.png",
+                "/project-img/fuwari/fuwari6.png",
+                "/project-img/fuwari/fuwari7.png",
+                "/project-img/fuwari/fuwari8.png",
+                "/project-img/fuwari/fuwari9.png"
+            ],
+            "team": [
+                {
+                    "name": "Le Ly Thanh Hai",
+                    "role": "Leader",
+                    "responsibilities": "Front End, Back End"
+                },
+                {
+                    "name": "鍾承翰",
+                    "role": "3D Artist",
+                    "responsibilities": "3D Modeling, Animation"
+                },
+                {
+                    "name": "郁靖ウェン",
+                    "role": "Designer",
+                    "responsibilities": "Products Design"
+                },
+                {
+                    "name": "LIXUEHUI",
+                    "role": "UI/UX Designer",
+                    "responsibilities": "Interface Design"
+                },
+                {
+                    "name": "KAUNG THAR",
+                    "role": "Designer",
+                    "responsibilities": "Interface Design"
+                }
+            ]
+        },
+        {
             "title": "Kindergarten",
             "subtitle": "幼稚園の情報と日々の活動を共有するサイト",
             "engSub": "Site Sharing Kindergarten Information and Daily Activities",
