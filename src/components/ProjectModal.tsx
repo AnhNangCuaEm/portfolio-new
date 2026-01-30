@@ -140,7 +140,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                             initial={{ opacity: 0, y: -10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.1 }}
-                            className="sticky top-0 flex justify-between items-center p-4 sm:p-6 border-b border-purple-500/10 backdrop-blur-xl bg-black/80 rounded-t-3xl"
+                            className="sticky top-0 flex justify-between items-center p-4 sm:p-6 border-b border-purple-500/10 backdrop-blur-xl bg-black/80 rounded-t-3xl z-50"
                         >
                             <div>
                                 <h1 className="text-3xl font-bold text-white">{project.title}</h1>
@@ -231,7 +231,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                                     {locale === 'ja' ? 'ギャラリー' : 'Gallery'}
                                 </h2>
                                 <div
-                                    className="pswp-gallery grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                                    className="pswp-gallery grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-min"
                                     role="region"
                                     aria-label="Project gallery"
                                 >
@@ -245,7 +245,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                                                 data-pswp-height={dims?.height || 687}
                                                 target="_blank"
                                                 rel="noreferrer"
-                                                className="overflow-hidden cursor-zoom-in group"
+                                                className="overflow-hidden rounded-lg cursor-zoom-in group h-fit"
                                             >
                                                 <img
                                                     src={image}
