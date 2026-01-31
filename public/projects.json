@@ -60,36 +60,6 @@
             ]
         },
         {
-            "title": "Kindergarten",
-            "subtitle": "幼稚園の情報と日々の活動を共有するサイト",
-            "engSub": "Site Sharing Kindergarten Information and Daily Activities",
-            "description": "幼稚園の情報発信サイトです。園の概要、カリキュラム、園児の日々の活動、イベント情報など、保護者に重要な情報をわかりやすく提供しています。親子の絆を深める情報発信を心がけています。",
-            "engDes": "A kindergarten information site providing essential details to parents in an easy-to-understand format. It includes kindergarten overview, curriculum, daily activities of children, event information, and more. The site focuses on information sharing that strengthens the parent-child bond.",
-            "url": "https://kindergarten.anhnangcuaem.com",
-            "github": "https://github.com/AnhNangCuaEm/kindergarten",
-            "technologies": [
-                "Next.js",
-                "Tailwind CSS"
-            ],
-            "education": true,
-            "thumb": "/project-img/kindergarten/kindergarten.jpg",
-            "gallery": [
-                "/project-img/kindergarten/kindergarten.jpg",
-                "/project-img/kindergarten/kindergarten1.jpg",
-                "/project-img/kindergarten/kindergarten2.jpg",
-                "/project-img/kindergarten/kindergarten3.jpg",
-                "/project-img/kindergarten/kindergarten4.jpg",
-                "/project-img/kindergarten/kindergarten5.jpg"
-            ],
-            "team": [
-                {
-                    "name": "Le Ly Thanh Hai",
-                    "role": "Frontend Developer",
-                    "responsibilities": "All"
-                }
-            ]
-        },
-        {
             "title": "Auraflow",
             "subtitle": "AuraFlow - 音楽体験アプリケーション",
             "engSub": "AuraFlow - Music Experience Application",
@@ -110,6 +80,92 @@
                 "/project-img/auraflow/auraflow3.jpg",
                 "/project-img/auraflow/auraflow4.jpg",
                 "/project-img/auraflow/auraflow1.jpg"
+            ],
+            "team": [
+                {
+                    "name": "Le Ly Thanh Hai",
+                    "role": "Frontend Developer",
+                    "responsibilities": "All"
+                }
+            ]
+        },
+        {
+            "title": "Deep Shinjuku",
+            "subtitle": "新宿の都市伝説と怪談を紐解く没入型ウェブ体験",
+            "engSub": "Immersive Web Experience Exploring Urban Legends and Ghost Stories of Shinjuku",
+            "description": "「DEEP新宿 - 新宿怪談集」は、新宿区に伝わる不思議な物語と都市伝説を現代的な視点で紹介するウェブサイトです。長い歴史の中で織りなされてきた数々の怪談や都市伝説を通じて、新宿という街が持つ独特の文化的深層に迫ります。",
+            "engDes": "DEEP Shinjuku presents mysterious stories and urban legends from Shinjuku Ward from a contemporary perspective. Through numerous ghost stories and urban legends woven throughout history, it explores the unique cultural depth of Shinjuku.",
+            "url": "https://deepshinjuku.anhnangcuaem.com",
+            "github": "https://github.com/AnhNangCuaEm/Deep-Shinjuku",
+            "technologies": [
+                "PHP",
+                "JavaScript",
+                "CSS",
+                "HTML"
+            ],
+            "education": true,
+            "thumb": "/project-img/deepshinjuku/deepshinjuku.jpeg",
+            "gallery": [
+                "/project-img/deepshinjuku/deepshinjuku.jpeg",
+                "/project-img/deepshinjuku/deepshinjuku1.jpg",
+                "/project-img/deepshinjuku/deepshinjuku2.jpg",
+                "/project-img/deepshinjuku/deepshinjuku3.png",
+                "/project-img/deepshinjuku/deepshinjuku4.jpg"
+            ],
+            "team": [
+                {
+                    "name": "Le Ly Thanh Hai",
+                    "role": "Backend Developer",
+                    "responsibilities": "Like and Comment Function, Backend Logic"
+                },
+                {
+                    "name": "LIUCHIAWEI",
+                    "role": "Frontend Developer",
+                    "responsibilities": "Index Page, Animation, Frontend Dev, Presenter"
+                },
+                {
+                    "name": "李森",
+                    "role": "UI/UX Designer",
+                    "responsibilities": "UI/UX Design, Logo Design"
+                },
+                {
+                    "name": "KAUNGTHAR",
+                    "role": "Photographer",
+                    "responsibilities": "Photo, Presentation"
+                },
+                {
+                    "name": "鍾嘉朗",
+                    "role": "Frontend Developer",
+                    "responsibilities": "Intro Page, Frontend Dev"
+                },
+                {
+                    "name": "若林真緒",
+                    "role": "Planner",
+                    "responsibilities": "Project Planning, Strategy"
+                }
+            ]
+        },
+        {
+            "title": "Kindergarten",
+            "subtitle": "幼稚園の情報と日々の活動を共有するサイト",
+            "engSub": "Site Sharing Kindergarten Information and Daily Activities",
+            "description": "幼稚園の情報発信サイトです。園の概要、カリキュラム、園児の日々の活動、イベント情報など、保護者に重要な情報をわかりやすく提供しています。親子の絆を深める情報発信を心がけています。",
+            "engDes": "A kindergarten information site providing essential details to parents in an easy-to-understand format. It includes kindergarten overview, curriculum, daily activities of children, event information, and more. The site focuses on information sharing that strengthens the parent-child bond.",
+            "url": "https://kindergarten.anhnangcuaem.com",
+            "github": "https://github.com/AnhNangCuaEm/kindergarten",
+            "technologies": [
+                "Next.js",
+                "Tailwind CSS"
+            ],
+            "education": true,
+            "thumb": "/project-img/kindergarten/kindergarten.jpg",
+            "gallery": [
+                "/project-img/kindergarten/kindergarten.jpg",
+                "/project-img/kindergarten/kindergarten1.jpg",
+                "/project-img/kindergarten/kindergarten2.jpg",
+                "/project-img/kindergarten/kindergarten3.jpg",
+                "/project-img/kindergarten/kindergarten4.jpg",
+                "/project-img/kindergarten/kindergarten5.jpg"
             ],
             "team": [
                 {
@@ -206,62 +262,6 @@
                     "name": "Le Ly Thanh Hai",
                     "role": "Full Stack Developer",
                     "responsibilities": "All"
-                }
-            ]
-        },
-        {
-            "title": "Deep Shinjuku",
-            "subtitle": "新宿の都市伝説と怪談を紐解く没入型ウェブ体験",
-            "engSub": "Immersive Web Experience Exploring Urban Legends and Ghost Stories of Shinjuku",
-            "description": "「DEEP新宿 - 新宿怪談集」は、新宿区に伝わる不思議な物語と都市伝説を現代的な視点で紹介するウェブサイトです。長い歴史の中で織りなされてきた数々の怪談や都市伝説を通じて、新宿という街が持つ独特の文化的深層に迫ります。",
-            "engDes": "DEEP Shinjuku presents mysterious stories and urban legends from Shinjuku Ward from a contemporary perspective. Through numerous ghost stories and urban legends woven throughout history, it explores the unique cultural depth of Shinjuku.",
-            "url": "https://deepshinjuku.anhnangcuaem.com",
-            "github": "https://github.com/AnhNangCuaEm/Deep-Shinjuku",
-            "technologies": [
-                "PHP",
-                "JavaScript",
-                "CSS",
-                "HTML"
-            ],
-            "education": true,
-            "thumb": "/project-img/deepshinjuku/deepshinjuku.jpeg",
-            "gallery": [
-                "/project-img/deepshinjuku/deepshinjuku.jpeg",
-                "/project-img/deepshinjuku/deepshinjuku1.jpg",
-                "/project-img/deepshinjuku/deepshinjuku2.jpg",
-                "/project-img/deepshinjuku/deepshinjuku3.png",
-                "/project-img/deepshinjuku/deepshinjuku4.jpg"
-            ],
-            "team": [
-                {
-                    "name": "Le Ly Thanh Hai",
-                    "role": "Backend Developer",
-                    "responsibilities": "Like and Comment Function, Backend Logic"
-                },
-                {
-                    "name": "LIUCHIAWEI",
-                    "role": "Frontend Developer",
-                    "responsibilities": "Index Page, Animation, Frontend Dev, Presenter"
-                },
-                {
-                    "name": "李森",
-                    "role": "UI/UX Designer",
-                    "responsibilities": "UI/UX Design, Logo Design"
-                },
-                {
-                    "name": "KAUNGTHAR",
-                    "role": "Photographer",
-                    "responsibilities": "Photo, Presentation"
-                },
-                {
-                    "name": "鍾嘉朗",
-                    "role": "Frontend Developer",
-                    "responsibilities": "Intro Page, Frontend Dev"
-                },
-                {
-                    "name": "若林真緒",
-                    "role": "Planner",
-                    "responsibilities": "Project Planning, Strategy"
                 }
             ]
         },
