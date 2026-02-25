@@ -7,11 +7,11 @@
             { "name": "JavaScript", "level": 60 },
             { "name": "TypeScript", "level": 60 },
             { "name": "Next.js", "level": 70 },
-            { "name": "PHP", "level": 60 },
+            { "name": "PHP", "level": 40 },
             { "name": "Laravel", "level": 40 },
             { "name": "MySQL", "level": 70 },
             { "name": "WordPress", "level": 80 },
-            { "name": "Git", "level": 70 }
+            { "name": "Sass", "level": 50 }
         ],
         "design": [
             { "name": "Figma", "level": 70 },
