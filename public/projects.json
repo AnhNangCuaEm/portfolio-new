@@ -4,21 +4,21 @@
             "title": "Fuwari Sweet Shop",
             "subtitle": "甘いスイーツショップのECサイト",
             "engSub": "Fuwari Sweet Shop - E-commerce Site for Sweets",
-            "description": "モダンなフロントエンド技術と安全な決済機能を用いたスイーツネットショップです。Next.jsとTailwind CSSを使用して、美しいデザインと優れたユーザー体験を提供しています。Three.jsを活用した3Dモデル表示により、商品を立体的に紹介し、顧客の購買意欲を高めます。バックエンドにはPostgreSQLを採用し、効率的なデータ管理と高速なパフォーマンスを実現しています。さらに、Stripeを統合することで、安全でスムーズな決済プロセスを提供し、顧客の信頼を獲得しています。",
-            "engDes": "An e-commerce site for sweets using modern front-end technologies and secure payment features. Built with Next.js and Tailwind CSS, it offers a beautiful design and excellent user experience. Utilizing Three.js for 3D model display, it showcases products in a three-dimensional manner, enhancing customer purchase motivation. The backend employs PostgreSQL for efficient data management and high performance. Additionally, by integrating Stripe, it provides a secure and smooth payment process, earning customer trust.",
+            "description": "(Adminアカウント:abc@gmail.com, パスワード:abc123123) モダンなフロントエンド技術と安全な決済機能を用いたスイーツネットショップです。Next.jsとTailwind CSSを使用して、美しいデザインと優れたユーザー体験を提供しています。Three.jsを活用した3Dモデル表示により、商品を立体的に紹介し、顧客の購買意欲を高めます。バックエンドにはPostgreSQLを採用し、効率的なデータ管理と高速なパフォーマンスを実現しています。さらに、Stripeを統合することで、安全でスムーズな決済プロセスを提供し、顧客の信頼を獲得しています。",
+            "engDes": "(Admin Account: abc@gmail.com, Password: abc123123) An e-commerce site for sweets using modern front-end technologies and secure payment features. Built with Next.js and Tailwind CSS, it offers a beautiful design and excellent user experience. Utilizing Three.js for 3D model display, it showcases products in a three-dimensional manner, enhancing customer purchase motivation. The backend employs PostgreSQL for efficient data management and high performance. Additionally, by integrating Stripe, it provides a secure and smooth payment process, earning customer trust.",
             "url": "https://fuwari.anhnangcuaem.com",
             "github": "https://github.com/AnhNangCuaEm/fuwari",
             "technologies": [
                 "Next.js",
                 "Tailwind CSS",
                 "Three.js",
+                "Stripe",
                 "PostgreSQL",
                 "Framer Motion",
-                "Stripe",
                 "Other..."
             ],
             "education": true,
-            "development": true,
+            "development": false,
             "thumb": "/project-img/fuwari/fuwari.png",
             "gallery": [
                 "/project-img/fuwari/fuwari.png",
@@ -29,6 +29,9 @@
                 "/project-img/fuwari/fuwari6.png",
                 "/project-img/fuwari/fuwari7.png",
                 "/project-img/fuwari/fuwari8.png",
+                "/project-img/fuwari/fuwari10.png",
+                "/project-img/fuwari/fuwari11.png",
+                "/project-img/fuwari/fuwari12.png",
                 "/project-img/fuwari/fuwari9.png"
             ],
             "team": [
@@ -142,6 +145,100 @@
                     "name": "若林真緒",
                     "role": "Planner",
                     "responsibilities": "Project Planning, Strategy"
+                }
+            ]
+        },
+        {
+            "title": "Virtual Festival (卒業制作)",
+            "subtitle": "新たなインタラクティブな体験",
+            "engSub": "New Interactive Experience",
+            "description": "このプロジェクトは、参加者が新しい形のインタラクティブな体験を楽しむことができる仮想フェスティバルを提供します。さまざまなアトラクションが提供され、参加者は自分のスマホをコントローラーとして、仮想空間内で他の参加者と交流したり、アトラクションを楽しんだりすることができます。フェスティバルは、参加者同士のつながりを深めることを目的としています。",
+            "engDes": "This project offers a virtual festival where participants can enjoy a new form of interactive experience. Through various attractions, participants can use their smartphones as controllers to interact with others in the virtual space and enjoy the attractions. The festival aims to deepen connections among participants.",
+            "url": "https://halgraduation.anhnangcuaem.com",
+            "github": "https://github.com/AnhNangCuaEm/virtual-festival",
+            "technologies": [
+                "Next.js",
+                "Tailwind CSS",
+                "Phaser.js",
+                "Socket.IO",
+                "Tiled Map Editor",
+                "Other..."
+            ],
+            "education": true,
+            "thumb": "/project-img/virtualfestival/virtualfestival.png",
+            "gallery": [
+                "/project-img/virtualfestival/virtualfestival.png",
+                "/project-img/virtualfestival/virtualfestival2.png",
+                "/project-img/virtualfestival/virtualfestival3.png"
+            ],
+            "team": [
+                {
+                    "name": "Le Ly Thanh Hai",
+                    "role": "Leader",
+                    "responsibilities": "Project Management"
+                },
+                {
+                    "name": "オルロフイゴール",
+                    "role": "Frontend Developer",
+                    "responsibilities": "Frontend Development"
+                },
+                {
+                    "name": "KAUNGTHAR",
+                    "role": "Map Designer",
+                    "responsibilities": "Map Design"
+                },
+                {
+                    "name": "鍾嘉朗",
+                    "role": "Sound Designer",
+                    "responsibilities": "Sound Design"
+                },
+                {
+                    "name": "沈元駿",
+                    "role": "Backend Developer",
+                    "responsibilities": "Backend Development"
+                },
+                {
+                    "name": "程世豪",
+                    "role": "UI/UX Designer",
+                    "responsibilities": "UI/UX Design"
+                },
+                {
+                    "name": "藍方",
+                    "role": "Graphic Designer",
+                    "responsibilities": "Graphic Design"
+                },
+                {
+                    "name": "LIXUEHUI",
+                    "role": "Game Planner",
+                    "responsibilities": "Game Design"
+                }
+            ]
+        },
+        {
+            "title": "Grande Maison Labaie",
+            "subtitle": "Sassaを使用したフランス料理店のブランドサイト",
+            "engSub": "Brand Site for French Restaurant Using Sassa",
+            "description": "このプロジェクトは、Sassaを使用してフランス料理店のブランドサイトを構築することを目的としています。美しいデザインと使いやすいインターフェースを提供し、訪問者に魅力的な体験を提供します。",
+            "engDes": "This project aims to build a brand site for a French restaurant using Sassa. It provides a beautiful design and user-friendly interface to offer an engaging experience for visitors.",
+            "url": "https://labaie.anhnangcuaem.com",
+            "github": "https://github.com/AnhNangCuaEm/labaie",
+            "technologies": [
+                "Next.js",
+                "Sass",
+                "Gsap"
+            ],
+            "education": true,
+            "thumb": "/project-img/labaie/labaie.jpg",
+            "gallery": [
+                "/project-img/labaie/labaie.jpg",
+                "/project-img/labaie/labaie2.jpg",
+                "/project-img/labaie/labaie3.jpg"
+            ],
+            "team": [
+                {
+                    "name": "Le Ly Thanh Hai",
+                    "role": "Frontend Developer",
+                    "responsibilities": "Frontend Development"
                 }
             ]
         },
