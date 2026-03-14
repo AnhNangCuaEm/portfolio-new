@@ -78,7 +78,7 @@ export default function ProjectsPage() {
                                     <div
                                         key={index}
                                         onClick={() => handleProjectClick(project)}
-                                        className="relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-400 ease-in-out cursor-pointer scroll-animate scroll-fade-up"
+                                        className="relative overflow-hidden! rounded-3xl shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-400 ease-in-out cursor-pointer scroll-animate scroll-fade-up"
                                         style={{
                                             aspectRatio: "4 / 3",
                                             animationDelay: `${Math.min(index * 100, 600)}ms`,
@@ -87,7 +87,7 @@ export default function ProjectsPage() {
                                     >
                                         {/* Background image */}
                                         <div
-                                            className="absolute inset-0 bg-cover bg-center blur-[2px]"
+                                            className="absolute inset-0 bg-cover rounded-3xl bg-center blur-[2px]"
                                             style={{
                                                 backgroundImage: `url('${project.thumb}')`,
                                             }}
