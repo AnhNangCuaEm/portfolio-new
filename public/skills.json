@@ -9,7 +9,8 @@
             { "name": "Next.js", "level": 70 },
             { "name": "PHP", "level": 40 },
             { "name": "Laravel", "level": 40 },
-            { "name": "MySQL", "level": 70 },
+            { "name": "MySQL", "level": 60 },
+            { "name": "PostgreSQL", "level": 60 },
             { "name": "WordPress", "level": 80 },
             { "name": "Sass", "level": 50 }
         ],
@@ -20,10 +21,10 @@
             { "name": "UI/UX Design", "level": 60 }
         ],
         "softSkills": [
-            { "name": "Problem Solving", "level": 80 },
-            { "name": "Leadership", "level": 75 },
-            { "name": "Communication", "level": 75 },
-            { "name": "Teamwork", "level": 80 }
+            { "name": "Problem Solving", "level": 70 },
+            { "name": "Leadership", "level": 70 },
+            { "name": "Communication", "level": 60 },
+            { "name": "Teamwork", "level": 70 }
         ],
         "languages": [
             { "name": "Vietnamese", "level": 100, "native": true },

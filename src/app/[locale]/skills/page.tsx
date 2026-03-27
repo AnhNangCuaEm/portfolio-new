@@ -84,7 +84,7 @@ export default function SkillsPage() {
                     ) : skillsData ? (
                         <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-3 gap-12">
                             {/* Web Development */}
-                            <div className="row-span-2 bg-white/5 backdrop-blur-xs rounded-3xl p-6 sm:p-8 border border-white/20">
+                            <div className="row-span-2 bg-white/5 backdrop-blur-xs rounded-3xl px-6 pt-6 sm:px-8 sm:pt-8 border border-white/20">
                                 {renderSkillCategory(
                                     t('skills.web'),
                                     skillsData.skills.web,

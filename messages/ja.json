@@ -3,7 +3,7 @@
         "edu": "学歴",
         "education": "HAL東京 - WEB学科",
         "now": "2024 - 現在",
-        "description": "高速でアクセシブルなUIと実用的なバックエンドの実装が得意です。HTML/CSS/TailwindでのクリーンなUI、JavaScript/TypeScriptによるモダンな開発、Next.jsとMySQLを用いたデータ連携を強みとしています。要件に応じてWordPressでの構築にも対応します。",
+        "description": "高速でアクセシブルなUIと実用的なバックエンドの実装が得意です。HTML/CSS/TailwindでのクリーンなUI、JavaScript/TypeScriptによるモダンな開発、Next.jsとPostgreSQLを用いたデータ連携を強みとしています。要件に応じてWordPressでの構築にも対応します。",
         "description2": "現在はNext.jsを中心にスキルを強化し、設計から実装まで一貫して価値を届けられるエンジニアを目指しています。Gitを活用したチーム開発とUX改善が得意で、アイデアを使いやすいプロダクトへ磨き上げることに情熱があります。",
         "interest": "興味・関心",
         "interests": {

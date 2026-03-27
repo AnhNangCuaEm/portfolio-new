@@ -1,6 +1,18 @@
 {
     "awards": [
         {
+            "title": "銅賞",
+            "engTitle": "Bronze Award",
+            "project": "Virtual Festival",
+            "pjURL": "https://halgraduation.anhnangcuaem.com/",
+            "issuer": "HAL 東京",
+            "engIssuer": "HAL Tokyo",
+            "date": "2026-02-28",
+            "description": "実践的なアプリケーション学内コンペにて銅賞を受賞。",
+            "engDescription": "Received the Bronze Award for a practical application in the school competition.",
+            "img": "/awards/4.jpg"
+        },
+        {
             "title": "独創力賞",
             "engTitle": "Innovation Award",
             "project": "AuraFlow",
