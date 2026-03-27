@@ -17,6 +17,9 @@ Pages:
 
 # Project Information
 Projects:
+  - Virtual Festival
+  - Labaie
+  - Fuwari
   - Artist Site
   - Aura Flow
   - Boulangerie
