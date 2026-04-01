@@ -84,14 +84,14 @@ export default function AwardsPage() {
                                     >
                                         {/* Background image */}
                                         <div
-                                            className="absolute inset-0 bg-cover rounded-3xl bg-center blur-[3px]"
+                                            className="absolute inset-0 bg-cover overflow-hidden rounded-3xl bg-center blur-[3px]"
                                             style={{
                                                 backgroundImage: `url('${award.img}')`,
                                             }}
                                         />
 
                                         {/* Blur overlay */}
-                                        <div className="absolute inset-0 bg-black/40 rounded-3xl" />
+                                        <div className="absolute inset-0 bg-black/40 overflow-hidden" />
 
                                         {/* Content */}
                                         <div className="relative h-full p-6 flex flex-col justify-between text-white">

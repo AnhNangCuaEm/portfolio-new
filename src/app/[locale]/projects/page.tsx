@@ -87,14 +87,14 @@ export default function ProjectsPage() {
                                     >
                                         {/* Background image */}
                                         <div
-                                            className="absolute inset-0 bg-cover rounded-3xl bg-center blur-[2px]"
+                                            className="absolute inset-0 bg-cover overflow-hidden rounded-3xl bg-center blur-[2px]"
                                             style={{
                                                 backgroundImage: `url('${project.thumb}')`,
                                             }}
                                         />
 
                                         {/* Blur overlay */}
-                                        <div className="absolute inset-0 bg-black/20" />
+                                        <div className="absolute inset-0 bg-black/20 overflow-hidden" />
 
                                         {/* Content */}
                                         <div className="relative h-full p-6 flex flex-col justify-end text-white">
