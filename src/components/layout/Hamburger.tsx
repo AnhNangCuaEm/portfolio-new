@@ -23,7 +23,7 @@ export default function HamburgerMenu() {
     return (
         <>
             {/* Hamburger Button with Background Circle - Show on mobile */}
-            <div className="md:hidden fixed top-4 right-4 z-50">
+            <div className="md:hidden fixed top-4 right-4 z-40">
                 <div className="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors duration-300 backdrop-blur-sm border border-white/10">
                     <Hamburger
                         toggled={isOpen}

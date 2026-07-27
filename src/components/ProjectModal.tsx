@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { useLocale } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
-import 'photoswipe/style.css';
 import { X, Github, ExternalLink } from 'lucide-react';
 
 interface Project {
@@ -116,7 +115,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                     animate="visible"
                     exit="exit"
                     transition={{ duration: 0.2 }}
-                    className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+                    className="fixed inset-0 bg-black/50 backdrop-blur-sm z-99 flex items-center justify-center p-4"
                     onClick={(e) => {
                         if (e.target === e.currentTarget) onClose();
                     }}
@@ -133,7 +132,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                             stiffness: 350,
                             damping: 40,
                         }}
-                        className="rounded-3xl backdrop-blur-2xl shadow-2xl max-h-[90vh] overflow-y-auto w-full max-w-4xl border border-purple-500/20 z-99"
+                        className="rounded-3xl backdrop-blur-2xl shadow-2xl max-h-[70vh] overflow-y-auto w-full max-w-4xl border border-purple-500/20 z-99"
                     >
                         {/* Header */}
                         <motion.div
@@ -186,7 +185,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                                                 href={project.url}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="flex items-center gap-2 px-2 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold rounded-lg transition-colors"
+                                                className="flex items-center gap-2 px-2 py-1.5 sm:px-4 sm:py-2 bg-linear-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold rounded-lg transition-colors"
                                             >
                                                 <ExternalLink className="w-4 h-4" />
                                                 {locale === 'ja' ? 'ウェブサイト' : 'Website'}
@@ -197,7 +196,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                                                 href={project.github}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="flex items-center gap-2 px-2 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white font-semibold rounded-lg transition-colors"
+                                                className="flex items-center gap-2 px-2 py-1.5 sm:px-4 sm:py-2 bg-linear-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white font-semibold rounded-lg transition-colors"
                                             >
                                                 <Github className="w-4 h-4" />
                                                 GitHub

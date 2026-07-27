@@ -2,8 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
-import Header from "@/components/layout/Header";
-import HamburgerMenu from "@/components/layout/Hamburger";
 import SkillProgressBar from "@/components/SkillProgressBar";
 
 interface Skill {
@@ -72,10 +70,7 @@ export default function SkillsPage() {
     };
 
     return (
-        <div className="flex flex-col items-center min-h-screen">
-            <Header />
-            <HamburgerMenu />
-            <main className="flex min-h-screen w-full max-w-6xl flex-col items-center pt-24 pb-4 sm:pt-32 px-4 sm:px-8">
+        <main className="flex min-h-screen w-full max-w-6xl mx-auto flex-col items-center pt-24 pb-4 sm:pt-32 px-4 sm:px-8">
                 <div className="w-full">
                     {loading ? (
                         <div className="text-center text-gray-300">
@@ -126,6 +121,5 @@ export default function SkillsPage() {
                     )}
                 </div>
             </main>
-        </div>
     );
 }

@@ -95,14 +95,14 @@ export default function AwardsModal({ award, isOpen, onClose }: AwardsModalProps
                             stiffness: 350,
                             damping: 40,
                         }}
-                        className="rounded-3xl backdrop-blur-2xl shadow-2xl max-h-[85vh] overflow-y-auto w-full max-w-2xl border border-purple-500/20 z-99"
+                        className="rounded-3xl backdrop-blur-2xl shadow-2xl max-h-[70vh] overflow-y-auto w-full max-w-2xl border border-purple-500/20 z-99"
                     >
                         {/* Header */}
                         <motion.div
                             initial={{ opacity: 0, y: -10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.1 }}
-                            className="sticky top-0 flex justify-between items-center p-4 sm:p-6 border-b border-purple-500/10 backdrop-blur-xl bg-black/80 rounded-t-3xl z-50"
+                            className="sticky top-0 flex justify-between items-center p-4 sm:p-6 border-b border-purple-500/10 backdrop-blur-xl bg-black/80 rounded-t-3xl z-99"
                         >
                             <div>
                                 <h1 className="text-3xl font-bold text-white">{title}</h1>
