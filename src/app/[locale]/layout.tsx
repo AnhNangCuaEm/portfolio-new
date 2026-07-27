@@ -6,6 +6,8 @@ import { notFound } from "next/navigation";
 import { routing } from '@/i18n/routing';
 import PageWrapper from "@/components/PageWrapper";
 import { Particles } from "@/components";
+import FloatingNavbar from "@/components/layout/FloatingNavbar";
+import HamburgerMenu from "@/components/layout/Hamburger";
 import { Analytics } from '@vercel/analytics/next';
 import "../globals.css";
 
@@ -67,6 +69,12 @@ export default async function LocaleLayout({
               disableRotation={false}
             />
           </div>
+
+          {/* Floating Navbar — desktop, fixed top-center, z-50 */}
+          <FloatingNavbar />
+
+          {/* Hamburger — mobile only (md:hidden inside) */}
+          <HamburgerMenu />
 
           {/* Main content */}
           <div className="relative z-10">

@@ -1,7 +1,5 @@
 'use client';
 
-import Header from "@/components/layout/Header";
-import HamburgerMenu from "@/components/layout/Hamburger";
 import { ProjectModal }  from "@/components";
 import { useLocale } from "next-intl";
 import { useState, useEffect } from "react";
@@ -57,9 +55,7 @@ export default function ProjectsPage() {
     };
 
     return (
-        <div className="flex flex-col items-center min-h-screen">
-            <Header />
-            <HamburgerMenu />
+        <>
             <main className="w-full pt-24 pb-4 sm:pt-32 px-4 sm:px-8">
                 <div className="max-w-7xl mx-auto">
                     {/* Loading state */}
@@ -71,8 +67,7 @@ export default function ProjectsPage() {
                         /* Grid 3 cols */
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-max">
                             {projects.map((project, index) => {
-                                const subtitle =
-                                    locale === "ja" ? project.subtitle : project.engSub;
+                                const subtitle = locale === "ja" ? project.subtitle : project.engSub;
 
                                 return (
                                     <div
@@ -128,12 +123,11 @@ export default function ProjectsPage() {
                 </div>
             </main>
 
-            {/* Modal */}
             <ProjectModal
                 project={selectedProject}
                 isOpen={isModalOpen}
                 onClose={handleCloseModal}
             />
-        </div>
+        </>
     );
 }

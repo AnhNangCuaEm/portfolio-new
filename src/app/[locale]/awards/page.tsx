@@ -1,7 +1,5 @@
 'use client';
 
-import Header from "@/components/layout/Header";
-import HamburgerMenu from "@/components/layout/Hamburger";
 import { AwardsModal } from "@/components";
 import { useLocale } from "next-intl";
 import { useState, useEffect } from "react";
@@ -50,9 +48,7 @@ export default function AwardsPage() {
     };
 
     return (
-        <div className="flex flex-col items-center min-h-screen">
-            <Header />
-            <HamburgerMenu />
+        <>
             <main className="w-full pt-24 pb-4 sm:pt-32 px-4 sm:px-8">
                 <div className="max-w-7xl mx-auto">
                     {/* Loading state */}
@@ -129,6 +125,6 @@ export default function AwardsPage() {
                 isOpen={isModalOpen}
                 onClose={handleCloseModal}
             />
-        </div>
+        </>
     );
 }
