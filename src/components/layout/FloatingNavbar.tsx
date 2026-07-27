@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import { Link } from '@/i18n/navigation';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import GlassSurface from '@/components/GlassSurface';
@@ -24,7 +24,7 @@ const navItems = [
  *
  * Spring physics: stiffness:200 + damping:18 → light Apple-style bounce.
  */
-const pillVariants = {
+const pillVariants: Variants = {
   initial: {
     y: -100,
     width: 68,      // equals height → perfect circle on load
@@ -35,7 +35,7 @@ const pillVariants = {
     width: 'auto', // grows to fit content organically
     scale: 1,
     transition: {
-      type: 'spring' as const,
+      type: 'spring',
       stiffness: 200,
       damping: 18,
     },
@@ -47,14 +47,14 @@ const pillVariants = {
  * Fades in after 0.6 s — the pill will have fully expanded by then,
  * so text never bleeds or causes layout shifts during the water-drop animation.
  */
-const contentVariants = {
+const contentVariants: Variants = {
   initial: { opacity: 0 },
   animate: {
     opacity: 1,
     transition: {
       delay: 0.6,
       duration: 0.35,
-      ease: 'easeOut',
+      ease: 'easeOut' as const,
     },
   },
 };
