@@ -95,7 +95,6 @@ export default function FloatingNavbar() {
         <GlassSurface
           width="100%"
           height="100%"
-          borderRadius={9999}
           displace={2}
           backgroundOpacity={0.1}
           className="h-full"
