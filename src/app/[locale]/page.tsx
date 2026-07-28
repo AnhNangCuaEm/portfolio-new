@@ -16,7 +16,7 @@ export default function HomePage() {
 
     return (
         <main className="flex min-h-screen w-full max-w-6xl mx-auto flex-col items-center justify-between pt-24 pb-4 sm:pt-32 px-4 sm:px-8">
-                <div className="w-full bg-white/5 backdrop-blur-xs rounded-4xl p-4 sm:p-8 border border-white/20 shadow-2xl">
+                <div className="w-full bg-white/2 backdrop-blur-xs rounded-4xl p-4 sm:p-8 border border-white/20 shadow-2xl">
                     <div className="flex flex-col items-center gap-6 sm:gap-8">
                         <div className="w-32 h-32 sm:w-48 sm:h-48 flex justify-center rounded-full overflow-hidden border-4 border-purple-500/30 scroll-animate scroll-fade-down">
                             <Image src="/avatar.png" alt="Avatar" width={310} height={395} className="h-full w-auto mt-2" />

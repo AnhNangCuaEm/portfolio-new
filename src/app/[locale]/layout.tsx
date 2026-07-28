@@ -5,7 +5,7 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from "next/navigation";
 import { routing } from '@/i18n/routing';
 import PageWrapper from "@/components/PageWrapper";
-import { Particles } from "@/components";
+import Galaxy from "@/components/Galaxy";
 import FloatingNavbar from "@/components/layout/FloatingNavbar";
 import HamburgerMenu from "@/components/layout/Hamburger";
 import { Analytics } from '@vercel/analytics/next';
@@ -57,17 +57,9 @@ export default async function LocaleLayout({
         className={`${montserrat.variable} ${notoSansJP.variable} antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-          {/* Particles background */}
-          <div className="fixed inset-0 w-full h-screen pointer-events-none">
-            <Particles
-              particleCount={200}
-              particleSpread={10}
-              speed={0.1}
-              particleColors={['#ffffff']}
-              particleBaseSize={90}
-              alphaParticles={false}
-              disableRotation={false}
-            />
+          {/* Galaxy background — fixed, full-screen, z below everything */}
+          <div className="fixed inset-0 w-full h-screen pointer-events-none" style={{ zIndex: -10 }}>
+            <Galaxy />
           </div>
 
           {/* Floating Navbar — desktop, fixed top-center, z-50 */}

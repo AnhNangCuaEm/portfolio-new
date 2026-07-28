@@ -1,0 +1,51 @@
+{
+    "info": {
+        "edu": "Học vấn",
+        "education": "HAL Tokyo - Khoa WEB",
+        "now": "2024 - 2026",
+        "description": "Tôi chuyên xây dựng các giao diện web nhanh, dễ tiếp cận và hệ thống backend thực tiễn. Thế mạnh của tôi là tạo ra UI tinh gọn với HTML/CSS/Tailwind và JS/TS hiện đại, cùng với các tính năng xử lý dữ liệu mạnh mẽ bằng Next.js và PostgreSQL. Tôi cũng linh hoạt triển khai các giải pháp WordPress khi phù hợp với yêu cầu của dự án.",
+        "description2": "Hiện tại, tôi đang tập trung trau dồi Next.js và Laravel để có thể tự tin bàn giao các tính năng hoàn chỉnh từ A đến Z ở môi trường thực tế (production). Tôi yêu thích làm việc nhóm qua Git, chú trọng đến trải nghiệm người dùng (UX) và đam mê biến các ý tưởng thành những sản phẩm chỉn chu, hữu ích.",
+        "interest": "Sở thích",
+        "interests": {
+            "photography": "Nhiếp ảnh",
+            "traveling": "Du lịch",
+            "music": "Âm nhạc",
+            "coding": "Lập trình"
+        },
+        "learning": "Đang học",
+        "learnings": {
+            "nextjs": "Next.js",
+            "laravel": "Laravel"
+        },
+        "clicktocopy": "Nhấn để copy"
+    },
+    "skills": {
+        "web": "Phát triển Web",
+        "design": "Thiết kế",
+        "softSkills": "Kỹ năng mềm",
+        "languages": "Ngôn ngữ"
+    },
+    "contact": {
+        "title": "Liên hệ",
+        "subtitle": "Tôi rất mong nhận được tin nhắn từ bạn. Hãy liên hệ với tôi nhé!",
+        "form": {
+            "name": "Tên",
+            "namePlaceholder": "Tên của bạn",
+            "email": "Email",
+            "emailPlaceholder": "your@email.com",
+            "content": "Lời nhắn",
+            "contentPlaceholder": "Nhập lời nhắn ở đây nè...",
+            "send": "Gửi",
+            "sending": "Đang gửi...",
+            "successMessage": "Đã gửi thành công! chờ xíu nhe",
+            "errorMessage": "Gửi lời nhắn thất bại. Thử lại đi.",
+            "validation": {
+                "nameRequired": "Vui lòng nhập tên của bạn.",
+                "emailRequired": "Vui lòng nhập địa chỉ email.",
+                "emailInvalid": "Vui lòng nhập một địa chỉ email hợp lệ.",
+                "contentRequired": "Vui lòng nhập nội dung lời nhắn.",
+                "contentTooShort": "Nội dung lời nhắn phải có ít nhất 10 ký tự."
+            }
+        }
+    }
+}
