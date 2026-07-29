@@ -67,7 +67,7 @@ export default function HomePage() {
                                 <h2 className="text-xl text-white font-semibold mb-3 scroll-animate scroll-fade-up">{t('info.learning')}</h2>
                                 <div className="flex flex-wrap justify-center gap-3">
                                     <span className="px-4 py-2 bg-purple-500/20 rounded-full text-purple-300 border-white/20 border scroll-animate scroll-fade-up">{t('info.learnings.nextjs')}</span>
-                                    <span className="px-4 py-2 bg-purple-500/20 rounded-full text-purple-300 border-white/20 border scroll-animate scroll-fade-up">{t('info.learnings.laravel')}</span>
+                                    <span className="px-4 py-2 bg-purple-500/20 rounded-full text-purple-300 border-white/20 border scroll-animate scroll-fade-up">{t('info.learnings.ios')}</span>
                                 </div>
                             </div>
 

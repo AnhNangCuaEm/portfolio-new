@@ -1,0 +1,57 @@
+        {
+            "title": "Cafe Site",
+            "subtitle": "架空のカフェ情報サイト",
+            "engSub": "Fictional Cafe Information Site",
+            "description": "架空のカフェの世界観を表現したウェブサイトです。カフェならではの温かみのある雰囲気をUIデザインで表現し、メニュー情報、アクセス情報、ニュースなど、実在するかのような臨場感のある情報を提供します。",
+            "engDes": "This website represents the world of a fictional cafe. The UI design captures the warm and inviting atmosphere typical of cafes, providing menu information, access details, news, and other content that gives a realistic feel as if the cafe actually exists.",
+            "url": "",
+            "github": "",
+            "technologies": [
+                "HTML",
+                "CSS"
+            ],
+            "education": true,
+            "thumb": "/project-img/cafesite/cafesite.png",
+            "gallery": [
+                "/project-img/cafesite/cafesite.png",
+                "/project-img/cafesite/cafesite1.jpg",
+                "/project-img/cafesite/cafesite2.jpg",
+                "/project-img/cafesite/cafesite3.jpg",
+                "/project-img/cafesite/cafesite4.jpg"
+            ],
+            "team": [
+                {
+                    "name": "Le Ly Thanh Hai",
+                    "role": "Frontend Developer",
+                    "responsibilities": "All"
+                }
+            ]
+        },
+        {
+            "title": "Movie Site",
+            "subtitle": "映画「Interstellar」の公式プロモーションサイト",
+            "engSub": "Official Promotional Site for the Movie 'Interstellar'",
+            "description": "映画「Interstellar」の魅力を伝える公式サイトです。作品概要、キャスト情報、レビューなど、映画の世界観を余すことなく紹介します。宇宙をモチーフにしたUIデザインにより、作品の壮大なスケールを視覚的に表現しています。",
+            "engDes": "This is the official site promoting the movie 'Interstellar'. It provides an overview of the film, cast information, reviews, and more, capturing the essence of the movie. The UI design, inspired by space themes, visually represents the grand scale of the film.",
+            "url": "",
+            "github": "",
+            "technologies": [
+                "HTML",
+                "CSS"
+            ],
+            "education": true,
+            "thumb": "/project-img/moviesite/moviesite.jpg",
+            "gallery": [
+                "/project-img/moviesite/moviesite.jpg",
+                "/project-img/moviesite/moviesite1.jpg",
+                "/project-img/moviesite/moviesite2.jpg",
+                "/project-img/moviesite/moviesite3.jpg"
+            ],
+            "team": [
+                {
+                    "name": "Le Ly Thanh Hai",
+                    "role": "Frontend Developer",
+                    "responsibilities": "All"
+                }
+            ]
+        }

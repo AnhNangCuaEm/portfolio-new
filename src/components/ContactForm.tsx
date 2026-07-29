@@ -358,7 +358,7 @@ const ContactForm: React.FC = () => {
                     ref={scope}
                     type="submit"
                     disabled={status.type === 'loading'}
-                    className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 disabled:from-gray-600 disabled:to-gray-700 text-white font-medium rounded-xl sm:rounded-lg transition-all duration-300 disabled:cursor-not-allowed"
+                    className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-linear-to-r from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 disabled:from-gray-600 disabled:to-gray-700 text-white font-medium rounded-xl sm:rounded-lg transition-all duration-300 disabled:cursor-not-allowed"
                 >
                     <div className="flex items-center gap-2">
                         <Loader />
