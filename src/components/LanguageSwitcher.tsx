@@ -82,7 +82,7 @@ export default function LanguageSwitcher() {
           <button
             onClick={() => handleSelect(lang.code)}
             aria-current={locale === lang.code ? 'true' : undefined}
-            aria-label={`Switch to ${lang.label}`}
+            aria-label={`${lang.label}`}
             className={[
               'text-sm font-semibold tracking-wide px-1 py-0.5 rounded transition-all duration-200 cursor-pointer',
               locale === lang.code
@@ -106,7 +106,7 @@ export default function LanguageSwitcher() {
       onClick={handleCycle}
       whileTap={{ scale: 0.9 }}
       aria-label={`Current language: ${current.label}. Click to cycle languages.`}
-      title={`Switch language (${current.label})`}
+      title={`${current.label}`}
       className={[
         'hidden md:flex items-center gap-1.5',
         'px-3 py-2 rounded-full',
