@@ -11,8 +11,10 @@ interface Project {
     title: string;
     subtitle: string;
     engSub: string;
+    viSub: string;
     description: string;
     engDes: string;
+    viDes: string;
     url: string;
     github: string;
     technologies: string[];
@@ -67,8 +69,16 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
         }
     }, [isOpen]);
 
-    const description = locale === 'ja' ? project?.description : project?.engDes;
-    const subtitle = locale === 'ja' ? project?.subtitle : project?.engSub;
+    const description = locale === 'ja'
+        ? project?.description
+        : locale === 'vi'
+            ? project?.viDes
+            : project?.engDes;
+    const subtitle = locale === 'ja'
+        ? project?.subtitle
+        : locale === 'vi'
+            ? project?.viSub
+            : project?.engSub;
 
     const backdropVariants = {
         hidden: { opacity: 0 },
