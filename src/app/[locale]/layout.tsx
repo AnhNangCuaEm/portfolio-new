@@ -44,7 +44,7 @@ export default async function LocaleLayout({
   const { locale } = await params;
 
   // Validate locale
-  if (!routing.locales.includes(locale as 'ja' | 'en')) {
+  if (!routing.locales.includes(locale as 'ja' | 'en' | 'vi')) {
     notFound();
   }
 

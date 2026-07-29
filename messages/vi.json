@@ -3,8 +3,8 @@
         "edu": "Học vấn",
         "education": "HAL Tokyo - Khoa WEB",
         "now": "2024 - 2026",
-        "description": "Tôi chuyên xây dựng các giao diện web nhanh, dễ tiếp cận và hệ thống backend thực tiễn. Thế mạnh của tôi là tạo ra UI tinh gọn với HTML/CSS/Tailwind và JS/TS hiện đại, cùng với các tính năng xử lý dữ liệu mạnh mẽ bằng Next.js và PostgreSQL. Tôi cũng linh hoạt triển khai các giải pháp WordPress khi phù hợp với yêu cầu của dự án.",
-        "description2": "Hiện tại, tôi đang tập trung trau dồi Next.js và Laravel để có thể tự tin bàn giao các tính năng hoàn chỉnh từ A đến Z ở môi trường thực tế (production). Tôi yêu thích làm việc nhóm qua Git, chú trọng đến trải nghiệm người dùng (UX) và đam mê biến các ý tưởng thành những sản phẩm chỉn chu, hữu ích.",
+        "description": "Hi! Mình hiện tại đang xây dựng các trang web vào thời gian rảnh rỗi với sự hỗ trợ từ AI và kiến thức mà mình đã được học. Mình biết về Design, Code, Database, WordPress,..vv Nếu thích thì mọi người có thể xem các dự án mình đã làm ở phần Projects nhé",
+        "description2": "Sở thích của mình là học hỏi và trải nghiệm những cái mới, đặc biệt là về lập trình và thiết kế. Mình cũng thích chụp ảnh, du lịch và nghe nhạc. Ảnh thì mình chụp bằng điện thoại thôi, hehe. Còn nhạc thì mình có làm 1 trang web nghe nhạc nho nhỏ tên là AuraFlow, mọi người có thể ghé qua nghe xem trùng gu không nha.",
         "interest": "Sở thích",
         "interests": {
             "photography": "Nhiếp ảnh",
@@ -15,7 +15,7 @@
         "learning": "Đang học",
         "learnings": {
             "nextjs": "Next.js",
-            "laravel": "Laravel"
+            "ios": "iOS App"
         },
         "clicktocopy": "Nhấn để copy"
     },
@@ -27,7 +27,7 @@
     },
     "contact": {
         "title": "Liên hệ",
-        "subtitle": "Tôi rất mong nhận được tin nhắn từ bạn. Hãy liên hệ với tôi nhé!",
+        "subtitle": "Rất mong nhận được tin nhắn từ bạn. Hãy liên hệ với mình nhé!",
         "form": {
             "name": "Tên",
             "namePlaceholder": "Tên của bạn",

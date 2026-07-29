@@ -22,9 +22,17 @@ export default function HamburgerMenu() {
 
     return (
         <>
-            {/* Hamburger Button with Background Circle - Show on mobile */}
-            <div className="md:hidden fixed top-4 right-4 z-40">
-                <div className="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors duration-300 backdrop-blur-sm border border-white/10">
+            {/* ── Mobile top bar — hamburger (right) + lang strip (left) ─────── */}
+            <div className="md:hidden fixed top-4 left-0 right-0 z-40 flex items-center justify-between px-4 pointer-events-none">
+                {/* Language strip — always visible on mobile */}
+                <div className="pointer-events-auto">
+                    <div className="px-3 py-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full">
+                        <LanguageSwitcher />
+                    </div>
+                </div>
+
+                {/* Hamburger button */}
+                <div className="pointer-events-auto w-14 h-14 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors duration-300 backdrop-blur-sm border border-white/10">
                     <Hamburger
                         toggled={isOpen}
                         toggle={setIsOpen}
@@ -41,7 +49,7 @@ export default function HamburgerMenu() {
                     <nav className="h-full flex items-center justify-center animate-in fade-in slide-in-from-bottom-4 duration-500">
                         <ul className="flex flex-col items-center space-y-8 text-2xl font-semibold">
                             {navItems.map((item, index) => (
-                                <li 
+                                <li
                                     key={item.href}
                                     style={{
                                         animation: `fadeInUp 0.5s ease-out ${0.1 * (index + 1)}s both`
@@ -56,14 +64,6 @@ export default function HamburgerMenu() {
                                     </Link>
                                 </li>
                             ))}
-                            <li 
-                                className="mt-8"
-                                style={{
-                                    animation: `fadeInUp 0.5s ease-out ${0.1 * (navItems.length + 1)}s both`
-                                }}
-                            >
-                                <LanguageSwitcher />
-                            </li>
                         </ul>
                     </nav>
                 </div>

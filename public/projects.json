@@ -4,8 +4,10 @@
             "title": "Fuwari Sweet Shop",
             "subtitle": "甘いスイーツショップのECサイト",
             "engSub": "Fuwari Sweet Shop - E-commerce Site for Sweets",
-            "description": "(Adminアカウント:abc@gmail.com, パスワード:abc123123) モダンなフロントエンド技術と安全な決済機能を用いたスイーツネットショップです。Next.jsとTailwind CSSを使用して、美しいデザインと優れたユーザー体験を提供しています。Three.jsを活用した3Dモデル表示により、商品を立体的に紹介し、顧客の購買意欲を高めます。バックエンドにはPostgreSQLを採用し、効率的なデータ管理と高速なパフォーマンスを実現しています。さらに、Stripeを統合することで、安全でスムーズな決済プロセスを提供し、顧客の信頼を獲得しています。",
-            "engDes": "(Admin Account: abc@gmail.com, Password: abc123123) An e-commerce site for sweets using modern front-end technologies and secure payment features. Built with Next.js and Tailwind CSS, it offers a beautiful design and excellent user experience. Utilizing Three.js for 3D model display, it showcases products in a three-dimensional manner, enhancing customer purchase motivation. The backend employs PostgreSQL for efficient data management and high performance. Additionally, by integrating Stripe, it provides a secure and smooth payment process, earning customer trust.",
+            "viSub": "Cửa hàng bánh kẹo Fuwari - Web bán bánh kẹo online",
+            "description": "(Adminアカウント:abc@gmail.com, パスワード:abc123123) これは、私のクラスのグループプロジェクトで、スイーツショップについてのものです。最初は一緒にアイデアを出し合い、徐々に改善していきました。最終的にはこのような形になりました。このプロジェクトの面白いところは、商品が3Dモデルで表示できることです。グループのメンバーの1人は3Dモデリングをしたことがなかったのですが、努力して3Dモデルを作成することができました。残りはインターネットからダウンロードしました。このプロジェクトにはStripeを使用したオンライン決済機能もありますが、教育目的のプロジェクトなので実際の支払いはありません。",
+            "engDes": "(Admin Account: abc@gmail.com, Password: abc123123) This is a group project from my class about a sweet shop. Initially, we brainstormed ideas together and gradually improved it. In the end, it turned out like this. The interesting part of this project is that the products can be viewed in 3D models. One member of the group, who had never done 3D modeling before, managed to create the 3D models with effort. The rest were downloaded from the internet. This project also has an online payment feature using Stripe, but since it's an educational project, there are no real payments.",
+            "viDes": "(Acc admin: abc@gmail.com, Pass: abc123123) Đây là dự án nhóm ở lớp mình làm về 1 cửa hành bán bánh kẹo. Ban đầu là cùng nhau thống nhất ý tưởng và từ từ cải thiện nó. Sau cùng thì nó đã được như thế này. Dự án này thú vị ở chỗ là sản phẩm có thể xem được dưới dạng model 3D. Các model 3D do 1 thành viên trong nhóm chưa từng làm 3d bao giờ nhưng cố gắng thì cũng đã làm được hehe. Phần còn lại thì là download trên mạng thôi. Dự án này cũng có chức năng thanh toán online bằng Stripe, nhưng vì là dự án học tập nên không có thanh toán thật đâu nha.",
             "url": "https://fuwari.anhnangcuaem.com",
             "github": "https://github.com/AnhNangCuaEm/fuwari",
             "technologies": [
@@ -66,8 +68,10 @@
             "title": "Auraflow",
             "subtitle": "AuraFlow - 音楽体験アプリケーション",
             "engSub": "AuraFlow - Music Experience Application",
-            "description": "AuraFlowは、Next.jsで開発されたモダンな音楽ストリーミングアプリケーションです。色彩豊かでインタラクティブなUIを提供し、ユーザーが音楽を視覚的に楽しむことができます。主な機能には、アルバムアートに基づく背景色の自動変更、リアルなレコード盤のアニメーション、歌詞の同期表示、再生リストの管理などがあります。",
-            "engDes": "AuraFlow is a modern music streaming application developed with Next.js. It provides a colorful and interactive UI that allows users to enjoy music visually. Key features include automatic background color changes based on album art, realistic record animations, synchronized lyrics display, and playlist management.",
+            "viSub": "AuraFlow - Web nghe nhạc",
+            "description": "AuraFlowは、Next.jsで構築されたモダンな音楽プレイヤーアプリケーションです。基本的な音楽プレイヤーの機能に加え、ユーザーが体験を通じて発見できるいくつかのユニークな機能も備えています。インターフェースは私の個人的な好みに基づいて設計されており、音楽の選曲も私の好みを反映しています。ぜひ皆さんも試してみてください！さらに、このプロジェクトは賞も受賞しています。",
+            "engDes": "AuraFlow is a modern music player application built with Next.js. It features basic music player functionalities along with some unique features that users can discover through experience. The interface is designed based on my personal taste, and the music selection also reflects my preferences. I encourage everyone to try it out! Additionally, this project has received an award.",
+            "viDes": "AuraFlow là một ứng dụng phát nhạc hiện đại được viết bằng Next.js. Có các tính năng cơ bản của một trình chơi nhạc và vài thứ đặc biệt mà các bạn thử rồi sẽ biết. Giao diện là do mình thiết kế dự trên gu của mình. Nhạc thì cũng là gu của mình luôn. Mọi người trải nghiệm thử xem nha! Và dự án này cũng được giải thưởng nữa nè.",
             "url": "https://auraflow.anhnangcuaem.com",
             "github": "https://github.com/AnhNangCuaEm/AuraFlow",
             "technologies": [
@@ -96,8 +100,10 @@
             "title": "Deep Shinjuku",
             "subtitle": "新宿の都市伝説と怪談を紐解く没入型ウェブ体験",
             "engSub": "Immersive Web Experience Exploring Urban Legends and Ghost Stories of Shinjuku",
-            "description": "「DEEP新宿 - 新宿怪談集」は、新宿区に伝わる不思議な物語と都市伝説を現代的な視点で紹介するウェブサイトです。長い歴史の中で織りなされてきた数々の怪談や都市伝説を通じて、新宿という街が持つ独特の文化的深層に迫ります。",
-            "engDes": "DEEP Shinjuku presents mysterious stories and urban legends from Shinjuku Ward from a contemporary perspective. Through numerous ghost stories and urban legends woven throughout history, it explores the unique cultural depth of Shinjuku.",
+            "viSub": "Đắm chìm, khám phá các truyền thuyết đô thị và truyện ma của Shinjuku",
+            "description": "DEEP Shinjukuは、新宿の都市伝説と怪談を紹介する没入型ウェブ体験です。歴史の中で紡がれた数々の怪談や都市伝説を通じて、新宿の独自の文化的深みを探求することができます。ぜひ、皆さんも体験してみてください。",
+            "engDes": "DEEP Shinjuku is an immersive web experience that introduces the urban legends and ghost stories of Shinjuku. Through numerous ghost stories and urban legends woven throughout history, you can explore the unique cultural depth of Shinjuku. Please note that the content is only available in Japanese.",
+            "viDes": "DEEP Shinjuku giới thiệu những câu chuyện bí ẩn và truyền thuyết đô thị ở quận Shinjuku. Qua nhiều truyện ma và truyền thuyết đô thị được thiêu dệt nên trong lịch sử, Bạn có thể khám phá chiều sâu văn hóa độc đáo của Shinjuku. Lưu ý là chỉ có tiếng Nhật thôi nha.",
             "url": "https://deepshinjuku.anhnangcuaem.com",
             "github": "https://github.com/AnhNangCuaEm/Deep-Shinjuku",
             "technologies": [
@@ -149,11 +155,13 @@
             ]
         },
         {
-            "title": "Virtual Festival (卒業制作)",
-            "subtitle": "新たなインタラクティブな体験",
-            "engSub": "New Interactive Experience",
-            "description": "このプロジェクトは、参加者が新しい形のインタラクティブな体験を楽しむことができる仮想フェスティバルを提供します。さまざまなアトラクションが提供され、参加者は自分のスマホをコントローラーとして、仮想空間内で他の参加者と交流したり、アトラクションを楽しんだりすることができます。フェスティバルは、参加者同士のつながりを深めることを目的としています。",
-            "engDes": "This project offers a virtual festival where participants can enjoy a new form of interactive experience. Through various attractions, participants can use their smartphones as controllers to interact with others in the virtual space and enjoy the attractions. The festival aims to deepen connections among participants.",
+            "title": "Virtual Festival",
+            "subtitle": "卒業作品",
+            "engSub": "Graduation Project",
+            "viSub": "Dự án tốt nghiệp",
+            "description": "これは卒業作品です。参加者は自分のスマートフォンでQRコードをスキャンして、仮想キャラクターとしてフェスティバルに接続します。ゲームをプレイしているような感覚で、スマートフォンがコントローラーの役割を果たします。参加者は自由に移動し、他の参加者と交流し、フェスティバル内のゲームに参加することができます。このようなウェブゲームを作成するのは初めてで、マップやキャラクターの作成なども含まれています。",
+            "engDes": "This is our graduation project. Participants will use their phones to scan a QR code to connect to the festival as virtual characters. It's like playing a game, and the phone acts as a controller. Participants can move around, interact with others, and participate in games at the festival. This is the first time we have created a web game like this, including creating maps, characters, etc.",
+            "viDes": "Đây là dự án tốt nghiệp của nhóm mình. Người tham gia sẽ dùng điện thoại quét mã QR để kết nối vào festival dưới dạng nhân vật ảo. Như là đang chơi game và điện thoại lúc này sẽ đóng vai là 1 chiếc tay cầm đều khiển. Người tham gia có thể đi lại, tương tác với những người khác và tham gia các trò chơi trong festival. Đây là lần đầu tiên mà tạo 1 web game kiểu như thế này. Ví dụ như tạo map, nhân vật,..vv Đều là lần đầu tiên tụi mình dùng đến nó.",
             "url": "https://halgraduation.anhnangcuaem.com",
             "github": "https://github.com/AnhNangCuaEm/virtual-festival",
             "technologies": [
@@ -215,39 +223,44 @@
             ]
         },
         {
-            "title": "Grande Maison Labaie",
-            "subtitle": "Sassaを使用したフランス料理店のブランドサイト",
-            "engSub": "Brand Site for French Restaurant Using Sassa",
-            "description": "このプロジェクトは、Sassaを使用してフランス料理店のブランドサイトを構築することを目的としています。美しいデザインと使いやすいインターフェースを提供し、訪問者に魅力的な体験を提供します。",
-            "engDes": "This project aims to build a brand site for a French restaurant using Sassa. It provides a beautiful design and user-friendly interface to offer an engaging experience for visitors.",
-            "url": "https://labaie.anhnangcuaem.com",
-            "github": "https://github.com/AnhNangCuaEm/labaie",
+            "title": "Tachikawa City",
+            "subtitle": "2カラムレイアウトの立川市の情報サイト",
+            "engSub": "Tachikawa City Information Site with 2-Column Layout",
+            "viSub": "Trang thông tin về thành phố Tachikawa với bố cục 2 cột",
+            "description": "このウェブサイトは、東京の西部に位置する立川市を紹介するために作成されました。初めて東京に来たときに住んでいた街です。ここには公共交通機関から公園やショッピングセンターまで、日常生活のあらゆるニーズを満たす都市機能が揃っており、中心部まで30分ほどでアクセスできます。全体的に、住みやすい場所です。",
+            "engDes": "This website was created to introduce Tachikawa City, located in the western part of Tokyo. It is the city where I lived when I first came to Tokyo. It has all the urban amenities, from public transportation to parks and shopping centers, meeting all daily living needs, and it takes about 30 minutes to reach the city center. Overall, it is a very livable place.",
+            "viDes": "Trang web này được tạo ra để giới thiệu về thành phố Tachikawa ở phía tây Tokyo. Đây là thành phố mà mình đã từng sống khi lần đầu đến Tokyo. Nơi dây có đầy đủ các tiện ích đô thị, từ phương tiện giao thông công cộng đến công viên và trung tâm mua sắm, đáp ứng mọi nhu cầu sống hàng ngày, đi đến trung tầm tầm hơn 30 phút. Nhìn chung là là 1 nơi đáng sống.",
+            "url": "https://tachikawacity.anhnangcuaem.com",
+            "github": "https://github.com/AnhNangCuaEm/TachikawaCity",
             "technologies": [
-                "Next.js",
-                "Sass",
-                "Gsap"
+                "JavaScript",
+                "HTML",
+                "Tailwind CSS"
             ],
             "education": true,
-            "thumb": "/project-img/labaie/labaie.jpg",
+            "thumb": "/project-img/tachikawacity/tachikawacity.jpg",
             "gallery": [
-                "/project-img/labaie/labaie.jpg",
-                "/project-img/labaie/labaie2.jpg",
-                "/project-img/labaie/labaie3.jpg"
+                "/project-img/tachikawacity/tachikawacity.jpg",
+                "/project-img/tachikawacity/tachikawacity1.jpg",
+                "/project-img/tachikawacity/tachikawacity2.jpg",
+                "/project-img/tachikawacity/tachikawacity3.jpg"
             ],
             "team": [
                 {
                     "name": "Le Ly Thanh Hai",
                     "role": "Frontend Developer",
-                    "responsibilities": "Frontend Development"
+                    "responsibilities": "All"
                 }
             ]
         },
         {
             "title": "Kindergarten",
-            "subtitle": "幼稚園の情報と日々の活動を共有するサイト",
-            "engSub": "Site Sharing Kindergarten Information and Daily Activities",
-            "description": "幼稚園の情報発信サイトです。園の概要、カリキュラム、園児の日々の活動、イベント情報など、保護者に重要な情報をわかりやすく提供しています。親子の絆を深める情報発信を心がけています。",
-            "engDes": "A kindergarten information site providing essential details to parents in an easy-to-understand format. It includes kindergarten overview, curriculum, daily activities of children, event information, and more. The site focuses on information sharing that strengthens the parent-child bond.",
+            "subtitle": "幼稚園のサイトデザイン",
+            "engSub": "Kindergarten Website Design",
+            "viSub": "Thiết kế website của trường mầm non",
+            "description": " これは幼稚園の情報を提供するウェブサイトのフロントエンドです。このフロントエンドプロジェクトを通じて、ウェブサイトのデザイン、レイアウト、カラースキーム、フォント、画像などについて学ぶことができました。また、ターゲットオーディエンスに適切にコンテンツを提示する経験も得ることができました。",
+            "engDes": "This is the frontend of a website providing information about a kindergarten. This frontend project helped me learn about website design, layout, color schemes, fonts, images, and more. Additionally, it allowed me to gain experience in presenting content appropriately for the target audience.",
+            "viDes": "Frontend của 1 website thông tin về trường mầm non. Dự án FE này giúp mình học hỏi được về cách thiết kế website, bố cục, màu sắc, font chữ, hình ảnh,...vv. Ngoài ra còn giúp mình học hỏi thêm về cách trình bày sao cho phù hợp với đối tượng hướng đến.",
             "url": "https://kindergarten.anhnangcuaem.com",
             "github": "https://github.com/AnhNangCuaEm/kindergarten",
             "technologies": [
@@ -273,40 +286,43 @@
             ]
         },
         {
-            "title": "Tachikawa City",
-            "subtitle": "2カラムレイアウトの立川市の情報サイト",
-            "engSub": "Tachikawa City Information Site with 2-Column Layout",
-            "description": "このウェブサイトは、東京西部にある立川市を紹介するために作成されました。立川市は充実した都市機能を持ち、公共交通機関から公園、モールまで、生活に必要なあらゆる施設が整っています。ウェブサイトは2カラムレイアウトを採用し、様々なデバイスに対応するレスポンシブデザインとなっています。",
-            "engDes": "This website was created to introduce Tachikawa City in western Tokyo. Tachikawa features comprehensive urban facilities with everything needed for daily life, from public transportation to parks and shopping malls. The website adopts a two-column layout with responsive design for various devices.",
-            "url": "https://tachikawacity.anhnangcuaem.com",
-            "github": "https://github.com/AnhNangCuaEm/TachikawaCity",
+            "title": "Grande Maison Labaie",
+            "subtitle": "Sassを使用したフランス料理店のブランドサイト",
+            "engSub": "Brand Site for French Restaurant Using Sass",
+            "viSub": "Trang web thương hiệu cho nhà hàng Pháp sử dụng Sass",
+            "description": "これはSassを使用して構築されたフランス料理店のトップページです。Sassを使用するのは初めてでしたが、この経験から多くのことを学びました。",
+            "engDes": "This is the top page of a French restaurant built using Sass. It was my first time using Sass, and I learned a lot from the experience.",
+            "viDes": "Đây là top page của 1 nhà hàng Pháp được viết bằng Sass. Là lần đầu tiên mình sử dụng Sass nên cũng học hỏi được nhiều thứ.",
+            "url": "https://labaie.anhnangcuaem.com",
+            "github": "https://github.com/AnhNangCuaEm/labaie",
             "technologies": [
-                "JavaScript",
-                "HTML",
-                "Tailwind CSS"
+                "Next.js",
+                "Sass",
+                "Gsap"
             ],
             "education": true,
-            "thumb": "/project-img/tachikawacity/tachikawacity.jpg",
+            "thumb": "/project-img/labaie/labaie.jpg",
             "gallery": [
-                "/project-img/tachikawacity/tachikawacity.jpg",
-                "/project-img/tachikawacity/tachikawacity1.jpg",
-                "/project-img/tachikawacity/tachikawacity2.jpg",
-                "/project-img/tachikawacity/tachikawacity3.jpg"
+                "/project-img/labaie/labaie.jpg",
+                "/project-img/labaie/labaie2.jpg",
+                "/project-img/labaie/labaie3.jpg"
             ],
             "team": [
                 {
                     "name": "Le Ly Thanh Hai",
                     "role": "Frontend Developer",
-                    "responsibilities": "All"
+                    "responsibilities": "Frontend Development"
                 }
             ]
         },
         {
             "title": "Music Player",
-            "subtitle": "オンラインで音楽を楽しむためのWebアプリケーション",
-            "engSub": "Web Application for Enjoying Music Online",
-            "description": "Music Playerは、オンライン音楽プレイヤーの機能を提供するWebアプリケーションです。再生、シャッフル、次へ、前へ、リピートなどの基本的な操作をサポートしています。プレイリストから曲をクリックするとその曲を再生でき、歌詞の表示機能があり、リアルタイム歌ってるところがハイライトされます。",
-            "engDes": "Music Player is a web application that provides online music player functionality. It supports basic operations such as play, shuffle, next, previous, and repeat. Users can click on songs in the playlist to play them, and the app includes lyrics display with real-time highlighting of the current lyrics.",
+            "subtitle": "スマートフォンの音楽プレイヤーアプリを模倣したウェブアプリケーション",
+            "engSub": "Web Application Mimicking a Smartphone Music Player App",
+            "viSub": "Mô phỏng lại app nghe nhạc trên điện thoại",
+            "description": "Music Playerは、スマートフォンの音楽プレイヤーアプリを模倣したウェブアプリケーションです。基本的な機能として、再生、シャッフル、次へ、前へ、リピートなどがあります。また、歌詞を表示し、リアルタイムで現在再生中の部分をハイライトする機能も備えています。",
+            "engDes": "Music Player is a web application that mimics a smartphone music player app. It includes basic functionalities such as play, shuffle, next, previous, and repeat. Additionally, it features the ability to display lyrics and highlight the currently playing part in real-time.",
+            "viDes": "Music Player là 1 web app mô phỏng lại app nghe nhạc trên điện thoại. Có các chức năng cơ bản như play, shuffle, next, previous, repeat. Có chức năng hiển thị lời bài hát và highlight phần đang hát theo thời gian thực.",
             "url": "https://musicplayer.anhnangcuaem.com",
             "github": "https://github.com/AnhNangCuaEm/MusicPlayer",
             "technologies": [
@@ -332,10 +348,12 @@
         },
         {
             "title": "Green Space",
-            "subtitle": "公園施設とイベント情報を提供する総合ポータルサイト",
-            "engSub": "Comprehensive Portal Site for Park Facilities and Event Information",
-            "description": "Green Spaceは、あらゆるデバイスに最適化されたモダンなレスポンシブデザインを採用し、直感的な操作性を実現しています。リアルタイム検索機能により、ユーザーは必要な公園やイベント情報にスムーズにアクセスできます。管理者向けには、データベースの専門知識がなくても簡単に情報を管理できる専用システムを実装。",
-            "engDes": "Green Space adopts a modern responsive design optimized for all devices with intuitive usability. The real-time search functionality allows users to smoothly access necessary park and event information. A dedicated management system is implemented for administrators to easily manage information without specialized database knowledge.",
+            "subtitle": "公園とイベント情報を提供する総合ポータルサイト",
+            "engSub": "Comprehensive Portal Site for Parks and Event Information",
+            "viSub": "Trang web tổng hợp thông tin về các công viên và sự kiện",
+            "description": "これは個人的なプロジェクトで、ウェブサイトのデザインから写真撮影まで、すべて自分で行いました。ウェブサイトは、緑地空間や今後のイベントに関する情報を提供し、ユーザーがリラックスできる場所を見つけるのに役立つことを目的としています。このプロジェクトは小さな賞も受賞しました。",
+            "engDes": "This is a personal project where I handled everything from website design to photography. The website provides information about green spaces and upcoming events, aiming to help users find places to relax. This project has also received a small award.",
+            "viDes": "Đây là dự án cá nhân tâm huyết của mình khi tạo ra nó. Từ thiết kế giao diện cho đến chụp ảnh đi làm tài liệu đều tự mình làm hết. Website cung cấp các thông tin về không gian xanh và các sự kiện sắp diễn ra với mục đích giúp người dùng có thể tìm 1 nơi nào đó để relax. Và dự án này cũng được giải nho nhỏ đó nha ^^",
             "url": "",
             "github": "https://github.com/AnhNangCuaEm/GreenSpace",
             "technologies": [
@@ -364,10 +382,12 @@
         },
         {
             "title": "Boulangeries",
-            "subtitle": "西新宿のベーカリーの魅力を伝えるブランドサイト",
-            "engSub": "Brand Site Showcasing the Appeal of a Bakery in Nishi-Shinjuku",
-            "description": "西新宿に位置するベーカリーの魅力を余すことなく伝えるウェブサイトです。こだわりの商品メニュー、店舗へのアクセス、最新ニュースなど、パン好きの心をくすぐる情報を丁寧に紹介しています。",
-            "engDes": "This website fully conveys the appeal of a bakery located in Nishi-Shinjuku. It carefully presents information that captivates bread lovers, including a carefully curated product menu, store access information, and the latest news.",
+            "subtitle": "西新宿に位置するベーカリーのウェブサイトデザイン",
+            "engSub": "Website Design for a Bakery Located in Nishi-Shinjuku",
+            "viSub": "Thiết kế website tiệm bánh mì ở Nishi-Shinjuku",
+            "description": "これは西新宿に位置するベーカリーのフロントエンドインターフェースデザインのシンプルなプロジェクトです。非常にシンプルに作られていますが、小さな賞を受賞しました ^_^",
+            "engDes": "This is a simple frontend interface design project for a bakery located in Nishi-Shinjuku. It was done very simply but still received a small award ^_^",
+            "viDes": "Đây cũng là dự án thiết kế giao diện frontend đơn giản cho 1 tiệm bánh mì ở Nishi-Shinjuku. Làm rất đơn giản nhưng mà vẫn được giải nho nhỏ ^_^",
             "url": "",
             "github": "https://github.com/AnhNangCuaEm/Boulangerie",
             "technologies": [
@@ -394,10 +414,12 @@
         },
         {
             "title": "Artist",
-            "subtitle": "アーティストの創造世界を表現するクリエイティブポートフォリオ",
-            "engSub": "Creative Portfolio Expressing an Artist's Creative World",
-            "description": "アーティストの独創性と芸術世界を最大限に引き出すよう設計された、モダンでインタラクティブなポートフォリオサイトです。作品展示やプロフィール、SNSフィード、今後のイベント情報など、アーティストの活動を多角的に発信します。",
-            "engDes": "A modern and interactive portfolio site designed to maximize an artist's originality and artistic world. It presents the artist's activities from multiple perspectives, including artwork display, profile information, social media feeds, and upcoming event details.",
+            "subtitle": "アーティストのポートフォリオサイト",
+            "engSub": "Artist Portfolio Site",
+            "viSub": "Trang web giới thiệu nghệ sĩ",
+            "description": "これは、アーティストのポートフォリオサイトのフロントエンドです。ウェブサイトのデザインは、過度なスクロールを制限するスタイルを好む私の個人的な好みに基づいています。",
+            "engDes": "This is the first FE website I created since I started learning web development. I quite like the design style that limits excessive scrolling, so I designed it that way ^^",
+            "viDes": "Đây là trang web FE đầu tiên mình làm từ khi học lập trình web. Mình khá thích style thiết kế hạn chế scroll nhiều nên đã thiết kế nó như vậy ^^",
             "url": "",
             "github": "",
             "technologies": [
@@ -424,8 +446,10 @@
             "title": "CocoonTower",
             "subtitle": "コクーンタワーの魅力を発信する総合情報サイト",
             "engSub": "Comprehensive Information Site Showcasing the Appeal of Cocoon Tower",
-            "description": "コクーンタワーの施設情報、テナント情報、教育機関情報を一元化した総合情報ポータルです。洗練された直感的なデザインにより、求める情報へのアクセスを容易にしています。視覚的にわかりやすいアクセスマップと施設案内により、初めての来訪者でも迷わずに目的地へ到着できます。",
-            "engDes": "A comprehensive information portal that consolidates facility information, tenant details, and educational institution information for Cocoon Tower. Sophisticated and intuitive design makes accessing desired information easy. Clear visual access maps and facility guides help first-time visitors reach their destination without confusion.",
+            "viSub": "Trang web tổng hợp thông tin về Cocoon Tower",
+            "description": "これはコクーンタワーの魅力を発信する総合情報サイトです。コクーンタワーは私が通っている学校の建物でもあります。建物の形状上、通常の学校とは異なる不便さもありますが、その代わりに素晴らしい眺めを楽しむことができます。",
+            "engDes": "This is a comprehensive information site that showcases the appeal of Cocoon Tower, which is also the building of the school I attend. Due to its unique architectural design, it may have some inconveniences compared to regular schools, but it offers an exceptional view in return.",
+            "viDes": "Trang web giới thiệu về Cocoon Tower, đây là nơi mà mình cũng là trường mình học về Web ở đây. Vì là dạng tòa nhà nên nhiều cái bất tiện không như những trường bình thường nhưng đổi lại là view cực xịn ^^",
             "url": "",
             "github": "",
             "technologies": [
@@ -460,63 +484,6 @@
                     "name": "若林真緒",
                     "role": "Planner",
                     "responsibilities": "Project Planning, Strategy"
-                }
-            ]
-        },
-        {
-            "title": "Movie Site",
-            "subtitle": "映画「Interstellar」の公式プロモーションサイト",
-            "engSub": "Official Promotional Site for the Movie 'Interstellar'",
-            "description": "映画「Interstellar」の魅力を伝える公式サイトです。作品概要、キャスト情報、レビューなど、映画の世界観を余すことなく紹介します。宇宙をモチーフにしたUIデザインにより、作品の壮大なスケールを視覚的に表現しています。",
-            "engDes": "This is the official site promoting the movie 'Interstellar'. It provides an overview of the film, cast information, reviews, and more, capturing the essence of the movie. The UI design, inspired by space themes, visually represents the grand scale of the film.",
-            "url": "",
-            "github": "",
-            "technologies": [
-                "HTML",
-                "CSS"
-            ],
-            "education": true,
-            "thumb": "/project-img/moviesite/moviesite.jpg",
-            "gallery": [
-                "/project-img/moviesite/moviesite.jpg",
-                "/project-img/moviesite/moviesite1.jpg",
-                "/project-img/moviesite/moviesite2.jpg",
-                "/project-img/moviesite/moviesite3.jpg"
-            ],
-            "team": [
-                {
-                    "name": "Le Ly Thanh Hai",
-                    "role": "Frontend Developer",
-                    "responsibilities": "All"
-                }
-            ]
-        },
-        {
-            "title": "Cafe Site",
-            "subtitle": "架空のカフェ情報サイト",
-            "engSub": "Fictional Cafe Information Site",
-            "description": "架空のカフェの世界観を表現したウェブサイトです。カフェならではの温かみのある雰囲気をUIデザインで表現し、メニュー情報、アクセス情報、ニュースなど、実在するかのような臨場感のある情報を提供します。",
-            "engDes": "This website represents the world of a fictional cafe. The UI design captures the warm and inviting atmosphere typical of cafes, providing menu information, access details, news, and other content that gives a realistic feel as if the cafe actually exists.",
-            "url": "",
-            "github": "",
-            "technologies": [
-                "HTML",
-                "CSS"
-            ],
-            "education": true,
-            "thumb": "/project-img/cafesite/cafesite.png",
-            "gallery": [
-                "/project-img/cafesite/cafesite.png",
-                "/project-img/cafesite/cafesite1.jpg",
-                "/project-img/cafesite/cafesite2.jpg",
-                "/project-img/cafesite/cafesite3.jpg",
-                "/project-img/cafesite/cafesite4.jpg"
-            ],
-            "team": [
-                {
-                    "name": "Le Ly Thanh Hai",
-                    "role": "Frontend Developer",
-                    "responsibilities": "All"
                 }
             ]
         }
