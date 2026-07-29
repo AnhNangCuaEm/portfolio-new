@@ -46,7 +46,7 @@ export default function HamburgerMenu() {
             {isOpen && (
                 <div className="md:hidden fixed inset-0 z-40 bg-black/80 backdrop-blur-sm animate-in fade-in duration-300">
                     {/* Navigation - Centered */}
-                    <nav className="h-full flex items-center justify-center animate-in fade-in slide-in-from-bottom-4 duration-500">
+                    <nav role='navigation' className="h-full flex items-center justify-center animate-in fade-in slide-in-from-bottom-4 duration-500">
                         <ul className="flex flex-col items-center space-y-8 text-2xl font-semibold">
                             {navItems.map((item, index) => (
                                 <li

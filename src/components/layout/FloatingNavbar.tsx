@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useRef, useState } from 'react';
 import { motion, type Variants } from 'framer-motion';
 import { Link, usePathname } from '@/i18n/navigation';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
@@ -57,6 +58,33 @@ const contentVariants: Variants = {
 export default function FloatingNavbar() {
   const pathname = usePathname();
 
+  /**
+   * itemRefs: one ref per nav item, used to read offsetLeft / offsetWidth
+   * after layout — these values are in the coordinate space of the <ul>
+   * (position:relative), so they never include scroll position and movement
+   * is always purely on the X-axis.
+   */
+  const itemRefs = useRef<(HTMLLIElement | null)[]>([]);
+  const [indicator, setIndicator] = useState<{
+    left: number; width: number; top: number; height: number; opacity: number;
+  }>({ left: 0, width: 0, top: 0, height: 0, opacity: 0 });
+
+  useEffect(() => {
+    const activeIndex = navItems.findIndex((item) =>
+      isActiveNavItem(pathname, item.href)
+    );
+    const el = itemRefs.current[activeIndex];
+    if (el) {
+      setIndicator({
+        left:    el.offsetLeft,
+        width:   el.offsetWidth,
+        top:     el.offsetTop,
+        height:  el.offsetHeight,
+        opacity: 1,
+      });
+    }
+  }, [pathname]);
+
   return (
     /**
      * Single fixed shell — horizontally centred, 16 px from top.
@@ -100,24 +128,46 @@ export default function FloatingNavbar() {
             animate="animate"
             className="flex items-center whitespace-nowrap"
           >
-            <nav aria-label="Primary">
-              <ul className="flex items-center gap-1 px-5 py-2.5">
+            <nav aria-label="Primary" role="navigation">
+              {/*
+                position:relative on <ul> is required so that
+                the indicator's offsetLeft values are relative to this element,
+                not the viewport — keeping animation strictly on the X-axis.
+              */}
+              <ul className="relative flex items-center gap-1 px-5 py-2.5">
+
+                {/*
+                  ── Magic Indicator ──────────────────────────────────────────
+                  Single motion.div that lives *outside* the nav items loop.
+                  It animates only `left` and `width` (X-axis), while `top`
+                  and `height` are applied instantly (no vertical spring travel).
+                  This prevents the "slide from below" artifact that occurred
+                  when using layoutId with page scroll.
+                */}
+                <motion.div
+                  aria-hidden
+                  className="absolute rounded-full bg-white/10 pointer-events-none z-0"
+                  animate={{
+                    left:   indicator.left,
+                    width:  indicator.width,
+                    opacity: indicator.opacity,
+                  }}
+                  style={{
+                    top:    indicator.top,
+                    height: indicator.height,
+                  }}
+                  transition={{ type: 'spring', stiffness: 200, damping: 18 }}
+                />
 
                 {/* ── Nav links ─────────────────────────────────────────── */}
-                {navItems.map((item) => {
+                {navItems.map((item, index) => {
                   const isActive = isActiveNavItem(pathname, item.href);
                   return (
-                    <li key={item.href} className="relative">
-                      {/* ── Magic Indicator: slides between active tabs ── */}
-                      {isActive && (
-                        <motion.div
-                          layoutId="activeTabIndicator"
-                          className="absolute inset-0 rounded-full bg-white/10"
-                          transition={{ type: 'spring', stiffness: 200, damping: 18 }}
-                        />
-                      )}
-
-                      <motion.div whileTap={{ scale: 0.95 }}>
+                    <li
+                      key={item.href}
+                      ref={(el) => { itemRefs.current[index] = el; }}
+                    >
+                      <motion.div whileTap={{ scale: 0.9 }}>
                         <Link
                           href={item.href}
                           aria-current={isActive ? 'page' : undefined}
