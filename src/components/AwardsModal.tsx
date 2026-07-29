@@ -10,13 +10,16 @@ import { X, ExternalLink } from 'lucide-react';
 interface Award {
     title: string;
     engTitle: string;
+    viTitle: string;
     project: string;
     pjURL: string;
     issuer: string;
     engIssuer: string;
+    viIssuer: string;
     date: string;
     description: string;
     engDescription: string;
+    viDescription: string;
     img: string;
 }
 
@@ -40,9 +43,21 @@ export default function AwardsModal({ award, isOpen, onClose }: AwardsModalProps
         }
     }, [isOpen]);
 
-    const title = locale === 'ja' ? award?.title : award?.engTitle;
-    const issuer = locale === 'ja' ? award?.issuer : award?.engIssuer;
-    const description = locale === 'ja' ? award?.description : award?.engDescription;
+    const title = locale === 'ja'
+        ? award?.title
+        : locale === 'vi'
+            ? award?.viTitle
+            : award?.engTitle;
+    const issuer = locale === 'ja'
+        ? award?.issuer
+        : locale === 'vi'
+            ? award?.viIssuer
+            : award?.engIssuer;
+    const description = locale === 'ja'
+        ? award?.description
+        : locale === 'vi'
+            ? award?.viDescription
+            : award?.engDescription;
 
     const backdropVariants = {
         hidden: { opacity: 0 },
@@ -139,7 +154,7 @@ export default function AwardsModal({ award, isOpen, onClose }: AwardsModalProps
                                     {award.pjURL && (<div>
                                         <Link href={award.pjURL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-2 py-1.5 sm:px-4 sm:py-2 bg-linear-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold rounded-lg transition-colors">
                                             <ExternalLink className="w-4 h-4" />
-                                            {locale === 'ja' ? 'ウェブサイト' : 'Website'}
+                                            {locale === 'ja' ? 'ウェブサイト' : locale === 'vi' ? 'Trang web' : 'Website'}
                                         </Link>
                                     </div>
                                     )}
@@ -153,10 +168,10 @@ export default function AwardsModal({ award, isOpen, onClose }: AwardsModalProps
                                 transition={{ delay: 0.2 }}
                             >
                                 <p className="text-sm font-semibold text-purple-300 mb-2">
-                                    {locale === 'ja' ? '受賞日' : 'Award Date'}
+                                    {locale === 'ja' ? '受賞日' : locale === 'vi' ? 'Ngày nhận giải' : 'Award Date'}
                                 </p>
                                 <p className="text-gray-200">
-                                    {new Date(award.date).toLocaleDateString(locale === 'ja' ? 'ja-JP' : 'en-US', {
+                                    {new Date(award.date).toLocaleDateString(locale === 'ja' ? 'ja-JP' : locale === 'vi' ? 'vi-VN' : 'en-US', {
                                         year: 'numeric',
                                         month: 'long',
                                         day: 'numeric'
@@ -171,7 +186,7 @@ export default function AwardsModal({ award, isOpen, onClose }: AwardsModalProps
                                 transition={{ delay: 0.25 }}
                             >
                                 <h2 className="text-sm font-semibold text-purple-300 mb-2">
-                                    {locale === 'ja' ? '説明' : 'Description'}
+                                    {locale === 'ja' ? '説明' : locale === 'vi' ? 'Mô tả' : 'Description'}
                                 </h2>
                                 <p className="text-gray-200 leading-relaxed">{description}</p>
                             </motion.div>

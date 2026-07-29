@@ -8,8 +8,10 @@ interface Project {
     title: string;
     subtitle: string;
     engSub: string;
+    viSub: string;
     description: string;
     engDes: string;
+    viDes: string;
     url: string;
     github: string;
     technologies: string[];
@@ -54,6 +56,12 @@ export default function ProjectsPage() {
         setTimeout(() => setSelectedProject(null), 300);
     };
 
+    const getLocalizedSubtitle = (project: Project) => {
+        if (locale === 'ja') return project.subtitle;
+        if (locale === 'vi') return project.viSub;
+        return project.engSub;
+    };
+
     return (
         <>
             <main className="w-full pt-24 pb-4 sm:pt-32 px-4 sm:px-8">
@@ -67,7 +75,7 @@ export default function ProjectsPage() {
                         /* Grid 3 cols */
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-max">
                             {projects.map((project, index) => {
-                                const subtitle = locale === "ja" ? project.subtitle : project.engSub;
+                                const subtitle = getLocalizedSubtitle(project);
 
                                 return (
                                     <div

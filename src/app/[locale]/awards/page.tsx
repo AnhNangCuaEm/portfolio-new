@@ -7,13 +7,16 @@ import { useState, useEffect } from "react";
 interface Award {
     title: string;
     engTitle: string;
+    viTitle: string;
     project: string;
     pjURL: string;
     issuer: string;
     engIssuer: string;
+    viIssuer: string;
     date: string;
     description: string;
     engDescription: string;
+    viDescription: string;
     img: string;
 }
 
@@ -47,6 +50,33 @@ export default function AwardsPage() {
         setTimeout(() => setSelectedAward(null), 300);
     };
 
+    const getLocalizedAwardText = (award: Award) => {
+        if (locale === 'ja') {
+            return {
+                title: award.title,
+                issuer: award.issuer,
+                description: award.description,
+                dateLocale: 'ja-JP',
+            };
+        }
+
+        if (locale === 'vi') {
+            return {
+                title: award.viTitle,
+                issuer: award.viIssuer,
+                description: award.viDescription,
+                dateLocale: 'vi-VN',
+            };
+        }
+
+        return {
+            title: award.engTitle,
+            issuer: award.engIssuer,
+            description: award.engDescription,
+            dateLocale: 'en-US',
+        };
+    };
+
     return (
         <>
             <main className="w-full pt-24 pb-4 sm:pt-32 px-4 sm:px-8">
@@ -60,13 +90,12 @@ export default function AwardsPage() {
                         /* Grid 3 cols */
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-max">
                             {awards.map((award, index) => {
-                                const title = locale === "ja" ? award.title : award.engTitle;
-                                const issuer = locale === "ja" ? award.issuer : award.engIssuer;
-                                const description = locale === "ja" ? award.description : award.engDescription;
-                                const formattedDate = new Date(award.date).toLocaleDateString(
-                                    locale === "ja" ? "ja-JP" : "en-US",
-                                    { year: "numeric", month: "long", day: "numeric" }
-                                );
+                                const { title, issuer, description, dateLocale } = getLocalizedAwardText(award);
+                                const formattedDate = new Date(award.date).toLocaleDateString(dateLocale, {
+                                    year: "numeric",
+                                    month: "long",
+                                    day: "numeric"
+                                });
 
                                 return (
                                     <div
