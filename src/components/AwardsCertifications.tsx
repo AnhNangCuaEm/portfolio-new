@@ -1,7 +1,6 @@
 'use client';
 
-import { motion, useInView } from 'framer-motion';
-import { useRef, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useLocale } from 'next-intl';
 import { useTranslations } from 'next-intl';
 
@@ -30,22 +29,6 @@ const accentMap: Record<string, { iconBg: string; iconText: string; meta: string
     cyan: { iconBg: 'bg-cyan-500/15', iconText: 'text-cyan-400', meta: 'text-cyan-400/70' },
 };
 
-// ─── Framer Motion variants ────────────────────────────────────────────────────
-
-const listVariants = {
-    hidden: {},
-    visible: { transition: { staggerChildren: 0.08 } },
-};
-
-const itemVariants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: {
-        opacity: 1,
-        x: 0,
-        transition: { type: 'spring' as const, stiffness: 240, damping: 24 },
-    },
-};
-
 // ─── Type label map ────────────────────────────────────────────────────────────
 
 const typeLabelMap: Record<ItemType, Record<string, string>> = {
@@ -58,8 +41,6 @@ const typeLabelMap: Record<ItemType, Record<string, string>> = {
 export default function AwardsCertifications() {
     const t = useTranslations();
     const locale = useLocale();
-    const ref = useRef<HTMLDivElement>(null);
-    const isInView = useInView(ref, { once: true, amount: 0.08 });
 
     const [items, setItems] = useState<AwardItem[]>([]);
 
@@ -82,29 +63,24 @@ export default function AwardsCertifications() {
     };
 
     return (
-        <div ref={ref} className="w-full mb-6">
+        <div className="w-full mb-6">
             {/* Section heading */}
             <p className="text-xl text-purple-400 font-semibold mb-4 sm:mb-6 scroll-animate scroll-fade-up">
                 {t('info.awards')}
             </p>
 
-            {/* 2-col grid*/}
+            {/* 2-col grid */}
             {items.length > 0 && (
-                <motion.div
-                    className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-0"
-                    variants={listVariants}
-                    initial="hidden"
-                    animate={isInView ? 'visible' : 'hidden'}
-                >
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-0">
                     {items.map((item, index) => {
                         const accent = accentMap[item.accentColor] ?? accentMap.amber;
                         const { title, issuer, label, date } = getLocaleText(item);
 
                         return (
-                            <motion.div
+                            <div
                                 key={index}
-                                variants={itemVariants}
-                                className="flex items-center gap-3 py-3 border-b border-white/10 last:border-b"
+                                className="flex items-center gap-3 py-3 border-b border-white/10 last:border-b scroll-animate scroll-fade-left"
+                                style={{ animationDelay: `${index * 80}ms` }}
                             >
                                 {/* Icon bubble */}
                                 <div className={`shrink-0 w-9 h-9 rounded-full ${accent.iconBg} flex items-center justify-center`}>
@@ -130,10 +106,10 @@ export default function AwardsCertifications() {
                                         <span className={accent.meta}>{label}</span>
                                     </span>
                                 </div>
-                            </motion.div>
+                            </div>
                         );
                     })}
-                </motion.div>
+                </div>
             )}
         </div>
     );
