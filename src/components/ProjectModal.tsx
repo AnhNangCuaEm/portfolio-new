@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useLocale } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import 'photoswipe/style.css';
 import { X, Github, ExternalLink } from 'lucide-react';
 
 interface Project {
@@ -189,7 +190,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                                         {locale === 'ja' ? '説明' : 'Description'}
                                     </h2>
                                     {/* Links */}
-                                    <div className="flex justify-end flex-wrap gap-3">  
+                                    <div className="flex justify-end flex-wrap gap-3">
                                         {project.url && (
                                             <Link
                                                 href={project.url}
