@@ -6,11 +6,6 @@ export type { GlassSurfaceProps } from './GlassSurface';
 export { default as GlassHeader } from './GlassHeader';
 export type { GlassHeaderProps } from './GlassHeader';
 
-export { default as SkillProgressBar } from './SkillProgressBar';
-export type { SkillProgressBarProps } from './SkillProgressBar';
-
 export { default as ProjectModal } from './ProjectModal';
 
-export { default as AwardsModal } from './AwardsModal';
-
-export { default as AwardsCertifications } from './AwardsCertifications';
+export { default as AwardsCertifications } from './AwardsCertifications';
