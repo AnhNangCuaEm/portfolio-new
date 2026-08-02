@@ -9,7 +9,6 @@ import GlassSurface from '@/components/GlassSurface';
 // ─── Nav items ────────────────────────────────────────────────────────────────
 const navItems = [
   { href: '/',         label: 'Info'     },
-  { href: '/skills',   label: 'Skills'   },
   { href: '/projects', label: 'Projects' },
   { href: '/awards',   label: 'Awards'   },
   { href: '/contact',  label: 'Contact'  },

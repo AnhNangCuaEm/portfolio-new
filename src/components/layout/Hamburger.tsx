@@ -10,7 +10,6 @@ export default function HamburgerMenu() {
 
     const navItems = [
         { href: "/", label: "Info" },
-        { href: "/skills", label: "Skills" },
         { href: "/projects", label: "Projects" },
         { href: "/awards", label: "Awards" },
         { href: "/contact", label: "Contact" },
