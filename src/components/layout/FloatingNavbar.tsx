@@ -8,10 +8,10 @@ import GlassSurface from '@/components/GlassSurface';
 
 // ─── Nav items ────────────────────────────────────────────────────────────────
 const navItems = [
-  { href: '/',         label: 'Info'     },
+  { href: '/', label: 'Info' },
+  { href: '/gallery', label: 'Gallery' },
   { href: '/projects', label: 'Projects' },
-  { href: '/awards',   label: 'Awards'   },
-  { href: '/contact',  label: 'Contact'  },
+  { href: '/contact', label: 'Contact' },
 ];
 
 function isActiveNavItem(pathname: string, href: string) {
@@ -75,10 +75,10 @@ export default function FloatingNavbar() {
     const el = itemRefs.current[activeIndex];
     if (el) {
       setIndicator({
-        left:    el.offsetLeft,
-        width:   el.offsetWidth,
-        top:     el.offsetTop,
-        height:  el.offsetHeight,
+        left: el.offsetLeft,
+        width: el.offsetWidth,
+        top: el.offsetTop,
+        height: el.offsetHeight,
         opacity: 1,
       });
     }
@@ -147,12 +147,12 @@ export default function FloatingNavbar() {
                   aria-hidden
                   className="absolute rounded-full bg-white/10 pointer-events-none z-0"
                   animate={{
-                    left:   indicator.left,
-                    width:  indicator.width,
+                    left: indicator.left,
+                    width: indicator.width,
                     opacity: indicator.opacity,
                   }}
                   style={{
-                    top:    indicator.top,
+                    top: indicator.top,
                     height: indicator.height,
                   }}
                   transition={{ type: 'spring', stiffness: 200, damping: 18 }}
