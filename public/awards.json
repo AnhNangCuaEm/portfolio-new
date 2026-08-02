@@ -1,60 +1,82 @@
 {
     "awards": [
         {
+            "title": "IT パスポート試験",
+            "engTitle": "IT Passport",
+            "viTitle": "IT Passport",
+            "project": "",
+            "issuer": "IPA · Japan",
+            "engIssuer": "IPA · Japan",
+            "viIssuer": "IPA · Nhật Bản",
+            "date": "2026-08",
+            "type": "certificate",
+            "icon": "fas fa-star",
+            "accentColor": "cyan"
+        },
+        {
             "title": "銅賞",
             "engTitle": "Bronze Award",
             "viTitle": "Giải Đồng",
             "project": "Virtual Festival",
-            "pjURL": "https://halgraduation.anhnangcuaem.com/",
             "issuer": "HAL 東京",
             "engIssuer": "HAL Tokyo",
-            "date": "2026-02-28",
-            "description": "実践的なアプリケーション学内コンペにて銅賞を受賞。",
-            "engDescription": "Received the Bronze Award for a practical application in the school competition.",
-            "viDescription": "Đạt giải Đồng trong cuộc thi ứng dụng thực tế tại trường.",
-            "img": "/awards/4.jpg"
+            "viIssuer": "HAL Tokyo",
+            "date": "2026-02",
+            "type": "award",
+            "icon": "fas fa-medal",
+            "accentColor": "amber"
         },
         {
             "title": "独創力賞",
             "engTitle": "Innovation Award",
             "viTitle": "Giải Sáng Tạo",
             "project": "AuraFlow",
-            "pjURL": "https://auraflow.anhnangcuaem.com/",
             "issuer": "HAL 東京",
             "engIssuer": "HAL Tokyo",
-            "date": "2025-09-30",
-            "description": "カード型レイアウトデザインコンペティションにて独創力賞を受賞。",
-            "engDescription": "Received the Innovation Award in the Card Layout Design Competition.",
-            "viDescription": "Đạt giải Sáng Tạo trong cuộc thi thiết kế bố cục thẻ.",
-            "img": "/awards/3.jpg"
+            "viIssuer": "HAL Tokyo",
+            "date": "2025-09",
+            "type": "award",
+            "icon": "fas fa-medal",
+            "accentColor": "amber"
         },
         {
             "title": "銅賞",
             "engTitle": "Bronze Award",
             "viTitle": "Giải Đồng",
             "project": "Green Space",
-            "pjURL": "",
             "issuer": "HAL 東京",
             "engIssuer": "HAL Tokyo",
-            "date": "2025-03-08",
-            "description": "就職作品展にて銅賞を受賞。",
-            "engDescription": "Received the Bronze Award at the Employment Works Exhibition.",
-            "viDescription": "Đạt giải Đồng trong triển lãm.",
-            "img": "/awards/2.jpg"
+            "viIssuer": "HAL Tokyo",
+            "date": "2025-03",
+            "type": "award",
+            "icon": "fas fa-medal",
+            "accentColor": "amber"
         },
         {
             "title": "独創力賞",
             "engTitle": "Innovation Award",
             "viTitle": "Giải Sáng Tạo",
             "project": "Boulangerie Site",
-            "pjURL": "https://boulangeries.anhnangcuaem.com/",
             "issuer": "HAL 東京",
             "engIssuer": "HAL Tokyo",
-            "date": "2025-02-27",
-            "description": "店舗サイト リデザインコンペティションにて独創力賞を受賞。",
-            "engDescription": "Received the Innovation Award in the Store Site Redesign Competition.",
-            "viDescription": "Đạt giải Sáng Tạo trong cuộc thi thiết kế lại trang web cửa hàng.",
-            "img": "/awards/1.jpg"
+            "viIssuer": "HAL Tokyo",
+            "date": "2025-02",
+            "type": "award",
+            "icon": "fas fa-medal",
+            "accentColor": "amber"
+        },
+        {
+            "title": "Webデザイナー ベーシック",
+            "engTitle": "Web Designer Basic",
+            "viTitle": "Web Designer Basic",
+            "project": "",
+            "issuer": "CG-ARTS · Japan",
+            "engIssuer": "CG-ARTS · Japan",
+            "viIssuer": "CG-ARTS · Nhật Bản",
+            "date": "2024-09",
+            "type": "certificate",
+            "icon": "fas fa-star",
+            "accentColor": "cyan"
         }
     ]
 }

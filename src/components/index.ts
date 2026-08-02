@@ -11,4 +11,6 @@ export type { SkillProgressBarProps } from './SkillProgressBar';
 
 export { default as ProjectModal } from './ProjectModal';
 
-export { default as AwardsModal } from './AwardsModal';
+export { default as AwardsModal } from './AwardsModal';
+
+export { default as AwardsCertifications } from './AwardsCertifications';

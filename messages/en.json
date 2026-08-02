@@ -1,29 +1,18 @@
 {
     "info": {
-        "edu": "Education",
+        "skills": "Skills",
+        "awards": "Awards & Certificates",
         "education": "HAL Tokyo - WEB Department",
         "now": "2024 - 2026",
-        "description": "Hi! I'm currently building websites in my free time with the support of AI and the knowledge I've learned. I have experience in Design, Code, Database, WordPress, etc. If you're interested, you can check out the projects I've worked on in the Projects section.",
-        "description2": "My hobbies include learning and trying new things, especially in programming and design. I also enjoy photography, traveling, and listening to music. I take photos just on my phone, hehe. As for music, I created a small music website called AuraFlow, so feel free to check it out and see if it matches your taste.",
+        "description": "Hi! I'm currently building websites in my free time with the support of AI and the knowledge I've learned. If you're interested, you can check out the projects I've worked on in the Projects section.",
+        "description2": "My hobbies include photography, traveling, and music. I take photos just on my phone. As for music, I created a small music website called AuraFlow, so feel free to check it out and see if it matches your taste.",
         "interest": "Interests",
         "interests": {
             "photography": "Photography",
             "traveling": "Traveling",
-            "music": "Music",
-            "coding": "Coding"
-        },
-        "learning": "Currently Learning",
-        "learnings": {
-            "nextjs": "Next.js",
-            "ios": "iOS App"
+            "music": "Music"
         },
         "clicktocopy": "Click to copy"
-    },
-    "skills": {
-        "web": "Web Development",
-        "design": "Design",
-        "softSkills": "Soft Skills",
-        "languages": "Languages"
     },
     "contact": {
         "title": "Get in Touch",

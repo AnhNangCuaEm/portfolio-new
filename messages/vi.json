@@ -1,29 +1,18 @@
 {
     "info": {
-        "edu": "Học vấn",
+        "skills": "Kỹ năng",
+        "awards": "Giải thưởng & Chứng chỉ",
         "education": "HAL Tokyo - Khoa WEB",
         "now": "2024 - 2026",
-        "description": "Hi! Mình hiện tại đang xây dựng các trang web vào thời gian rảnh rỗi với sự hỗ trợ từ AI và kiến thức mà mình đã được học. Mình biết về Design, Code, Database, WordPress,..vv Nếu thích thì mọi người có thể xem các dự án mình đã làm ở phần Projects nhé",
-        "description2": "Sở thích của mình là học hỏi và trải nghiệm những cái mới, đặc biệt là về lập trình và thiết kế. Mình cũng thích chụp ảnh, du lịch và nghe nhạc. Ảnh thì mình chụp bằng điện thoại thôi, hehe. Còn nhạc thì mình có làm 1 trang web nghe nhạc nho nhỏ tên là AuraFlow, mọi người có thể ghé qua nghe xem trùng gu không nha.",
+        "description": "Hi! Mình hiện tại đang xây dựng các trang web vào thời gian rảnh rỗi với sự hỗ trợ từ AI và kiến thức mà mình đã được học. Nếu thích thì mọi người có thể xem các dự án mình đã làm ở phần Projects nhé",
+        "description2": "Sở thích của mình là chụp ảnh, du lịch và nghe nhạc. Ảnh thì mình chụp bằng điện thoại thôi. Còn nhạc thì mình có làm 1 trang web nghe nhạc nho nhỏ tên là AuraFlow, mọi người có thể ghé qua nghe xem trùng gu không nha.",
         "interest": "Sở thích",
         "interests": {
-            "photography": "Nhiếp ảnh",
+            "photography": "Chụp ảnh",
             "traveling": "Du lịch",
-            "music": "Âm nhạc",
-            "coding": "Lập trình"
-        },
-        "learning": "Đang học",
-        "learnings": {
-            "nextjs": "Next.js",
-            "ios": "iOS App"
+            "music": "Âm nhạc"
         },
         "clicktocopy": "Nhấn để copy"
-    },
-    "skills": {
-        "web": "Phát triển Web",
-        "design": "Thiết kế",
-        "softSkills": "Kỹ năng mềm",
-        "languages": "Ngôn ngữ"
     },
     "contact": {
         "title": "Liên hệ",
