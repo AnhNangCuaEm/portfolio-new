@@ -72,6 +72,34 @@ html {
   }
 }
 
+@keyframes scrollFadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Hamburger menu item stagger */
+@keyframes hamburgerFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hamburger-fade-up {
+  animation: hamburgerFadeUp 0.5s ease-out both;
+}
+
 /* Base scroll animation class */
 .scroll-animate {
   opacity: 0;
@@ -93,6 +121,10 @@ html {
 
 .scroll-fade-down {
   animation-name: scrollFadeDown;
+}
+
+.scroll-fade-left {
+  animation-name: scrollFadeLeft;
 }
 
 /* Delay utilities */

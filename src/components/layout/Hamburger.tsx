@@ -50,9 +50,8 @@ export default function HamburgerMenu() {
                             {navItems.map((item, index) => (
                                 <li
                                     key={item.href}
-                                    style={{
-                                        animation: `fadeInUp 0.5s ease-out ${0.1 * (index + 1)}s both`
-                                    }}
+                                    className="hamburger-fade-up"
+                                    style={{ animationDelay: `${0.1 * (index + 1)}s` }}
                                 >
                                     <Link
                                         href={item.href}
@@ -68,19 +67,6 @@ export default function HamburgerMenu() {
                 </div>
             )}
 
-            {/* Animation keyframes */}
-            <style>{`
-                @keyframes fadeInUp {
-                    from {
-                        opacity: 0;
-                        transform: translateY(20px);
-                    }
-                    to {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-            `}</style>
         </>
     );
 }
