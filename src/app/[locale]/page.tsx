@@ -19,16 +19,16 @@ export default function HomePage() {
         <main role="main" className="flex min-h-screen w-full max-w-6xl mx-auto flex-col items-center justify-between pt-24 pb-4 sm:pt-32 px-4 sm:px-8">
             <div className="w-full bg-white/2 backdrop-blur-xs rounded-4xl p-4 sm:p-8 border border-white/20 shadow-2xl">
                 <div className="flex flex-col items-center gap-6 sm:gap-8">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10">
                         <div className="w-48 h-48 sm:w-56 sm:h-56 flex justify-center rounded-full overflow-hidden border-4 border-purple-500/40 scroll-animate scroll-fade-down">
                             <Image src="/avatar.png" alt="Avatar" width={310} height={395} className="h-full w-auto mt-2" />
                         </div>
-                        <div className="flex flex-col text-center gap-4">
+                        <div className="flex flex-col text-center sm:text-left gap-4">
                             <h1 role="header" className="text-2xl sm:text-4xl font-bold text-white scroll-animate scroll-fade-up">Le Ly Thanh Hai</h1>
                             <h2 className="text-xl sm:text-2xl font-bold text-white scroll-animate scroll-fade-up scroll-delay-100">レリタン ハイ</h2>
-                            <p className="text-lg sm:text-xl text-purple-400 mb-2 scroll-animate scroll-fade-up scroll-delay-200">Full Stack Developer</p>
+                            <p className="text-lg sm:text-xl text-purple-400 scroll-animate scroll-fade-up scroll-delay-200">Full Stack Developer</p>
                             {/* Education */}
-                            <div className="mb-6 scroll-animate scroll-fade-up scroll-delay-200">
+                            <div className="scroll-animate scroll-fade-up scroll-delay-200">
                                 <p className="text-gray-300">
                                     {t('info.education')}
                                     <span className="text-purple-400 block text-md">{t('info.now')}</span>
@@ -90,13 +90,13 @@ export default function HomePage() {
                         </div>
 
                         {/* About Me */}
-                        <p className="text-sm sm:text-lg text-gray-300 max-w-4xl mx-auto mb-6 scroll-animate scroll-fade-up scroll-delay-300">
+                        <p className="text-sm sm:text-lg text-gray-300 max-w-4xl mx-auto scroll-animate scroll-fade-up scroll-delay-300">
                             {t('info.description')}
                         </p>
 
                         {/* Highlight Skills */}
-                        <div className="w-full mb-6 scroll-animate scroll-fade-up scroll-delay-300">
-                            <p className="text-xl uppercase tracking-widest text-purple-400/60 font-semibold mb-4">{t('info.skills')}</p>
+                        <div className="w-full scroll-animate scroll-fade-up scroll-delay-300">
+                            <p className="text-xl text-purple-400 font-semibold mb-4 sm:mb-6 scroll-animate scroll-fade-up">{t('info.skills')}</p>
                             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                                 {/* Design */}
                                 <div className="group relative flex flex-col items-center gap-2 p-4 rounded-2xl bg-white/3 border border-white/10 hover:border-purple-500/40 transition-all duration-300">
@@ -138,7 +138,7 @@ export default function HomePage() {
 
                         {/* Interests */}
                         <div>
-                            <h3 className="text-xl text-purple-400 font-semibold mb-8 scroll-animate scroll-fade-up">{t('info.interest')}</h3>
+                            <h3 className="text-xl text-purple-400 font-semibold mb-4 sm:mb-6 scroll-animate scroll-fade-up">{t('info.interest')}</h3>
                             <div className="flex flex-wrap justify-center gap-4">
                                 <div className="interest-tag-wrap scroll-animate scroll-fade-up scroll-delay-100">
                                     <span className="px-4 py-2 bg-white/10  rounded-full">
@@ -159,7 +159,7 @@ export default function HomePage() {
                         </div>
 
                         {/* About Me */}
-                        <p className="text-sm sm:text-lg text-gray-300 max-w-4xl mx-auto mb-6 scroll-animate scroll-fade-up scroll-delay-400">
+                        <p className="text-sm sm:text-lg text-gray-300 max-w-4xl mx-auto scroll-animate scroll-fade-up scroll-delay-400">
                             {t('info.description2')}
                         </p>
 
