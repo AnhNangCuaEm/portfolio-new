@@ -138,17 +138,23 @@ export default function HomePage() {
 
                         {/* Interests */}
                         <div>
-                            <h3 className="text-xl text-white font-semibold mb-3 scroll-animate scroll-fade-up">{t('info.interest')}</h3>
-                            <div className="flex flex-wrap justify-center gap-3">
-                                <span className="px-4 py-2 bg-purple-500/20 rounded-full text-purple-300 border-white/20 border scroll-animate scroll-fade-up scroll-delay-100">
-                                    <i className="fas fa-camera mr-2"></i>{t('info.interests.photography')}
-                                </span>
-                                <span className="px-4 py-2 bg-purple-500/20 rounded-full text-purple-300 border-white/20 border scroll-animate scroll-fade-up scroll-delay-200">
-                                    <i className="fas fa-plane-departure mr-2"></i>{t('info.interests.traveling')}
-                                </span>
-                                <span className="px-4 py-2 bg-purple-500/20 rounded-full text-purple-300 border-white/20 border scroll-animate scroll-fade-up scroll-delay-300">
-                                    <i className="fas fa-music mr-2"></i>{t('info.interests.music')}
-                                </span>
+                            <h3 className="text-xl text-purple-400 font-semibold mb-8 scroll-animate scroll-fade-up">{t('info.interest')}</h3>
+                            <div className="flex flex-wrap justify-center gap-4">
+                                <div className="interest-tag-wrap scroll-animate scroll-fade-up scroll-delay-100">
+                                    <span className="px-4 py-2 bg-white/10  rounded-full">
+                                        <i className="fas fa-camera mr-2"></i>{t('info.interests.photography')}
+                                    </span>
+                                </div>
+                                <div className="interest-tag-wrap scroll-animate scroll-fade-up scroll-delay-200">
+                                    <span className="px-4 py-2 bg-white/10  rounded-full">
+                                        <i className="fas fa-plane-departure mr-2"></i>{t('info.interests.traveling')}
+                                    </span>
+                                </div>
+                                <div className="interest-tag-wrap scroll-animate scroll-fade-up scroll-delay-300">
+                                    <span className="px-4 py-2 bg-white/10  rounded-full">
+                                        <i className="fas fa-music mr-2"></i>{t('info.interests.music')}
+                                    </span>
+                                </div>
                             </div>
                         </div>
 
