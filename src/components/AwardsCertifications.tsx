@@ -84,7 +84,7 @@ export default function AwardsCertifications() {
     return (
         <div ref={ref} className="w-full mb-6">
             {/* Section heading */}
-            <p className="text-xl uppercase tracking-widest text-purple-400/60 font-semibold mb-4">
+            <p className="text-xl text-purple-400 font-semibold mb-4 sm:mb-6 scroll-animate scroll-fade-up">
                 {t('info.awards')}
             </p>
 
@@ -117,17 +117,17 @@ export default function AwardsCertifications() {
                                     <span className="text-white text-sm font-semibold leading-snug truncate">
                                         {title}
                                         {item.project && (
-                                            <span className="text-white/40 font-normal"> · {item.project}</span>
+                                            <span className="text-gray-300 font-normal"> · {item.project}</span>
                                         )}
                                     </span>
 
                                     {/* Issuer · Type label · Date */}
                                     <span className="text-gray-400 text-xs mt-0.5 truncate">
                                         {issuer}
-                                        <span className="text-white/20 mx-1">·</span>
-                                        <span className={accent.meta}>{label}</span>
-                                        <span className="text-white/20 mx-1">·</span>
+                                        <span className="mx-1">·</span>
                                         {date}
+                                        <span className="mx-1">·</span>
+                                        <span className={accent.meta}>{label}</span>
                                     </span>
                                 </div>
                             </motion.div>
