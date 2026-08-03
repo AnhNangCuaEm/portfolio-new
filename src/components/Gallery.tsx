@@ -78,6 +78,25 @@ function NavButton({
 
 // --- Lightbox ----------------------------------------------------------------
 
+// --- LightboxSkeleton -------------------------------------------------------
+
+function LightboxSkeleton({ visible }: { visible: boolean }) {
+    return (
+        <div
+            aria-hidden="true"
+            className={`absolute inset-0 z-10 rounded-2xl transition-opacity duration-500 ${visible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                }`}
+            style={{
+                background: 'linear-gradient(110deg, rgba(255,255,255,0.04) 25%, rgba(255,255,255,0.12) 50%, rgba(255,255,255,0.04) 75%)',
+                backgroundSize: '200% 100%',
+                animation: visible ? 'skeleton-shimmer 2.5s infinite linear' : 'none',
+            }}
+        />
+    );
+}
+
+// --- Lightbox ----------------------------------------------------------------
+
 function Lightbox({
     image,
     images,
@@ -89,6 +108,7 @@ function Lightbox({
     onClose: () => void;
     onNavigate: (next: GalleryImage) => void;
 }) {
+    const [lightboxLoaded, setLightboxLoaded] = useState(false);
     const currentIndex = images.findIndex((img) => img.id === image.id);
     const hasPrev = currentIndex > 0;
     const hasNext = currentIndex < images.length - 1;
@@ -115,6 +135,7 @@ function Lightbox({
         document.body.style.overflow = 'hidden';
         return () => { document.body.style.overflow = ''; };
     }, []);
+
 
     // Compute image dimensions: capped at 70vh, preserving native aspect ratio.
     // width = min(available_width, 70vh * aspectRatio)
@@ -164,14 +185,18 @@ function Lightbox({
                     }}
                     transition={{ type: 'spring', stiffness: 350, damping: 38 }}
                 >
+                    {/* Skeleton shimmer for lightbox */}
+                    <LightboxSkeleton visible={!lightboxLoaded} />
                     <Image
                         unoptimized
                         src={`${image.src}`}
                         alt={image.caption || image.location || image.id}
                         fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
-                        className="object-cover"
+                        className={`object-cover transition-opacity duration-500 ${lightboxLoaded ? 'opacity-100' : 'opacity-0'
+                            }`}
                         priority
+                        onLoad={() => setLightboxLoaded(true)}
                     />
                 </motion.div>
 
@@ -238,6 +263,8 @@ function GalleryCard({
     index: number;
     onClick: () => void;
 }) {
+    const [loaded, setLoaded] = useState(false);
+
     return (
         <motion.article
             id={`thumb-${image.id}`}
@@ -263,13 +290,27 @@ function GalleryCard({
                 className="relative w-full aspect-4/3 overflow-hidden rounded-xl"
                 transition={{ type: 'spring', stiffness: 350, damping: 38 }}
             >
+                {/* Skeleton shimmer — visible until image loads */}
+                <div
+                    aria-hidden="true"
+                    className={`absolute inset-0 z-10 bg-white/5 animate-pulse transition-opacity duration-500 ${loaded ? 'opacity-0 pointer-events-none' : 'opacity-100'
+                        }`}
+                    style={{
+                        background: 'linear-gradient(110deg, rgba(255,255,255,0.04) 25%, rgba(255,255,255,0.10) 50%, rgba(255,255,255,0.04) 75%)',
+                        backgroundSize: '200% 100%',
+                        animation: loaded ? 'none' : 'skeleton-shimmer 1.5s infinite linear',
+                    }}
+                />
+
                 <Image
                     src={image.src}
                     alt={image.caption || image.location || `Photo ${index + 1}`}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.06]"
+                    className={`object-cover transition-all duration-500 ease-out group-hover:scale-[1.06] ${loaded ? 'opacity-100 scale-100' : 'opacity-0 scale-[1.02]'
+                        }`}
                     quality={75}
+                    onLoad={() => setLoaded(true)}
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                 {image.location && (
@@ -321,7 +362,7 @@ export default function Gallery({ images }: GalleryProps) {
             <AnimatePresence>
                 {selectedImage && (
                     <Lightbox
-                        key="lightbox"
+                        key={selectedImage.id}
                         image={selectedImage}
                         images={shuffled}
                         onClose={close}

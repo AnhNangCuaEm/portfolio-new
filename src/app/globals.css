@@ -234,3 +234,9 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(142, 142, 142);
 }
+
+/* Gallery skeleton shimmer */
+@keyframes skeleton-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
