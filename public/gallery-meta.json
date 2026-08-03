@@ -1,0 +1,56 @@
+[
+    {
+        "id": "img_001",
+        "src": "dummy.jpg",
+        "location": "Tokai, Aichi, Japan",
+        "date": "2026-08-03",
+        "caption": "Hoàng hôn nhẹ nhàng sau một ngày code căng thẳng.",
+        "width": 1200,
+        "height": 900
+    },
+    {
+        "id": "img_002",
+        "src": "dummy.jpg",
+        "location": null,
+        "date": "2026-07-15",
+        "caption": "",
+        "width": 1200,
+        "height": 900
+    },
+    {
+        "id": "img_003",
+        "src": "dummy.jpg",
+        "location": null,
+        "date": "2026-07-15",
+        "caption": "",
+        "width": 1200,
+        "height": 900
+    },
+    {
+        "id": "img_004",
+        "src": "dummy3.jpg",
+        "location": null,
+        "date": "2026-07-15",
+        "caption": "",
+        "width": 450,
+        "height": 800
+    },
+    {
+        "id": "img_005",
+        "src": "dummy3.jpg",
+        "location": null,
+        "date": "2026-07-15",
+        "caption": "",
+        "width": 450,
+        "height": 800
+    },
+    {
+        "id": "img_006",
+        "src": "dummy.jpg",
+        "location": null,
+        "date": "2026-07-15",
+        "caption": "",
+        "width": 1200,
+        "height": 900
+    }
+]
