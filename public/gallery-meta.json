@@ -1,56 +1,74 @@
 [
-    {
-        "id": "img_001",
-        "src": "dummy.jpg",
-        "location": "Tokai, Aichi, Japan",
-        "date": "2026-08-03",
-        "caption": "Hoàng hôn nhẹ nhàng sau một ngày code căng thẳng.",
-        "width": 1200,
-        "height": 900
-    },
-    {
-        "id": "img_002",
-        "src": "dummy.jpg",
-        "location": null,
-        "date": "2026-07-15",
-        "caption": "",
-        "width": 1200,
-        "height": 900
-    },
-    {
-        "id": "img_003",
-        "src": "dummy.jpg",
-        "location": null,
-        "date": "2026-07-15",
-        "caption": "",
-        "width": 1200,
-        "height": 900
-    },
-    {
-        "id": "img_004",
-        "src": "dummy3.jpg",
-        "location": null,
-        "date": "2026-07-15",
-        "caption": "",
-        "width": 450,
-        "height": 800
-    },
-    {
-        "id": "img_005",
-        "src": "dummy3.jpg",
-        "location": null,
-        "date": "2026-07-15",
-        "caption": "",
-        "width": 450,
-        "height": 800
-    },
-    {
-        "id": "img_006",
-        "src": "dummy.jpg",
-        "location": null,
-        "date": "2026-07-15",
-        "caption": "",
-        "width": 1200,
-        "height": 900
-    }
+  {
+    "id": "img_IMG_0398",
+    "src": "/gallery/IMG_0398.jpg",
+    "date": "2022-12-07",
+    "location": "Nagasaki, Japan",
+    "width": 1134,
+    "height": 2016,
+    "caption": ""
+  },
+  {
+    "id": "img_IMG_0400",
+    "src": "/gallery/IMG_0400.jpg",
+    "date": "2022-12-07",
+    "location": "Nagasaki, Japan",
+    "width": 1134,
+    "height": 2016,
+    "caption": ""
+  },
+  {
+    "id": "img_IMG_0453",
+    "src": "/gallery/IMG_0453.jpg",
+    "date": "2022-12-07",
+    "location": "Higashi-Sonogi, Japan",
+    "width": 2016,
+    "height": 1134,
+    "caption": ""
+  },
+  {
+    "id": "img_IMG_0462",
+    "src": "/gallery/IMG_0462.jpg",
+    "date": "2022-12-07",
+    "location": "Fukuoka, Japan",
+    "width": 2016,
+    "height": 1134,
+    "caption": ""
+  },
+  {
+    "id": "img_IMG_0720",
+    "src": "/gallery/IMG_0720.jpg",
+    "date": "2023-01-04",
+    "location": "Togitsu, Japan",
+    "width": 4032,
+    "height": 3024,
+    "caption": ""
+  },
+  {
+    "id": "img_IMG_1309",
+    "src": "/gallery/IMG_1309.jpg",
+    "date": "2023-06-24",
+    "location": "Hamamatsu, Japan",
+    "width": 2016,
+    "height": 1512,
+    "caption": ""
+  },
+  {
+    "id": "img_IMG_2239",
+    "src": "/gallery/IMG_2239.jpg",
+    "date": "2024-07-02",
+    "location": "Shinjuku, Japan",
+    "width": 2016,
+    "height": 1512,
+    "caption": ""
+  },
+  {
+    "id": "img_IMG_4014",
+    "src": "/gallery/IMG_4014.jpg",
+    "date": "2024-07-01",
+    "location": "Shinjuku, Japan",
+    "width": 2016,
+    "height": 1512,
+    "caption": ""
+  }
 ]

@@ -165,7 +165,7 @@ function Lightbox({
                     transition={{ type: 'spring', stiffness: 350, damping: 38 }}
                 >
                     <Image
-                        src={`/${image.src}`}
+                        src={`${image.src}`}
                         alt={image.caption || image.location || image.id}
                         fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
@@ -263,7 +263,7 @@ function GalleryCard({
                 transition={{ type: 'spring', stiffness: 350, damping: 38 }}
             >
                 <Image
-                    src={`/${image.src}`}
+                    src={image.src}
                     alt={image.caption || image.location || `Photo ${index + 1}`}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
