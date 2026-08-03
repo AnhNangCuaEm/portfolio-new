@@ -2,55 +2,146 @@
 # This file helps AI models understand the structure and content of this website
 
 Site-Name: Portfolio Website
-Site-Description: A professional portfolio showcasing web development projects and skills
-Site-Author: Anh Nang Cua Em
-Primary-Language: en, ja
+Site-Description: A personal portfolio by Le Ly Thanh Hai (Le Ly), showcasing web development projects, skills, awards, and contact information
+Site-Author: Le Ly Thanh Hai
+Primary-Language: ja (default), en, vi
 Repository: https://github.com/AnhNangCuaEm/portfolio-new
 
-# Main Pages
+# Main Pages (locale-prefixed routes: /ja, /en, /vi)
 Pages:
-  - Home: / - Main landing page
-  - Projects: /projects - Showcase of web development projects
-  - Skills: /skills - Technical skills and expertise
-  - Awards: /awards - Achievements and recognitions
-  - Contact: /contact - Contact form for inquiries
+  - Home:    /{locale}          - Landing page with hero, about section, skills, and awards overview
+  - Projects: /{locale}/projects - Full showcase of web development projects with modal details and gallery
+  - Gallery:  /{locale}/gallery  - Animated image gallery
+  - Contact:  /{locale}/contact  - Contact form powered by EmailJS
+
+# Supported Locales
+Locales:
+  - ja (Japanese) — default locale
+  - en (English)
+  - vi (Vietnamese)
 
 # Project Information
+# All projects are educational/school projects by Le Ly Thanh Hai (HAL Tokyo - WEB Department, 2024–2026)
 Projects:
-  - Virtual Festival
-  - Labaie
-  - Fuwari
-  - Artist Site
-  - Aura Flow
-  - Boulangerie
-  - Cafe Site
-  - Cocoon Site
+  - Fuwari Sweet Shop
+      url: https://fuwari.anhnangcuaem.com
+      github: https://github.com/AnhNangCuaEm/fuwari
+      tech: Next.js, Tailwind CSS, Three.js, Stripe, PostgreSQL, Framer Motion
+      note: Group project — E-commerce site with 3D product viewer and Stripe payment (test only)
+
+  - Auraflow
+      url: https://auraflow.anhnangcuaem.com
+      github: https://github.com/AnhNangCuaEm/AuraFlow
+      tech: Next.js, Tailwind CSS, TypeScript
+      note: Music player web app — received Innovation Award (独創力賞) at HAL Tokyo (2025-09)
+
   - Deep Shinjuku
-  - Green Space
-  - Kindergarten
-  - Movie Site
-  - Music Player
+      url: https://deepshinjuku.anhnangcuaem.com
+      github: https://github.com/AnhNangCuaEm/Deep-Shinjuku
+      tech: PHP, JavaScript, CSS, HTML
+      note: Immersive web experience about Shinjuku urban legends (Japanese only). Group project.
+
+  - Virtual Festival
+      url: https://halgraduation.anhnangcuaem.com
+      github: https://github.com/AnhNangCuaEm/virtual-festival
+      tech: Next.js, Tailwind CSS, Phaser.js, Socket.IO, Tiled Map Editor
+      note: Graduation project — multiplayer web game with QR-based phone controller. Received Bronze Award (銅賞) at HAL Tokyo (2026-02)
+
   - Tachikawa City
+      url: https://tachikawacity.anhnangcuaem.com
+      github: https://github.com/AnhNangCuaEm/TachikawaCity
+      tech: JavaScript, HTML, Tailwind CSS
+      note: Information site about Tachikawa City with 2-column layout
 
-# Technical Stack
+  - Kindergarten
+      url: https://kindergarten.anhnangcuaem.com
+      github: https://github.com/AnhNangCuaEm/kindergarten
+      tech: Next.js, Tailwind CSS
+      note: Frontend design for a kindergarten information website
+
+  - Grande Maison Labaie
+      url: https://labaie.anhnangcuaem.com
+      github: https://github.com/AnhNangCuaEm/labaie
+      tech: Next.js, Sass, GSAP
+      note: Brand site for a French restaurant — first Sass project
+
+  - Music Player
+      url: https://musicplayer.anhnangcuaem.com
+      github: https://github.com/AnhNangCuaEm/MusicPlayer
+      tech: JavaScript, HTML, CSS
+      note: Smartphone music player web app with real-time lyric highlighting
+
+  - Green Space
+      github: https://github.com/AnhNangCuaEm/GreenSpace
+      tech: PHP, JavaScript, MySQL, CSS, HTML
+      note: Portal site for parks and events with original photography. Received Bronze Award (銅賞) at HAL Tokyo (2025-03)
+
+  - Boulangeries
+      github: https://github.com/AnhNangCuaEm/Boulangerie
+      tech: JavaScript, Tailwind CSS, HTML
+      note: Frontend design for a bakery in Nishi-Shinjuku. Received Innovation Award (独創力賞) at HAL Tokyo (2025-02)
+
+  - Artist
+      tech: JavaScript, CSS, HTML
+      note: First frontend website — artist portfolio with minimal-scroll layout
+
+  - CocoonTower
+      tech: CSS, HTML
+      note: Information site about Cocoon Tower (HAL Tokyo building). Group project.
+
+# Awards & Certificates
+Awards:
+  - IT Passport (ITパスポート試験) — IPA · Japan — 2026-08 [Certificate]
+  - Bronze Award (銅賞) for Virtual Festival — HAL Tokyo — 2026-02 [Award]
+  - Innovation Award (独創力賞) for AuraFlow — HAL Tokyo — 2025-09 [Award]
+  - Bronze Award (銅賞) for Green Space — HAL Tokyo — 2025-03 [Award]
+  - Innovation Award (独創力賞) for Boulangerie Site — HAL Tokyo — 2025-02 [Award]
+  - Web Designer Basic (Webデザイナー ベーシック) — CG-ARTS · Japan — 2024-09 [Certificate]
+
+# Technical Skills
+Skills:
+  Web:
+    - HTML (90%), CSS (90%), Tailwind CSS (90%)
+    - JavaScript (60%), TypeScript (60%)
+    - Next.js (70%), PHP (40%), Laravel (40%)
+    - MySQL (60%), PostgreSQL (60%)
+    - WordPress (80%), Sass (50%)
+  Design:
+    - Figma (70%), Adobe Photoshop (60%), Adobe Illustrator (60%), UI/UX Design (60%)
+  Languages:
+    - Vietnamese (native), Japanese (70%), English (50%)
+
+# Technical Stack (This Portfolio Site)
 Technologies:
-  - Frontend: Next.js, React, TypeScript
-  - Styling: Tailwind CSS, PostCSS
-  - Internationalization: i18n (English, Japanese)
-  - UI Components: Glass-morphism design components
-  - Animation: Scroll animations
+  - Framework: Next.js 16 (App Router)
+  - Runtime: React 19
+  - Language: TypeScript
+  - Styling: Tailwind CSS v4, PostCSS
+  - Internationalization: next-intl (ja / en / vi), localePrefix always
+  - Animation: Framer Motion, GSAP
+  - 3D/WebGL: OGL (Galaxy background)
+  - UI Libraries: Lucide React, FontAwesome, Hamburger React
+  - Gallery: PhotoSwipe
+  - Contact: EmailJS (@emailjs/browser)
+  - Analytics: Vercel Analytics
+  - Fonts: Montserrat, Noto Sans JP (Google Fonts)
+  - Design Pattern: Glassmorphism
 
-# Content
-This portfolio demonstrates expertise in:
-- Full-stack web development
-- Responsive design
-- UI/UX implementation
-- Project showcase and documentation
+# Site Architecture
+- Locale-based routing via Next.js App Router: /[locale]/...
+- Default locale: Japanese (ja)
+- Static params generated for all locales at build time
+- Galaxy WebGL background (fixed, full-screen, OGL-powered)
+- Floating navbar (desktop) + Hamburger menu (mobile)
+- Project data served from /public/projects.json
+- Skills data served from /public/skills.json
+- Awards data served from /public/awards.json
+- Gallery metadata from /public/gallery-meta.json
 
-# Accessibility
-- Multi-language support (English, Japanese)
-- Responsive design
-- Accessible navigation
+# Author Background
+Le Ly Thanh Hai is a Vietnamese web developer studying at HAL Tokyo (WEB Department, 2024–2026).
+Interests: Photography, Traveling, Music.
+Personal projects are available at: https://anhnangcuaem.com (domain pattern)
 
 # Contact
-For inquiries, please use the contact form on the website.
+Use the contact form at /{locale}/contact. Powered by EmailJS.
