@@ -273,7 +273,7 @@ const ContactForm: React.FC = () => {
     };
 
     return (
-        <div className="w-full bg-white/5 backdrop-blur-xs rounded-3xl sm:rounded-4xl p-4 sm:p-8 border border-white/20 shadow-2xl scroll-animate scroll-fade-up scroll-delay-200">
+        <div className="w-full backdrop-blur-sm rounded-3xl sm:rounded-4xl p-4 sm:p-8 border border-white/20 shadow-2xl scroll-animate scroll-fade-up scroll-delay-200">
             <form onSubmit={handleSubmit} className="space-y-6">
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                     {/* Name Field */}
