@@ -1,74 +1,233 @@
 [
   {
+    "id": "img_IMG_0016",
+    "src": "/gallery/IMG_0016.jpg",
+    "date": "2026-02-18",
+    "location": "Shinjuku, Japan",
+    "camera": "iPhone 16 Pro Max 6.765mm f/1.78",
+    "iso": 400,
+    "width": 1512,
+    "height": 2016,
+    "caption": "Cocoon Tower"
+  },
+  {
+    "id": "img_IMG_0046",
+    "src": "/gallery/IMG_0046.jpg",
+    "date": "2026-03-12",
+    "location": "Minamiuonuma, Japan",
+    "camera": "iPhone 16 Pro Max 6.765mm f/1.78",
+    "iso": 64,
+    "width": 2856,
+    "height": 2142,
+    "caption": "Ski fields"
+  },
+  {
+    "id": "img_IMG_0141",
+    "src": "/gallery/IMG_0141.jpg",
+    "date": "2026-04-20",
+    "location": "Nagoya, Japan",
+    "camera": "iPhone 16 Pro Max 6.765mm f/1.78",
+    "iso": 64,
+    "width": 1394,
+    "height": 1859,
+    "caption": "Nagoya from tower"
+  },
+  {
+    "id": "img_IMG_0209",
+    "src": "/gallery/IMG_0209.jpg",
+    "date": "2026-05-18",
+    "location": "Hamamatsu, Japan",
+    "camera": "iPhone 16 Pro Max 6.765mm f/1.78",
+    "iso": 800,
+    "width": 3024,
+    "height": 4032,
+    "caption": "Night Galaxy"
+  },
+  {
+    "id": "img_IMG_0336",
+    "src": "/gallery/IMG_0336.jpg",
+    "date": "2026-06-21",
+    "location": "Tokai, Japan",
+    "camera": "iPhone 16 Pro Max 6.765mm f/1.78",
+    "iso": 160,
+    "width": 2016,
+    "height": 1512,
+    "caption": "Shurakuen Park"
+  },
+  {
     "id": "img_IMG_0398",
     "src": "/gallery/IMG_0398.jpg",
     "date": "2022-12-07",
     "location": "Nagasaki, Japan",
+    "camera": "iPhone 13 Pro Max 5.7mm f/1.5",
+    "iso": 50,
     "width": 1134,
     "height": 2016,
-    "caption": ""
+    "caption": "Megane-bashi Bridge"
   },
   {
     "id": "img_IMG_0400",
     "src": "/gallery/IMG_0400.jpg",
     "date": "2022-12-07",
     "location": "Nagasaki, Japan",
+    "camera": "iPhone 13 Pro Max 5.7mm f/1.5",
+    "iso": 50,
     "width": 1134,
     "height": 2016,
-    "caption": ""
+    "caption": "Heart stone"
   },
   {
     "id": "img_IMG_0453",
     "src": "/gallery/IMG_0453.jpg",
     "date": "2022-12-07",
     "location": "Higashi-Sonogi, Japan",
+    "camera": "iPhone 13 Pro Max 1.57mm f/1.8",
+    "iso": 32,
     "width": 2016,
     "height": 1134,
-    "caption": ""
+    "caption": "Just a sunset"
   },
   {
     "id": "img_IMG_0462",
     "src": "/gallery/IMG_0462.jpg",
     "date": "2022-12-07",
     "location": "Fukuoka, Japan",
+    "camera": "iPhone 13 Pro Max 5.7mm f/1.5",
+    "iso": 320,
     "width": 2016,
     "height": 1134,
-    "caption": ""
+    "caption": "Mizuho PayPay Dome"
   },
   {
     "id": "img_IMG_0720",
     "src": "/gallery/IMG_0720.jpg",
     "date": "2023-01-04",
     "location": "Togitsu, Japan",
+    "camera": "iPhone 13 Pro Max 5.7mm f/1.5",
+    "iso": 500,
     "width": 4032,
     "height": 3024,
-    "caption": ""
+    "caption": "Sunrise from airplane"
   },
   {
     "id": "img_IMG_1309",
     "src": "/gallery/IMG_1309.jpg",
     "date": "2023-06-24",
     "location": "Hamamatsu, Japan",
+    "camera": "iPhone 13 Pro Max 5.7mm f/1.5",
+    "iso": 80,
     "width": 2016,
     "height": 1512,
-    "caption": ""
+    "caption": "Fantastic afternoon sky"
   },
   {
     "id": "img_IMG_2239",
     "src": "/gallery/IMG_2239.jpg",
     "date": "2024-07-02",
     "location": "Shinjuku, Japan",
+    "camera": "iPhone 13 Pro Max 5.7mm f/1.5",
+    "iso": 50,
     "width": 2016,
     "height": 1512,
-    "caption": ""
+    "caption": "Shinjuku Station"
+  },
+  {
+    "id": "img_IMG_2743",
+    "src": "/gallery/IMG_2743.jpg",
+    "date": "2024-12-25",
+    "location": "Shinjuku, Japan",
+    "camera": "iPhone 16 Pro Max 6.765mm f/1.78",
+    "iso": 100,
+    "width": 2016,
+    "height": 1512,
+    "caption": "Shinjuku Central Park"
+  },
+  {
+    "id": "img_IMG_2764",
+    "src": "/gallery/IMG_2764.jpg",
+    "date": "2024-12-25",
+    "location": "Shinjuku, Japan",
+    "camera": "iPhone 16 Pro Max 15.66mm f/2.8",
+    "iso": 50,
+    "width": 2016,
+    "height": 1512,
+    "caption": "A large tree in Showa Kinen Park"
+  },
+  {
+    "id": "img_IMG_2791",
+    "src": "/gallery/IMG_2791.jpg",
+    "date": "2024-12-25",
+    "location": "Shinjuku, Japan",
+    "camera": "iPhone 16 Pro Max 15.66mm f/2.8",
+    "iso": 64,
+    "width": 1512,
+    "height": 2016,
+    "caption": "Autumn avenue"
+  },
+  {
+    "id": "img_IMG_2795",
+    "src": "/gallery/IMG_2795.jpg",
+    "date": "2024-12-25",
+    "location": "Shinjuku, Japan",
+    "camera": "iPhone 16 Pro Max 6.765mm f/1.78",
+    "iso": 125,
+    "width": 2016,
+    "height": 1512,
+    "caption": "A Lake inside Shinjuku Gyoen"
+  },
+  {
+    "id": "img_IMG_2968",
+    "src": "/gallery/IMG_2968.jpg",
+    "date": "2025-02-01",
+    "location": "Minato, Japan",
+    "camera": "iPhone 16 Pro Max 2.22mm f/2.2",
+    "iso": 50,
+    "width": 2016,
+    "height": 1512,
+    "caption": "Tokyo Tower"
+  },
+  {
+    "id": "img_IMG_3163",
+    "src": "/gallery/IMG_3163.jpg",
+    "date": "2025-06-06",
+    "location": "Tachikawa, Japan",
+    "camera": "iPhone 16 Pro Max 6.765mm f/1.78",
+    "iso": 80,
+    "width": 2856,
+    "height": 2142,
+    "caption": "Tama monorail"
+  },
+  {
+    "id": "img_IMG_3168",
+    "src": "/gallery/IMG_3168.jpg",
+    "date": "2025-06-06",
+    "location": "Tachikawa, Japan",
+    "camera": "iPhone 16 Pro Max 6.765mm f/1.78",
+    "iso": 64,
+    "width": 2016,
+    "height": 1512,
+    "caption": "Afternoon in Tachikawa"
+  },
+  {
+    "id": "img_IMG_3391",
+    "src": "/gallery/IMG_3391.jpg",
+    "date": "2025-12-31",
+    "location": "Tachikawa, Japan",
+    "camera": "iPhone 16 Pro Max 120mm f/2.8",
+    "iso": 250,
+    "width": 1512,
+    "height": 2016,
+    "caption": "Blue rock thrush"
   },
   {
     "id": "img_IMG_4014",
     "src": "/gallery/IMG_4014.jpg",
     "date": "2024-07-01",
     "location": "Shinjuku, Japan",
+    "camera": "iPhone 12 1.55mm f/2.4",
+    "iso": 25,
     "width": 2016,
     "height": 1512,
-    "caption": ""
+    "caption": "Shinjuku in rainy day"
   }
 ]

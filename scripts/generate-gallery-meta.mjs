@@ -148,9 +148,17 @@ async function processImage(filePath, index, total) {
   let date = null;
   let location = null;
 
+  let camera = null;
+  let iso = null;
+
   try {
     const exif = await exifr.parse(filePath, {
-      pick: ["DateTimeOriginal", "CreateDate", "GPSLatitude", "GPSLongitude", "GPSLatitudeRef", "GPSLongitudeRef"],
+      pick: [
+        "DateTimeOriginal", "CreateDate",
+        "GPSLatitude", "GPSLongitude", "GPSLatitudeRef", "GPSLongitudeRef",
+        "Make", "Model", "LensModel",
+        "ISO", "ISOSpeedRatings",
+      ],
     });
 
     if (exif) {
@@ -178,8 +186,44 @@ async function processImage(filePath, index, total) {
       } else {
         console.log(`    ℹ Không có GPS → null`);
       }
+
+      // --- Thiết bị chụp ---
+      const make = (exif.Make || "").trim();
+      const model = (exif.Model || "").trim();
+      const lens = (exif.LensModel || "").trim();
+
+      // Tránh lặp lại tên hãng nếu model đã chứa hãng (vd: "SONY ILCE-7M4")
+      let bodyStr = null;
+      if (model) {
+        const modelUpper = model.toUpperCase();
+        const makeUpper = make.toUpperCase();
+        bodyStr = (make && !modelUpper.startsWith(makeUpper)) ? `${make} ${model}` : model;
+      } else if (make) {
+        bodyStr = make;
+      }
+
+      if (bodyStr || lens) {
+        const isAppleLens = lens && / back .+ camera /i.test(lens);
+        if (isAppleLens) {
+          camera = lens.replace(/ back .+? camera /i, " ").trim() || null;
+        } else {
+          camera = [bodyStr, lens].filter(Boolean).join(" + ") || null;
+        }
+        console.log(`    ✓ Thiết bị: ${camera}`);
+      } else {
+        console.log(`    ℹ Không có thông tin thiết bị → null`);
+      }
+
+      // --- ISO ---
+      const isoRaw = exif.ISO ?? exif.ISOSpeedRatings ?? null;
+      iso = typeof isoRaw === "number" ? isoRaw : (Array.isArray(isoRaw) ? isoRaw[0] ?? null : null);
+      if (iso !== null) {
+        console.log(`    ✓ ISO: ${iso}`);
+      } else {
+        console.log(`    ℹ Không có ISO → null`);
+      }
     } else {
-      console.log(`    ℹ Không có dữ liệu EXIF → date & location = null`);
+      console.log(`    ℹ Không có dữ liệu EXIF → date, location & camera = null`);
     }
   } catch (err) {
     console.warn(`    ⚠ Lỗi đọc EXIF: ${err.message}`);
@@ -190,6 +234,8 @@ async function processImage(filePath, index, total) {
     src,
     date,
     location,
+    camera,
+    iso,
     width,
     height,
     caption: "",
@@ -248,10 +294,12 @@ async function main() {
   // Tóm tắt
   const withDate = results.filter((r) => r.date !== null).length;
   const withLocation = results.filter((r) => r.location !== null).length;
+  const withCamera = results.filter((r) => r.camera !== null).length;
   console.log(`\n📊 Thống kê:`);
-  console.log(`   • Có ngày chụp (date)  : ${withDate}/${results.length}`);
-  console.log(`   • Có địa danh (location): ${withLocation}/${results.length}`);
-  console.log(`   • Cần nhập caption tay  : ${results.length} ảnh`);
+  console.log(`   • Có ngày chụp (date)   : ${withDate}/${results.length}`);
+  console.log(`   • Có địa danh (location) : ${withLocation}/${results.length}`);
+  console.log(`   • Có thiết bị (camera)   : ${withCamera}/${results.length}`);
+  console.log(`   • Cần nhập caption tay   : ${results.length} ảnh`);
   console.log("──────────────────────────────────────────────\n");
 }
 

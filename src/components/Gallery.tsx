@@ -3,7 +3,7 @@
 import { useState, useCallback, useEffect, useMemo } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
-import { MapPin, Calendar, ChevronLeft, ChevronRight, X } from 'lucide-react';
+import { MapPin, Calendar, ChevronLeft, ChevronRight, X, Camera } from 'lucide-react';
 
 // --- Types -------------------------------------------------------------------
 
@@ -12,6 +12,8 @@ export interface GalleryImage {
     src: string;
     location: string | null;
     date: string;
+    camera: string | null;
+    iso: number | null;
     caption: string;
     width: number;
     height: number;
@@ -131,10 +133,7 @@ function Lightbox({
         return () => window.removeEventListener('keydown', handler);
     }, [onClose, goNext, goPrev]);
 
-    useEffect(() => {
-        document.body.style.overflow = 'hidden';
-        return () => { document.body.style.overflow = ''; };
-    }, []);
+
 
 
     // Compute image dimensions: capped at 70vh, preserving native aspect ratio.
@@ -210,9 +209,21 @@ function Lightbox({
                     className="w-full flex flex-col gap-1.5"
                 >
                     {image.caption && (
-                        <p className="text-white/90 text-base sm:text-lg font-light leading-snug tracking-wide">
+                        <p className="text-white/90 text-base sm:text-lg font-bold leading-snug tracking-wide">
                             {image.caption}
                         </p>
+                    )}
+                    {(image.camera || image.iso !== null) && (
+                        <span className="inline-flex items-center gap-2 text-white/50 text-xs font-mono tracking-wide">
+                            <Camera className="w-3.5 h-3.5 shrink-0" />
+                            {image.camera && <span>{image.camera}</span>}
+                            {image.iso !== null && (
+                                <span className="text-white/35">·</span>
+                            )}
+                            {image.iso !== null && (
+                                <span>ISO {image.iso}</span>
+                            )}
+                        </span>
                     )}
                     <div className="flex flex-wrap items-center justify-between gap-x-5 gap-y-1">
                         <div className="flex flex-wrap items-center gap-x-5 gap-y-1">
@@ -336,6 +347,20 @@ export default function Gallery({ images }: GalleryProps) {
     }, []);
 
     const [selectedId, setSelectedId] = useState<string | null>(null);
+
+    // Lock body scroll whenever lightbox is open.
+    // Keeping this in the parent (not inside Lightbox) prevents the brief
+    // unlock/relock that happens when Lightbox remounts on navigation.
+    useEffect(() => {
+        if (!selectedId) return;
+        const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+        document.body.style.overflow = 'hidden';
+        document.body.style.paddingRight = `${scrollbarWidth}px`;
+        return () => {
+            document.body.style.overflow = '';
+            document.body.style.paddingRight = '';
+        };
+    }, [selectedId !== null]); // re-run only when open/close state changes, not on image switch
 
     const selectedImage = useMemo(
         () => shuffled.find((img) => img.id === selectedId) ?? null,
