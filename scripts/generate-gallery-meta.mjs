@@ -1,5 +1,5 @@
 /**
- * generate-gallery-meta.js
+ * generate-gallery-meta.mjs
  *
  * Script tự động quét thư mục ảnh gallery, bóc tách EXIF (ngày chụp, GPS),
  * reverse geocoding tọa độ → tên địa danh, đọc kích thước ảnh,
@@ -9,7 +9,7 @@
  *   npm install sharp exifr node-fetch@2
  *
  * Chạy:
- *   node scripts/generate-gallery-meta.js
+ *   node scripts/generate-gallery-meta.mjs
  */
 
 import sharp from "sharp";
