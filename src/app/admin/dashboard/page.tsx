@@ -507,8 +507,8 @@ export default function AdminDashboard() {
                 ) : <p className="text-gray-600 text-sm py-4 text-center">No project clicks yet</p>}
               </SectionCard>
 
-              {/* Top Photos Clicked */}
-              <SectionCard title="📸 Photos Clicked">
+              {/* Top Photos Viewed */}
+              <SectionCard title="📸 Photos Viewed">
                 {topPhotos.length > 0 ? (
                   <div className="space-y-2">
                     {topPhotos.map((p, i) => (
@@ -520,17 +520,17 @@ export default function AdminDashboard() {
                         </div>
                         <div className="flex items-center gap-1">
                           <span className="text-sm font-bold text-cyan-400">{p.clicks}</span>
-                          <span className="text-xs text-gray-600">clicks</span>
+                          <span className="text-xs text-gray-600">views</span>
                         </div>
                       </div>
                     ))}
                   </div>
-                ) : <p className="text-gray-600 text-sm py-4 text-center">No photo clicks yet</p>}
+                ) : <p className="text-gray-600 text-sm py-4 text-center">No photo views yet</p>}
               </SectionCard>
             </div>
 
             {/* All Event Components */}
-            <SectionCard title="All Click Events by Component">
+            <SectionCard title="All Events by Component">
               {topEvents.length > 0 ? (
                 <>
                   <ResponsiveContainer width="100%" height={250}>
@@ -539,7 +539,7 @@ export default function AdminDashboard() {
                       <XAxis dataKey="component" tick={{ fill: '#9ca3af', fontSize: 10 }} axisLine={false} tickLine={false} />
                       <YAxis tick={{ fill: '#6b7280', fontSize: 11 }} axisLine={false} tickLine={false} />
                       <Tooltip contentStyle={{ background: '#1a1a2e', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 8 }} />
-                      <Bar dataKey="count" name="Clicks" radius={[4, 4, 0, 0]}>
+                      <Bar dataKey="count" name="Events" radius={[4, 4, 0, 0]}>
                         {topEvents.map((_, i) => (
                           <Cell key={i} fill={COLORS[i % COLORS.length]} />
                         ))}
@@ -549,13 +549,15 @@ export default function AdminDashboard() {
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4">
                     {topEvents.map((e, i) => (
                       <div key={i} className="flex items-center justify-between bg-white/5 rounded-lg px-3 py-2">
-                        <span className="text-xs text-gray-400 truncate">{e.component}</span>
+                        <span className="text-xs text-gray-400 truncate">
+                          {e.component === 'gallery-photo-view' ? 'gallery-photo-view (view)' : e.component}
+                        </span>
                         <span className="text-sm font-bold ml-2" style={{ color: COLORS[i % COLORS.length] }}>{e.count}</span>
                       </div>
                     ))}
                   </div>
                 </>
-              ) : <p className="text-gray-600 text-sm py-4 text-center">No click events yet</p>}
+              ) : <p className="text-gray-600 text-sm py-4 text-center">No events yet</p>}
             </SectionCard>
           </div>
         )}

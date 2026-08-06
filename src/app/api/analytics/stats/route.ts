@@ -135,7 +135,7 @@ export async function GET(req: Request) {
         metadata->>'location' AS location,
         COUNT(*) AS clicks
       FROM events
-      WHERE component = 'gallery-photo'
+      WHERE component IN ('gallery-photo', 'gallery-photo-view')
         AND created_at >= NOW() - (${days} || ' days')::INTERVAL
       GROUP BY element_id, caption, location
       ORDER BY clicks DESC
