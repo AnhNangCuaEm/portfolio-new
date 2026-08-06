@@ -177,7 +177,7 @@ function StatCard({
     amber: 'from-amber-600/20 to-amber-800/10 border-amber-500/20',
   };
   return (
-    <div className={`rounded-2xl border bg-gradient-to-br p-5 ${colorMap[color]}`}>
+    <div className={`rounded-2xl border bg-linear-to-br p-5 ${colorMap[color]}`}>
       <div className="flex items-start justify-between">
         <div>
           <p className="text-xs text-gray-400 font-medium uppercase tracking-wider">{label}</p>
