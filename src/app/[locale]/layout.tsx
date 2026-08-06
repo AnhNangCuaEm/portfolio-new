@@ -53,32 +53,28 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className="scroll-smooth" data-scroll-behavior="smooth">
-      <body
-        className={`${montserrat.variable} ${notoSansJP.variable} antialiased`}
-      >
-        <NextIntlClientProvider messages={messages}>
-          {/* Galaxy background — fixed, full-screen, z below everything */}
-          <div className="fixed inset-0 w-full h-screen pointer-events-none" style={{ zIndex: -10 }}>
-            <Galaxy />
-          </div>
+    <NextIntlClientProvider messages={messages}>
+      <div className={`${montserrat.variable} ${notoSansJP.variable} antialiased`}>
+        {/* Galaxy background — fixed, full-screen, z below everything */}
+        <div className="fixed inset-0 w-full h-screen pointer-events-none" style={{ zIndex: -10 }}>
+          <Galaxy />
+        </div>
 
-          {/* Floating Navbar — desktop, fixed top-center, z-50 */}
-          <FloatingNavbar />
+        {/* Floating Navbar — desktop, fixed top-center, z-50 */}
+        <FloatingNavbar />
 
-          {/* Hamburger — mobile only (md:hidden inside) */}
-          <HamburgerMenu />
+        {/* Hamburger — mobile only (md:hidden inside) */}
+        <HamburgerMenu />
 
-          {/* Main content */}
-          <div className="relative z-10">
-            <PageWrapper>
-              <AnalyticsProvider />
-              {children}
-              <Analytics />
-            </PageWrapper>
-          </div>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+        {/* Main content */}
+        <div className="relative z-10">
+          <PageWrapper>
+            <AnalyticsProvider />
+            {children}
+            <Analytics />
+          </PageWrapper>
+        </div>
+      </div>
+    </NextIntlClientProvider>
   );
 }
