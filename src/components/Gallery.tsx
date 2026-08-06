@@ -4,6 +4,7 @@ import { useState, useCallback, useEffect, useMemo } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
 import { MapPin, Calendar, ChevronLeft, ChevronRight, X, Camera } from 'lucide-react';
+import { trackEvent } from '@/lib/analytics';
 
 // --- Types -------------------------------------------------------------------
 
@@ -367,7 +368,13 @@ export default function Gallery({ images }: GalleryProps) {
         [selectedId, shuffled],
     );
 
-    const open = useCallback((img: GalleryImage) => setSelectedId(img.id), []);
+    const open = useCallback((img: GalleryImage) => {
+        setSelectedId(img.id);
+        trackEvent('gallery-photo', img.id, {
+            caption: img.caption,
+            location: img.location,
+        });
+    }, []);
     const close = useCallback(() => setSelectedId(null), []);
     const handleNavigate = useCallback((next: GalleryImage) => setSelectedId(next.id), []);
 

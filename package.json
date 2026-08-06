@@ -12,17 +12,22 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@fortawesome/fontawesome-free": "^7.1.0",
+    "@neondatabase/serverless": "^1.1.0",
+    "@types/ua-parser-js": "^0.7.39",
     "@vercel/analytics": "^1.5.0",
     "framer-motion": "^12.23.24",
     "gsap": "^3.15.0",
     "hamburger-react": "^2.5.2",
+    "iron-session": "^8.0.4",
     "lucide-react": "^0.548.0",
     "next": "16.0.7",
     "next-intl": "^4.4.0",
     "ogl": "^1.0.11",
     "photoswipe": "^5.4.4",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "recharts": "^3.10.1",
+    "ua-parser-js": "^2.0.10"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

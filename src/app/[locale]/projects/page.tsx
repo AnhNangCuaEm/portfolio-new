@@ -3,6 +3,7 @@
 import { ProjectModal }  from "@/components";
 import { useLocale } from "next-intl";
 import { useState, useEffect } from "react";
+import { trackEvent } from "@/lib/analytics";
 
 interface Project {
     title: string;
@@ -49,6 +50,11 @@ export default function ProjectsPage() {
     const handleProjectClick = (project: Project) => {
         setSelectedProject(project);
         setIsModalOpen(true);
+        // Track project click
+        trackEvent('project-card', project.title, {
+            name: project.title,
+            technologies: project.technologies,
+        });
     };
 
     const handleCloseModal = () => {

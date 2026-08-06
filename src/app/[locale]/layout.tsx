@@ -9,6 +9,7 @@ import Galaxy from "@/components/Galaxy";
 import FloatingNavbar from "@/components/layout/FloatingNavbar";
 import HamburgerMenu from "@/components/layout/Hamburger";
 import { Analytics } from '@vercel/analytics/next';
+import AnalyticsProvider from "@/components/AnalyticsProvider";
 import "../globals.css";
 
 const montserrat = Montserrat({
@@ -71,6 +72,7 @@ export default async function LocaleLayout({
           {/* Main content */}
           <div className="relative z-10">
             <PageWrapper>
+              <AnalyticsProvider />
               {children}
               <Analytics />
             </PageWrapper>
