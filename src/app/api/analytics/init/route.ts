@@ -1,7 +1,16 @@
 import { sql } from '@/lib/db';
 import { NextResponse } from 'next/server';
+import { isAdminAuthenticated } from '@/lib/admin-session';
 
 export async function POST() {
+  if (process.env.NODE_ENV === 'production') {
+    return NextResponse.json({ error: 'Not found' }, { status: 404 });
+  }
+
+  if (!(await isAdminAuthenticated())) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
   try {
     // Create sessions table
     await sql`

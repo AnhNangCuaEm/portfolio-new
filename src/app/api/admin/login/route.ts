@@ -1,12 +1,5 @@
-import { getIronSession } from 'iron-session';
-import { cookies } from 'next/headers';
 import { NextRequest, NextResponse } from 'next/server';
-
-const sessionOptions = {
-  password: process.env.IRON_SESSION_SECRET || 'fallback-secret-32-chars-minimum!!',
-  cookieName: 'admin_session',
-  cookieOptions: { secure: process.env.NODE_ENV === 'production' },
-};
+import { getAdminSession } from '@/lib/admin-session';
 
 export async function POST(req: NextRequest) {
   try {
@@ -18,7 +11,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Invalid password' }, { status: 401 });
     }
 
-    const session = await getIronSession<{ isAdmin?: boolean }>(await cookies(), sessionOptions);
+    const session = await getAdminSession();
     session.isAdmin = true;
     await session.save();
 

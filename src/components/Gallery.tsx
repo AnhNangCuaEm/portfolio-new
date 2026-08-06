@@ -352,8 +352,9 @@ export default function Gallery({ images }: GalleryProps) {
     // Lock body scroll whenever lightbox is open.
     // Keeping this in the parent (not inside Lightbox) prevents the brief
     // unlock/relock that happens when Lightbox remounts on navigation.
+    const isLightboxOpen = selectedId !== null;
     useEffect(() => {
-        if (!selectedId) return;
+        if (!isLightboxOpen) return;
         const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
         document.body.style.overflow = 'hidden';
         document.body.style.paddingRight = `${scrollbarWidth}px`;
@@ -361,19 +362,26 @@ export default function Gallery({ images }: GalleryProps) {
             document.body.style.overflow = '';
             document.body.style.paddingRight = '';
         };
-    }, [selectedId !== null]); // re-run only when open/close state changes, not on image switch
+    }, [isLightboxOpen]); // re-run only when open/close state changes, not on image switch
 
     const selectedImage = useMemo(
         () => shuffled.find((img) => img.id === selectedId) ?? null,
         [selectedId, shuffled],
     );
 
+    useEffect(() => {
+        if (!selectedImage) return;
+
+        trackEvent('gallery-photo-view', selectedImage.id, {
+            caption: selectedImage.caption,
+            location: selectedImage.location,
+            position: shuffled.findIndex((img) => img.id === selectedImage.id) + 1,
+            total: shuffled.length,
+        });
+    }, [selectedImage, shuffled]);
+
     const open = useCallback((img: GalleryImage) => {
         setSelectedId(img.id);
-        trackEvent('gallery-photo', img.id, {
-            caption: img.caption,
-            location: img.location,
-        });
     }, []);
     const close = useCallback(() => setSelectedId(null), []);
     const handleNavigate = useCallback((next: GalleryImage) => setSelectedId(next.id), []);

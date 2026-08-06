@@ -1,25 +1,9 @@
 import { sql } from '@/lib/db';
-import { getIronSession } from 'iron-session';
-import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
-
-const sessionOptions = {
-  password: process.env.IRON_SESSION_SECRET || 'fallback-secret-32-chars-minimum!!',
-  cookieName: 'admin_session',
-  cookieOptions: { secure: process.env.NODE_ENV === 'production' },
-};
-
-async function isAuthenticated(): Promise<boolean> {
-  try {
-    const session = await getIronSession<{ isAdmin?: boolean }>(await cookies(), sessionOptions);
-    return session.isAdmin === true;
-  } catch {
-    return false;
-  }
-}
+import { isAdminAuthenticated } from '@/lib/admin-session';
 
 export async function GET(req: Request) {
-  if (!(await isAuthenticated())) {
+  if (!(await isAdminAuthenticated())) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
