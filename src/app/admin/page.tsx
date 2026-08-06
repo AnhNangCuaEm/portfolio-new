@@ -71,7 +71,7 @@ export default function AdminLoginPage() {
                 required
                 autoFocus
                 className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500
-                  focus:outline-none focus:border-purple-500/60 focus:bg-white/8 transition-all duration-200 text-sm"
+                  focus:outline-none focus:border-purple-500/60 focus:bg-white/10 transition-all duration-200 text-sm"
               />
             </div>
 

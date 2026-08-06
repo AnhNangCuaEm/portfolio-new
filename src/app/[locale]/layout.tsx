@@ -10,7 +10,6 @@ import FloatingNavbar from "@/components/layout/FloatingNavbar";
 import HamburgerMenu from "@/components/layout/Hamburger";
 import { Analytics } from '@vercel/analytics/next';
 import AnalyticsProvider from "@/components/AnalyticsProvider";
-import "../globals.css";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",

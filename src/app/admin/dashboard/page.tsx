@@ -97,6 +97,26 @@ interface StatsData {
   recentVisitors: RecentVisitor[];
 }
 
+const EMPTY_STATS: StatsData = {
+  overview: {
+    total_visitors: 0,
+    total_pageviews: 0,
+    visitors_today: 0,
+    visitors_week: 0,
+    avg_duration_seconds: 0,
+  },
+  dailyVisitors: [],
+  topPages: [],
+  devices: [],
+  browsers: [],
+  operatingSystems: [],
+  countries: [],
+  topEvents: [],
+  topProjects: [],
+  topPhotos: [],
+  recentVisitors: [],
+};
+
 // ---- Color Palette ----------------------------------------------------------
 
 const COLORS = ['#7c3aed', '#6366f1', '#06b6d4', '#10b981', '#f59e0b', '#ef4444', '#ec4899', '#84cc16'];
@@ -157,7 +177,7 @@ function StatCard({
     amber: 'from-amber-600/20 to-amber-800/10 border-amber-500/20',
   };
   return (
-    <div className={`rounded-2xl border bg-linear-to-br p-5 ${colorMap[color]}`}>
+    <div className={`rounded-2xl border bg-gradient-to-br p-5 ${colorMap[color]}`}>
       <div className="flex items-start justify-between">
         <div>
           <p className="text-xs text-gray-400 font-medium uppercase tracking-wider">{label}</p>
@@ -172,7 +192,7 @@ function StatCard({
 
 function SectionCard({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="rounded-2xl border border-white/10 p-5 bg-white/3">
+    <div className="rounded-2xl border border-white/10 p-5 bg-white/5">
       <h3 className="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-4">{title}</h3>
       {children}
     </div>
@@ -196,10 +216,27 @@ export default function AdminDashboard() {
         router.push('/admin');
         return;
       }
+      if (!res.ok) {
+        setData(EMPTY_STATS);
+        return;
+      }
       const json = await res.json();
-      setData(json);
+      setData({
+        overview: json.overview ?? EMPTY_STATS.overview,
+        dailyVisitors: Array.isArray(json.dailyVisitors) ? json.dailyVisitors : EMPTY_STATS.dailyVisitors,
+        topPages: Array.isArray(json.topPages) ? json.topPages : EMPTY_STATS.topPages,
+        devices: Array.isArray(json.devices) ? json.devices : EMPTY_STATS.devices,
+        browsers: Array.isArray(json.browsers) ? json.browsers : EMPTY_STATS.browsers,
+        operatingSystems: Array.isArray(json.operatingSystems) ? json.operatingSystems : EMPTY_STATS.operatingSystems,
+        countries: Array.isArray(json.countries) ? json.countries : EMPTY_STATS.countries,
+        topEvents: Array.isArray(json.topEvents) ? json.topEvents : EMPTY_STATS.topEvents,
+        topProjects: Array.isArray(json.topProjects) ? json.topProjects : EMPTY_STATS.topProjects,
+        topPhotos: Array.isArray(json.topPhotos) ? json.topPhotos : EMPTY_STATS.topPhotos,
+        recentVisitors: Array.isArray(json.recentVisitors) ? json.recentVisitors : EMPTY_STATS.recentVisitors,
+      });
     } catch (e) {
       console.error(e);
+      setData(EMPTY_STATS);
     } finally {
       setLoading(false);
     }
@@ -239,7 +276,7 @@ export default function AdminDashboard() {
   return (
     <div className="min-h-screen text-white" style={{ background: '#0a0a12' }}>
       {/* Navbar */}
-      <header className="sticky top-0 z-50 border-b border-white/8 bg-[#0a0a12]/80 backdrop-blur-xl px-6 py-4">
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0a12]/80 backdrop-blur-xl px-6 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-lg bg-purple-600/30 border border-purple-500/30 flex items-center justify-center">
@@ -299,7 +336,7 @@ export default function AdminDashboard() {
         </div>
 
         {/* Tabs */}
-        <div className="flex gap-1 border-b border-white/8">
+        <div className="flex gap-1 border-b border-white/10">
           {(['overview', 'events', 'visitors'] as const).map((tab) => (
             <button
               key={tab}
@@ -511,7 +548,7 @@ export default function AdminDashboard() {
                   </ResponsiveContainer>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4">
                     {topEvents.map((e, i) => (
-                      <div key={i} className="flex items-center justify-between bg-white/3 rounded-lg px-3 py-2">
+                      <div key={i} className="flex items-center justify-between bg-white/5 rounded-lg px-3 py-2">
                         <span className="text-xs text-gray-400 truncate">{e.component}</span>
                         <span className="text-sm font-bold ml-2" style={{ color: COLORS[i % COLORS.length] }}>{e.count}</span>
                       </div>
@@ -529,7 +566,7 @@ export default function AdminDashboard() {
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-white/8 text-left">
+                  <tr className="border-b border-white/10 text-left">
                     {['Time', 'Location', 'Device', 'Browser / OS', 'Referrer', 'Pages'].map((h) => (
                       <th key={h} className="pb-3 pr-4 text-xs text-gray-500 font-medium uppercase tracking-wider whitespace-nowrap">{h}</th>
                     ))}
@@ -537,7 +574,7 @@ export default function AdminDashboard() {
                 </thead>
                 <tbody>
                   {recentVisitors.length > 0 ? recentVisitors.map((v, i) => (
-                    <tr key={i} className="border-b border-white/5 last:border-0 hover:bg-white/2 transition-colors">
+                    <tr key={i} className="border-b border-white/5 last:border-0 hover:bg-white/5 transition-colors">
                       <td className="py-2.5 pr-4 text-gray-400 whitespace-nowrap text-xs">
                         {new Date(v.created_at).toLocaleString('en-US', {
                           month: 'short', day: 'numeric',

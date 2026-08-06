@@ -1,4 +1,5 @@
 import { cookies } from 'next/headers';
+import './globals.css';
 
 /**
  * Root layout — required by Next.js App Router.

@@ -15,7 +15,7 @@ export function getDb(): NeonQueryFunction<false, false> {
 }
 
 // Convenience proxy — use this like: await sql`SELECT 1`
-export const sql: NeonQueryFunction<false, false> = new Proxy({} as NeonQueryFunction<false, false>, {
+export const sql: NeonQueryFunction<false, false> = new Proxy((() => {}) as unknown as NeonQueryFunction<false, false>, {
   apply(_target, _thisArg, args) {
     return (getDb() as unknown as (...a: unknown[]) => unknown)(...args);
   },
