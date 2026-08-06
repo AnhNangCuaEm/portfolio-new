@@ -58,6 +58,6 @@ export default function middleware(req: NextRequest) {
 }
 
 export const config = {
-  // Match only internationalized pathnames, exclude /admin and /api
-  matcher: ['/', '/(ja|en|vi)/:path*', '/((?!admin|api|_next|favicon).*)'],
+  // Match only internationalized pathnames
+  matcher: ['/', '/(ja|en|vi)/:path*'],
 };
