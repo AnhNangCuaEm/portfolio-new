@@ -88,6 +88,17 @@
     "caption": "Just a sunset"
   },
   {
+    "id": "img_IMG_0458",
+    "src": "/gallery/IMG_0458.jpg",
+    "date": "2026-08-11",
+    "location": "Osaka, Japan",
+    "camera": "iPhone 16 Pro Max 15.66mm f/2.8",
+    "iso": 64,
+    "width": 2016,
+    "height": 1512,
+    "caption": "Osaka Castle"
+  },
+  {
     "id": "img_IMG_0462",
     "src": "/gallery/IMG_0462.jpg",
     "date": "2022-12-07",
@@ -97,6 +108,17 @@
     "width": 2016,
     "height": 1134,
     "caption": "Mizuho PayPay Dome"
+  },
+  {
+    "id": "img_IMG_0466",
+    "src": "/gallery/IMG_0466.jpg",
+    "date": "2026-08-11",
+    "location": "Osaka, Japan",
+    "camera": "iPhone 16 Pro Max 6.765mm f/1.78",
+    "iso": 500,
+    "width": 2016,
+    "height": 1512,
+    "caption": "Umeda Sky Building"
   },
   {
     "id": "img_IMG_0720",
@@ -186,6 +208,17 @@
     "height": 1512,
     "caption": "Tokyo Tower"
   },
+  {
+    "id": "img_IMG_3030",
+    "src": "/gallery/IMG_3030.jpg",
+    "date": "2025-03-05",
+    "location": "Shinjuku, Japan",
+    "camera": "iPhone 16 Pro Max 6.765mm f/1.78",
+    "iso": 64,
+    "width": 2651,
+    "height": 3535,
+    "caption": "Cocoon Tower"
+  }
   {
     "id": "img_IMG_3163",
     "src": "/gallery/IMG_3163.jpg",
