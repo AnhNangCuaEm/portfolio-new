@@ -42,6 +42,12 @@ const SUPPORTED_EXTENSIONS = [".jpg", ".jpeg", ".png", ".webp", ".avif", ".tiff"
 /** Thời gian chờ (ms) giữa các request geocoding để tránh rate-limit */
 const GEOCODE_DELAY_MS = 1200;
 
+/**
+ * Các field mà người dùng có thể chỉnh tay — sẽ được bảo vệ khi merge.
+ * Điều kiện bảo vệ: giá trị trong JSON cũ khác null VÀ khác chuỗi rỗng.
+ */
+const MANUAL_PROTECTED_FIELDS = ["caption", "camera", "location"];
+
 // ─────────────────────────────────────────────
 //  Helpers
 // ─────────────────────────────────────────────
@@ -73,6 +79,50 @@ function formatDate(dateObj) {
  */
 function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
+}
+
+/**
+ * Đọc file JSON hiện có và trả về Map<id, entry>.
+ * Nếu file chưa tồn tại hoặc parse lỗi → trả về Map rỗng.
+ */
+async function loadExistingMeta() {
+  if (!existsSync(OUTPUT_FILE)) return new Map();
+  try {
+    const raw = await fs.readFile(OUTPUT_FILE, "utf-8");
+    const parsed = JSON.parse(raw);
+    if (!Array.isArray(parsed)) return new Map();
+    return new Map(parsed.map((entry) => [entry.id, entry]));
+  } catch {
+    console.warn(`⚠ Không đọc được file JSON cũ, sẽ tạo mới hoàn toàn.`);
+    return new Map();
+  }
+}
+
+/**
+ * Kiểm tra xem một field có được chỉnh tay không.
+ * Điều kiện: giá trị tồn tại (khác null và khác chuỗi rỗng).
+ */
+function isManuallySet(value) {
+  return value !== null && value !== undefined && value !== "";
+}
+
+/**
+ * Merge entry mới (từ EXIF) với entry cũ (từ JSON).
+ * Các field trong MANUAL_PROTECTED_FIELDS sẽ được giữ nguyên
+ * nếu đã được chỉnh tay trong JSON cũ.
+ */
+function mergeEntry(freshEntry, oldEntry) {
+  if (!oldEntry) return freshEntry;
+
+  const merged = { ...freshEntry };
+
+  for (const field of MANUAL_PROTECTED_FIELDS) {
+    if (isManuallySet(oldEntry[field])) {
+      merged[field] = oldEntry[field];
+    }
+  }
+
+  return merged;
 }
 
 /**
@@ -125,7 +175,7 @@ async function reverseGeocode(lat, lon) {
 //  Logic chính
 // ─────────────────────────────────────────────
 
-async function processImage(filePath, index, total) {
+async function processImage(filePath, index, total, skipGeocode = false) {
   const filename = path.basename(filePath);
   console.log(`\n[${index + 1}/${total}] Đang xử lý: ${filename}`);
 
@@ -176,12 +226,16 @@ async function processImage(filePath, index, total) {
       const lon = exif.longitude ?? exif.GPSLongitude ?? null;
 
       if (lat !== null && lon !== null) {
-        console.log(`    ✓ GPS: (${lat.toFixed(5)}, ${lon.toFixed(5)}) — đang reverse geocoding...`);
-        location = await reverseGeocode(lat, lon);
-        if (location) {
-          console.log(`    ✓ Địa danh: ${location}`);
+        if (skipGeocode) {
+          console.log(`    ℹ GPS có nhưng location đã được chỉnh tay → bỏ qua geocoding`);
         } else {
-          console.log(`    ℹ Geocoding không trả về kết quả → null`);
+          console.log(`    ✓ GPS: (${lat.toFixed(5)}, ${lon.toFixed(5)}) — đang reverse geocoding...`);
+          location = await reverseGeocode(lat, lon);
+          if (location) {
+            console.log(`    ✓ Địa danh: ${location}`);
+          } else {
+            console.log(`    ℹ Geocoding không trả về kết quả → null`);
+          }
         }
       } else {
         console.log(`    ℹ Không có GPS → null`);
@@ -254,6 +308,12 @@ async function main() {
     process.exit(1);
   }
 
+  // ── Đọc JSON cũ (nếu có) ──
+  const existingMeta = await loadExistingMeta();
+  if (existingMeta.size > 0) {
+    console.log(`♻  Tìm thấy JSON cũ   : ${existingMeta.size} mục — sẽ bảo toàn dữ liệu tay (${MANUAL_PROTECTED_FIELDS.join(", ")})\n`);
+  }
+
   // Lấy danh sách file ảnh
   const allFiles = await fs.readdir(GALLERY_DIR);
   const imageFiles = allFiles
@@ -271,14 +331,42 @@ async function main() {
   console.log(`🖼  Tìm thấy     : ${imageFiles.length} ảnh\n`);
 
   const results = [];
+  let countNew = 0;
+  let countUpdated = 0;
+  let countPreserved = 0;
+
+  // Tập hợp các id ảnh hiện tại để phát hiện ảnh bị xóa
+  const currentIds = new Set(imageFiles.map((f) => makeId(f)));
+
+  // Tính số ảnh bị xóa
+  const deletedCount = [...existingMeta.keys()].filter((id) => !currentIds.has(id)).length;
+  if (deletedCount > 0) {
+    console.log(`🗑  Ảnh đã bị xóa khỏi thư mục: ${deletedCount} mục → sẽ xóa khỏi JSON\n`);
+  }
 
   for (let i = 0; i < imageFiles.length; i++) {
     const filePath = path.join(GALLERY_DIR, imageFiles[i]);
-    const entry = await processImage(filePath, i, imageFiles.length);
-    results.push(entry);
+    const id = makeId(imageFiles[i]);
+    const oldEntry = existingMeta.get(id) ?? null;
 
-    // Throttle: chờ giữa các ảnh nếu cần geocoding (tránh rate-limit Nominatim)
-    if (i < imageFiles.length - 1) {
+    // Nếu location đã được chỉnh tay trong entry cũ → bỏ qua geocoding để tiết kiệm thời gian
+    const skipGeocode = oldEntry && isManuallySet(oldEntry.location);
+
+    const freshEntry = await processImage(filePath, i, imageFiles.length, skipGeocode);
+    const merged = mergeEntry(freshEntry, oldEntry);
+    results.push(merged);
+
+    if (!oldEntry) {
+      countNew++;
+    } else {
+      // Kiểm tra xem có field tay nào được bảo vệ không
+      const hasManual = MANUAL_PROTECTED_FIELDS.some((f) => isManuallySet(oldEntry[f]));
+      if (hasManual) countPreserved++;
+      else countUpdated++;
+    }
+
+    // Throttle: chờ giữa các ảnh nếu thực sự gọi geocoding
+    if (!skipGeocode && i < imageFiles.length - 1) {
       await sleep(GEOCODE_DELAY_MS);
     }
   }
@@ -288,7 +376,7 @@ async function main() {
   await fs.writeFile(OUTPUT_FILE, jsonContent, "utf-8");
 
   console.log("\n──────────────────────────────────────────────");
-  console.log(`✅ Hoàn tất! Đã tạo ${results.length} mục trong:`);
+  console.log(`✅ Hoàn tất! Đã ghi ${results.length} mục vào:`);
   console.log(`   ${OUTPUT_FILE}`);
 
   // Tóm tắt
@@ -296,10 +384,14 @@ async function main() {
   const withLocation = results.filter((r) => r.location !== null).length;
   const withCamera = results.filter((r) => r.camera !== null).length;
   console.log(`\n📊 Thống kê:`);
-  console.log(`   • Có ngày chụp (date)   : ${withDate}/${results.length}`);
+  console.log(`   • Ảnh mới thêm vào       : ${countNew}`);
+  console.log(`   • Ảnh cũ cập nhật EXIF   : ${countUpdated}`);
+  console.log(`   • Ảnh giữ dữ liệu tay    : ${countPreserved}`);
+  console.log(`   • Ảnh bị xóa khỏi JSON   : ${deletedCount}`);
+  console.log(`   • Có ngày chụp (date)    : ${withDate}/${results.length}`);
   console.log(`   • Có địa danh (location) : ${withLocation}/${results.length}`);
   console.log(`   • Có thiết bị (camera)   : ${withCamera}/${results.length}`);
-  console.log(`   • Cần nhập caption tay   : ${results.length} ảnh`);
+  console.log(`   • Caption còn trống      : ${results.filter((r) => !isManuallySet(r.caption)).length} ảnh`);
   console.log("──────────────────────────────────────────────\n");
 }
 
